@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="fr" class="space-theme">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sirius Space Association | Timeless Elegance</title>
+    <title>Sirius Space Association | Explorer le Cosmos</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="index.css">
     <link rel="icon" href="icone_luxurious-removebg-preview.png">
     <link
-        href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&family=Poppins:wght@300;400;500;600&family=Orbitron:wght@400;500;600;700&display=swap"
         rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/feather-icons"></script>
@@ -23,20 +23,50 @@
                     fontFamily: {
                         tangerine: ['Tangerine', 'cursive'],
                         poppins: ['Poppins', 'sans-serif'],
+                        orbitron: ['Orbitron', 'sans-serif'],
                     },
                     colors: {
-                        stone: {
-                            50: '#fafaf9',
-                            100: '#f5f5f4',
-                            200: '#e7e5e4',
-                            300: '#d6d3d1',
-                            400: '#a8a29e',
-                            500: '#78716c',
-                            600: '#57534e',
-                            700: '#44403c',
-                            800: '#292524',
-                            900: '#1c1917',
+                        cosmic: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            200: '#bae6fd',
+                            300: '#7dd3fc',
+                            400: '#38bdf8',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                            700: '#0369a1',
+                            800: '#075985',
+                            900: '#0c4a6e',
+                        },
+                        nebula: {
+                            50: '#faf5ff',
+                            100: '#f3e8ff',
+                            200: '#e9d5ff',
+                            300: '#d8b4fe',
+                            400: '#c084fc',
+                            500: '#a855f7',
+                            600: '#9333ea',
+                            700: '#7e22ce',
+                            800: '#6b21a8',
+                            900: '#581c87',
+                        },
+                        space: {
+                            50: '#f8fafc',
+                            100: '#f1f5f9',
+                            200: '#e2e8f0',
+                            300: '#cbd5e1',
+                            400: '#94a3b8',
+                            500: '#64748b',
+                            600: '#475569',
+                            700: '#334155',
+                            800: '#1e293b',
+                            900: '#0f172a',
                         }
+                    },
+                    backgroundImage: {
+                        'space-gradient': 'linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #312e81 100%)',
+                        'nebula-gradient': 'radial-gradient(circle at 20% 50%, rgba(120, 119, 198, 0.3) 0%, rgba(30, 27, 75, 0) 50%)',
+                        'starfield': 'radial-gradient(2px 2px at 20px 30px, #eee, transparent), radial-gradient(1px 1px at 40px 70px, #fff, transparent), radial-gradient(2px 2px at 50px 160px, #ddd, transparent), radial-gradient(3px 3px at 90px 40px, #fff, transparent), radial-gradient(1px 1px at 130px 80px, #fff, transparent), radial-gradient(2px 2px at 160px 120px, #ddd, transparent)',
                     },
                     animation: {
                         'fade-in': 'fadeIn 0.8s ease-in-out',
@@ -44,6 +74,9 @@
                         'slide-down': 'slideDown 0.8s ease-out',
                         'float': 'float 8s ease-in-out infinite',
                         'zoom-in': 'zoomIn 0.8s ease-out',
+                        'pulse-glow': 'pulseGlow 4s ease-in-out infinite',
+                        'twinkle': 'twinkle 3s ease-in-out infinite',
+                        'orbit': 'orbit 20s linear infinite',
                     },
                     keyframes: {
                         fadeIn: {
@@ -65,12 +98,228 @@
                         zoomIn: {
                             '0%': { transform: 'scale(0.95)', opacity: '0' },
                             '100%': { transform: 'scale(1)', opacity: '1' },
+                        },
+                        pulseGlow: {
+                            '0%, 100%': { 
+                                boxShadow: '0 0 20px rgba(56, 189, 248, 0.3), 0 0 40px rgba(56, 189, 248, 0.2)',
+                                transform: 'scale(1)'
+                            },
+                            '50%': { 
+                                boxShadow: '0 0 30px rgba(56, 189, 248, 0.5), 0 0 60px rgba(56, 189, 248, 0.3)',
+                                transform: 'scale(1.02)'
+                            },
+                        },
+                        twinkle: {
+                            '0%, 100%': { opacity: '0.3' },
+                            '50%': { opacity: '1' },
+                        },
+                        orbit: {
+                            '0%': { transform: 'rotate(0deg) translateX(100px) rotate(0deg)' },
+                            '100%': { transform: 'rotate(360deg) translateX(100px) rotate(-360deg)' },
                         }
                     }
                 }
             }
         }
     </script>
+    <style>
+        .space-theme {
+            --cosmic-primary: #0ea5e9;
+            --cosmic-secondary: #7e22ce;
+            --space-dark: #0f172a;
+            --space-light: #1e293b;
+            --star-color: rgba(255, 255, 255, 0.8);
+        }
+
+        body {
+            background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #312e81 100%);
+            color: #e2e8f0;
+            min-height: 100vh;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: 
+                radial-gradient(2px 2px at 20px 30px, rgba(238, 238, 238, 0.8), transparent),
+                radial-gradient(1px 1px at 40px 70px, rgba(255, 255, 255, 1), transparent),
+                radial-gradient(2px 2px at 50px 160px, rgba(221, 221, 221, 0.7), transparent),
+                radial-gradient(3px 3px at 90px 40px, rgba(255, 255, 255, 0.9), transparent),
+                radial-gradient(1px 1px at 130px 80px, rgba(255, 255, 255, 0.6), transparent),
+                radial-gradient(2px 2px at 160px 120px, rgba(221, 221, 221, 0.5), transparent);
+            background-size: 300px 300px;
+            z-index: -1;
+            animation: starfield 20s linear infinite;
+        }
+
+        @keyframes starfield {
+            0% { transform: translateY(0) translateX(0); }
+            100% { transform: translateY(-300px) translateX(100px); }
+        }
+
+        .nav-border {
+            border-bottom: 1px solid rgba(56, 189, 248, 0.2);
+            background: rgba(15, 23, 42, 0.95);
+            backdrop-filter: blur(10px);
+        }
+
+        .hero-bg {
+            background: radial-gradient(ellipse at center, rgba(30, 27, 75, 0.7) 0%, rgba(15, 23, 42, 0.9) 70%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-bg::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                radial-gradient(circle at 20% 30%, rgba(56, 189, 248, 0.15) 0%, transparent 50%),
+                radial-gradient(circle at 80% 70%, rgba(168, 85, 247, 0.1) 0%, transparent 50%);
+            z-index: 1;
+        }
+
+        .watch-hover {
+            background: linear-gradient(145deg, rgba(30, 41, 59, 0.8) 0%, rgba(15, 23, 42, 0.9) 100%);
+            border: 1px solid rgba(56, 189, 248, 0.2);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .watch-hover::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg, transparent, rgba(56, 189, 248, 0.1), transparent);
+            transform: rotate(45deg);
+            transition: transform 0.6s ease;
+        }
+
+        .watch-hover:hover::before {
+            transform: rotate(45deg) translate(50%, 50%);
+        }
+
+        .watch-hover:hover {
+            border-color: rgba(56, 189, 248, 0.4);
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3), 0 0 30px rgba(56, 189, 248, 0.2);
+        }
+
+        .modal-content {
+            background: linear-gradient(145deg, #1e293b 0%, #0f172a 100%);
+            border: 1px solid rgba(56, 189, 248, 0.3);
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5), 0 0 40px rgba(56, 189, 248, 0.2);
+        }
+
+        .text-shadow {
+            text-shadow: 0 4px 20px rgba(56, 189, 248, 0.5);
+        }
+
+        .transition-smooth {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .scroll-reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .scroll-reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .cosmic-button {
+            background: linear-gradient(135deg, #0ea5e9 0%, #7e22ce 100%);
+            border: 1px solid rgba(56, 189, 248, 0.5);
+            color: white;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cosmic-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.6s ease;
+        }
+
+        .cosmic-button:hover::before {
+            left: 100%;
+        }
+
+        .cosmic-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(14, 165, 233, 0.3), 0 0 20px rgba(126, 34, 206, 0.2);
+        }
+
+        .planet {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+            position: absolute;
+            animation: orbit 20s linear infinite;
+            box-shadow: 
+                inset -20px -20px 40px rgba(0, 0, 0, 0.3),
+                inset 20px 20px 40px rgba(255, 255, 255, 0.1),
+                0 0 60px rgba(59, 130, 246, 0.5);
+        }
+
+        .planet::before {
+            content: '';
+            position: absolute;
+            top: 20%;
+            left: 20%;
+            width: 30%;
+            height: 30%;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+            filter: blur(5px);
+        }
+
+        .glow-effect {
+            position: relative;
+        }
+
+        .glow-effect::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 120%;
+            height: 120%;
+            background: radial-gradient(circle, rgba(56, 189, 248, 0.2) 0%, transparent 70%);
+            filter: blur(20px);
+            z-index: -1;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .glow-effect:hover::after {
+            opacity: 1;
+        }
+    </style>
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script>
         emailjs.init("Tx5_m7qECIegxX6Gr");
@@ -78,24 +327,27 @@
     
 </head>
 
-<body class="bg-black text-stone-200 font-poppins min-h-screen overflow-x-hidden">
+<body class="font-poppins min-h-screen overflow-x-hidden">
     <!-- Fixed Navbar -->
     <nav
-        class="fixed top-0 left-0 right-0 bg-stone-900 bg-opacity-95 backdrop-blur-sm z-50 nav-border transition-all duration-500 transform -translate-y-full nav-scroll">
+        class="fixed top-0 left-0 right-0 z-50 nav-border transition-all duration-500 transform -translate-y-full nav-scroll">
         <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-            <a href="#" class="font-tangerine text-3xl md:text-4xl text-stone-100 animate-fade-in">Sirius Space Association</a>
+            <a href="#" class="font-orbitron text-2xl md:text-3xl text-cosmic-400 animate-fade-in flex items-center gap-2">
+                <i data-feather="star" class="w-6 h-6 text-cosmic-400"></i>
+                Sirius Space Association
+            </a>
             <div class="hidden md:flex space-x-10">
                 <a href="#"
-                    class="text-stone-300 hover:text-stone-100 transition-smooth relative after:content-[''] after:absolute after:w-0 after:h-px after:bg-stone-300 after:left-0 after:-bottom-1 after:transition-all after:duration-300 hover:after:w-full">Accueil</a>
-                <a href="Galerie.html"
-                    class="text-stone-300 hover:text-stone-100 transition-smooth relative after:content-[''] after:absolute after:w-0 after:h-px after:bg-stone-300 after:left-0 after:-bottom-1 after:transition-all after:duration-300 hover:after:w-full">Galerie</a>
+                    class="text-space-300 hover:text-cosmic-400 transition-smooth relative after:content-[''] after:absolute after:w-0 after:h-px after:bg-cosmic-400 after:left-0 after:-bottom-1 after:transition-all after:duration-300 hover:after:w-full">Accueil</a>
+                <a href="collection.html"
+                    class="text-space-300 hover:text-cosmic-400 transition-smooth relative after:content-[''] after:absolute after:w-0 after:h-px after:bg-cosmic-400 after:left-0 after:-bottom-1 after:transition-all after:duration-300 hover:after:w-full">Galerie</a>
                 <a href="#about"
-                    class="text-stone-300 hover:text-stone-100 transition-smooth relative after:content-[''] after:absolute after:w-0 after:h-px after:bg-stone-300 after:left-0 after:-bottom-1 after:transition-all after:duration-300 hover:after:w-full">A Propos</a>
+                    class="text-space-300 hover:text-cosmic-400 transition-smooth relative after:content-[''] after:absolute after:w-0 after:h-px after:bg-cosmic-400 after:left-0 after:-bottom-1 after:transition-all after:duration-300 hover:after:w-full">À Propos</a>
                 <a href="#contact"
-                    class="text-stone-300 hover:text-stone-100 transition-smooth relative after:content-[''] after:absolute after:w-0 after:h-px after:bg-stone-300 after:left-0 after:-bottom-1 after:transition-all after:duration-300 hover:after:w-full">Contact</a>
+                    class="text-space-300 hover:text-cosmic-400 transition-smooth relative after:content-[''] after:absolute after:w-0 after:h-px after:bg-cosmic-400 after:left-0 after:-bottom-1 after:transition-all after:duration-300 hover:after:w-full">Contact</a>
             </div>
             <div class="flex items-center space-x-6">
-                <button class="md:hidden text-stone-300" id="mobile-menu-button">
+                <button class="md:hidden text-space-300 hover:text-cosmic-400" id="mobile-menu-button">
                     <i data-feather="menu"></i>
                 </button>
             </div>
@@ -103,78 +355,25 @@
     </nav>
 
     <!-- Mobile Menu -->
-    <div class="fixed top-0 left-0 w-full h-full bg-stone-900 z-40 flex flex-col items-center justify-center space-y-10 transform translate-x-full transition-transform duration-500 md:hidden"
+    <div class="fixed top-0 left-0 w-full h-full bg-space-900 z-40 flex flex-col items-center justify-center space-y-10 transform translate-x-full transition-transform duration-500 md:hidden"
         id="mobile-menu">
-        <button class="absolute top-8 right-8 text-stone-300" id="close-menu">
-            <i data-feather="x"></i>
-        </button>
-        <a href="#" class="text-3xl text-stone-300 hover:text-stone-100 transition-smooth py-2">Accueil</a>
-        <a href="galerie.html"
-            class="text-3xl text-stone-300 hover:text-stone-100 transition-smooth py-2">Galerie</a>
-        <a href="#about" class="text-3xl text-stone-300 hover:text-stone-100 transition-smooth py-2">A propos</a>
-        <a href="#contact" class="text-3xl text-stone-300 hover:text-stone-100 transition-smooth py-2">Contact</a>
-    </div>
-
-    <!-- Product Modal -->
-    <div class="modal" id="product-modal">
-        <div class="modal-content">
-            <button class="absolute top-4 right-4 text-stone-400 hover:text-stone-100" id="close-modal">
+        <div class="absolute top-0 left-0 w-full h-full bg-space-900 opacity-95"></div>
+        <div class="relative z-10">
+            <button class="absolute top-8 right-8 text-space-300 hover:text-cosmic-400" id="close-menu">
                 <i data-feather="x"></i>
             </button>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div>
-                    <img src="" alt="" class="w-full h-80 object-cover rounded-lg" id="modal-image">
-                </div>
-                <div>
-                    <h3 class="text-2xl font-medium text-stone-100 mb-2" id="modal-title"></h3>
-                    <p class="text-stone-400 mb-4" id="modal-material"></p>
-                    <p class="text-stone-300 mb-6" id="modal-description"></p>
-                    <div class="flex space-x-4">
-                        <button
-                            class="add-to-cart-modal bg-stone-700 hover:bg-stone-600 text-stone-100 px-6 py-3 rounded transition-smooth border border-stone-600 flex-1">
-                            Laisser une note
-                        </button>
-                    </div>
-                </div>
-            </div>
+            <a href="#" class="text-3xl text-space-300 hover:text-cosmic-400 transition-smooth py-2 block">Accueil</a>
+            <a href="collection.html"
+                class="text-3xl text-space-300 hover:text-cosmic-400 transition-smooth py-2 block">Galerie</a>
+            <a href="#about" class="text-3xl text-space-300 hover:text-cosmic-400 transition-smooth py-2 block">À propos</a>
+            <a href="#contact" class="text-3xl text-space-300 hover:text-cosmic-400 transition-smooth py-2 block">Contact</a>
         </div>
     </div>
 
-    <!-- Cart Modal -->
-    <div id="cart-modal" class="fixed inset-0 bg-black bg-opacity-80 z-50 hidden">
-        <div
-            class="absolute right-0 top-0 h-full w-96 bg-stone-800 shadow-xl transform transition-transform duration-300 translate-x-full border-l border-stone-700">
-            <div class="p-6 h-full flex flex-col">
-                <!-- Header -->
-                <div class="flex justify-between items-center mb-6">
-                    <h2 class="text-2xl font-light text-stone-100">Your Cart</h2>
-                    <button id="close-cart" class="text-stone-400 hover:text-stone-100">
-                        <i data-feather="x" class="w-6 h-6"></i>
-                    </button>
-                </div>
-
-                <!-- Cart Items -->
-                <div id="cart-items" class="flex-1 overflow-y-auto">
-                </div>
-
-                <!-- Footer -->
-                <div class="border-t border-stone-700 pt-4">
-                    <div class="flex justify-between text-lg font-medium mb-4">
-                        <span class="text-stone-100">Total:</span>
-                        <span id="cart-total" class="text-stone-100">CFA 0</span>
-                    </div>
-                    <button id="checkout-btn"
-                        class="w-full bg-stone-700 hover:bg-stone-600 text-stone-100 py-3 rounded-lg transition-colors border border-stone-600 disabled:opacity-50 disabled:cursor-not-allowed">
-                        <span id="checkout-btn-text">Checkout</span>
-                        <svg id="checkout-spinner" class="animate-spin -ml-1 mr-3 h-5 w-5 text-white inline hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-                            <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
-                            <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
-                        </svg>
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
+    <!-- Floating Planets -->
+    <div class="fixed top-1/4 left-10 w-4 h-4 bg-cosmic-400 rounded-full animate-twinkle z-0"></div>
+    <div class="fixed top-1/3 right-20 w-3 h-3 bg-cosmic-300 rounded-full animate-twinkle z-0" style="animation-delay: 1s"></div>
+    <div class="fixed bottom-1/4 left-1/4 w-2 h-2 bg-cosmic-200 rounded-full animate-twinkle z-0" style="animation-delay: 2s"></div>
 
     <!-- Hero Section -->
     <section
@@ -193,237 +392,353 @@
     </video>
 </div>
 
-
-        <!-- Overlay -->
-        <div class="absolute inset-0 bg-black bg-opacity-40 z-10"></div>
-
         <!-- Content -->
         <div class="max-w-4xl mx-auto relative z-20">
-            <h1 class="font-tangerine text-6xl md:text-8xl text-stone-100 mb-6 text-shadow">Sirius Space Association</h1>
-            <p class="text-xl md:text-2xl text-stone-300 mb-10 max-w-2xl mx-auto">"To infinity and beyond"</p>
-            <div>
-                <a href="#collection"
-                    class="inline-block px-10 py-4 border border-stone-400 text-stone-200 hover:bg-stone-800 hover:border-stone-300 transition-all font-medium tracking-wider">
-                    Explorons l'espace
-                </a>
+            <div class="mb-8">
+                <div class="inline-block p-4 rounded-full bg-gradient-to-r from-cosmic-600/20 to-nebula-600/20 border border-cosmic-400/30 mb-6">
+                    <i data-feather="star" class="w-12 h-12 text-cosmic-400"></i>
+                </div>
+                <h1 class="font-orbitron text-5xl md:text-7xl text-space-100 mb-6 text-shadow tracking-tighter">
+                    <span class="bg-gradient-to-r from-cosmic-400 to-nebula-400 bg-clip-text text-transparent">
+                        Sirius Space Association
+                    </span>
+                </h1>
+                <p class="text-xl md:text-2xl text-space-300 mb-10 max-w-2xl mx-auto font-light">
+                    Explorer le cosmos, une découverte à la fois
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center mt-12">
+                    <a href="#collection"
+                        class="cosmic-button px-10 py-4 rounded-lg font-medium tracking-wider inline-flex items-center justify-center gap-2">
+                        <i data-feather="compass"></i>
+                        Explorer le Cosmos
+                    </a>
+                    <a href="#about"
+                        class="px-10 py-4 border border-cosmic-400/50 text-space-200 hover:bg-cosmic-900/30 hover:border-cosmic-300 transition-all font-medium tracking-wider rounded-lg inline-flex items-center justify-center gap-2">
+                        <i data-feather="info"></i>
+                        À Propos
+                    </a>
+                </div>
             </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <i data-feather="chevron-down" class="w-8 h-8 text-cosmic-400"></i>
         </div>
 
     </section>
 
-    <!-- Featured Products -->
-    <section class="py-20 px-4 bg-stone-900" id="collection">
-        <div class="container mx-auto">
-            <h2 class="font-tangerine text-4xl md:text-5xl text-center text-stone-100 mb-6 scroll-reveal">Notre Galaxie
-            </h2>
-            <p class="text-stone-400 text-center max-w-2xl mx-auto mb-16 scroll-reveal">Un vide pourtant fascinant et riche en histoires</p>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
-                <!-- objet identifié 1 -->
-                <div
-                    class="bg-stone-800 p-8 rounded-lg watch-hover transition-smooth scroll-reveal overflow-hidden relative group border border-stone-700">
-                    <div class="overflow-hidden rounded-md">
-                        <img src="https://th.bing.com/th/id/OIP.vcseGsf9wVfebZ2u012bzwHaEK?w=281&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
-                            alt="Eternal Classique Watch"
-                            class="w-full h-72 object-cover watch-image group-hover:scale-105">
+    <!-- Featured Products Section -->
+    <section class="py-20 px-4 relative overflow-hidden" id="collection">
+        <!-- Background Nebula Effect -->
+        <div class="absolute top-0 left-0 w-full h-full bg-nebula-gradient z-0"></div>
+        
+        <div class="container mx-auto relative z-10">
+            <div class="text-center mb-16">
+                <h2 class="font-orbitron text-4xl md:text-5xl text-space-100 mb-6 scroll-reveal">
+                    <span class="bg-gradient-to-r from-cosmic-400 to-nebula-400 bg-clip-text text-transparent">
+                        Notre Galerie Galactique
+                    </span>
+                </h2>
+                <p class="text-space-300 text-lg max-w-2xl mx-auto mb-16 scroll-reveal">
+                    Découvrez les merveilles de l'espace à travers notre collection d'objets célestes
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Celestial Object 1 -->
+                <div class="watch-hover rounded-2xl p-6 scroll-reveal group glow-effect">
+                    <div class="relative overflow-hidden rounded-xl mb-6">
+                        <div class="aspect-square bg-gradient-to-br from-cosmic-900/50 to-space-900 rounded-xl flex items-center justify-center">
+                            <i data-feather="sun" class="w-20 h-20 text-yellow-400 group-hover:animate-spin group-hover:duration-3000"></i>
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-space-900/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                     </div>
-                    <div class="mt-6">
-                        <h3 class="text-xl font-medium text-stone-100">Eternal Classique</h3>
-                        <p class="text-stone-400 mt-2">Stainless Steel</p>
-                        <div class="flex justify-between items-center mt-6">
-                            <div class="flex space-x-2">
-                                <button
-                                    class="view-details-btn bg-stone-700 hover:bg-stone-600 text-stone-100 px-3 py-2 rounded transition-smooth transform translate-y-2 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 duration-500 border border-stone-600 text-sm"
-                                    data-image="https://th.bing.com/th/id/OIP.vcseGsf9wVfebZ2u012bzwHaEK?w=281&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
-                                    data-description="The Eternal Classique embodies timeless sophistication with its stainless steel construction and precision Swiss movement. A perfect companion for both formal occasions and everyday elegance.">
-                                    Details
-                                </button>
-                            </div>
+                    <div class="space-y-4">
+                        <h3 class="text-xl font-semibold text-space-100 group-hover:text-cosmic-300 transition-colors">
+                            Systèmes Solaires
+                        </h3>
+                        <p class="text-space-400 text-sm">
+                            Explorez des systèmes solaires lointains et leurs formations planétaires
+                        </p>
+                        <div class="pt-4">
+                            <button href="collection.html" class="cosmic-button px-6 py-3 rounded-lg text-sm font-medium w-full">
+                                Explorer les Détails
+                            </button>
                         </div>
                     </div>
                 </div>
 
-                <!-- objet identifié 2 -->
-                <div
-                    class="bg-stone-800 p-8 rounded-lg watch-hover transition-smooth scroll-reveal overflow-hidden relative group border border-stone-700">
-                    <div class="overflow-hidden rounded-md">
-                        <img src="https://th.bing.com/th/id/OIP.1D70od-hoA6zkIF52ur7sAHaEK?w=371&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
-                            alt="Noir Premier Watch" class="w-full h-72 object-cover watch-image group-hover:scale-105">
+                <!-- Celestial Object 2 -->
+                <div class="watch-hover rounded-2xl p-6 scroll-reveal group glow-effect">
+                    <div class="relative overflow-hidden rounded-xl mb-6">
+                        <div class="aspect-square bg-gradient-to-br from-purple-900/50 to-space-900 rounded-xl flex items-center justify-center">
+                            <i data-feather="wind" class="w-20 h-20 text-purple-400 group-hover:animate-pulse"></i>
+                        </div>
                     </div>
-                    <div class="mt-6">
-                        <h3 class="text-xl font-medium text-stone-100">Noir Premier</h3>
-                        <p class="text-stone-400 mt-2">Black Leather</p>
-                        <div class="flex justify-between items-center mt-6">
-                            <div class="flex space-x-2">
-                                <button
-                                    class="view-details-btn bg-stone-700 hover:bg-stone-600 text-stone-100 px-3 py-2 rounded transition-smooth transform translate-y-2 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 duration-500 border border-stone-600 text-sm"
-                                    data-image="https://th.bing.com/th/id/OIP.1D70od-hoA6zkIF52ur7sAHaEK?w=371&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
-                                    data-description="The Noir Premier combines luxury and mystery with its premium black leather strap and dark dial. A statement piece for those who appreciate understated elegance.">
-                                    Details
-                                </button>
-                            </div>
+                    <div class="space-y-4">
+                        <h3 class="text-xl font-semibold text-space-100 group-hover:text-nebula-300 transition-colors">
+                            Nébuleuses
+                        </h3>
+                        <p class="text-space-400 text-sm">
+                            Nuages cosmiques de gaz et de poussière où naissent les étoiles
+                        </p>
+                        <div class="pt-4">
+                            <button href="collection.html" class="cosmic-button px-6 py-3 rounded-lg text-sm font-medium w-full">
+                                Explorer les Détails
+                            </button>
                         </div>
                     </div>
                 </div>
 
-                <!-- objet identifié 3 -->
-                <div
-                    class="bg-stone-800 p-8 rounded-lg watch-hover transition-smooth scroll-reveal overflow-hidden relative group border border-stone-700">
-                    <div class="overflow-hidden rounded-md">
-                        <img src="data:image/webp;base64,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"
-                            alt="Argent Lumière Watch"
-                            class="w-full h-72 object-cover watch-image group-hover:scale-105">
+                <!-- Celestial Object 3 -->
+                <div class="watch-hover rounded-2xl p-6 scroll-reveal group glow-effect">
+                    <div class="relative overflow-hidden rounded-xl mb-6">
+                        <div class="aspect-square bg-gradient-to-br from-blue-900/50 to-space-900 rounded-xl flex items-center justify-center">
+                            <i data-feather="zap" class="w-20 h-20 text-blue-400 group-hover:animate-bounce"></i>
+                        </div>
                     </div>
-                    <div class="mt-6">
-                        <h3 class="text-xl font-medium text-stone-100">Argent Lumière</h3>
-                        <p class="text-stone-400 mt-2">Silver Mesh</p>
-                        <div class="flex justify-between items-center mt-6">
-                            <div class="flex space-x-2">
-                                <button
-                                    class="view-details-btn bg-stone-700 hover:bg-stone-600 text-stone-100 px-3 py-2 rounded transition-smooth transform translate-y-2 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 duration-500 border border-stone-600 text-sm"
-                                    data-image="data:image/webp;base64,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"
-                                    data-description="Argent Lumière captures light and elegance with its silver mesh bracelet and luminous dial. A contemporary masterpiece for the modern connoisseur.">
-                                    Details
-                                </button>
-                            </div>
+                    <div class="space-y-4">
+                        <h3 class="text-xl font-semibold text-space-100 group-hover:text-cosmic-300 transition-colors">
+                            Trous Noirs
+                        </h3>
+                        <p class="text-space-400 text-sm">
+                            Régions de l'espace-temps aux effets gravitationnels intenses
+                        </p>
+                        <div class="pt-4">
+                            <button href="collection.html" class="cosmic-button px-6 py-3 rounded-lg text-sm font-medium w-full">
+                                Explorer les Détails
+                            </button>
                         </div>
                     </div>
                 </div>
 
-                <!-- objet identifié 4 -->
-                <div
-                    class="bg-stone-800 p-8 rounded-lg watch-hover transition-smooth scroll-reveal overflow-hidden relative group border border-stone-700">
-                    <div class="overflow-hidden rounded-md">
-                        <img src="data:image/webp;base64,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"
-                            alt="Royal Chrono Watch" class="w-full h-72 object-cover watch-image group-hover:scale-105">
+                <!-- Celestial Object 4 -->
+                <div class="watch-hover rounded-2xl p-6 scroll-reveal group glow-effect">
+                    <div class="relative overflow-hidden rounded-xl mb-6">
+                        <div class="aspect-square bg-gradient-to-br from-indigo-900/50 to-space-900 rounded-xl flex items-center justify-center">
+                            <i data-feather="activity" class="w-20 h-20 text-indigo-400 group-hover:animate-ping"></i>
+                        </div>
                     </div>
-                    <div class="mt-6">
-                        <h3 class="text-xl font-medium text-stone-100">Royal Chrono</h3>
-                        <p class="text-stone-400 mt-2">Rose Gold</p>
-                        <div class="flex justify-between items-center mt-6">
-                            <div class="flex space-x-2">
-                                <button
-                                    class="view-details-btn bg-stone-700 hover:bg-stone-600 text-stone-100 px-3 py-2 rounded transition-smooth transform translate-y-2 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 duration-500 border border-stone-600 text-sm"
-                                    data-image="data:image/webp;base64,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"
-                                    data-description="The Royal Chrono in rose gold exudes opulence and precision. With its chronograph functions and luxurious finish, it's the ultimate statement of refined taste.">
-                                    Details
-                                </button>
-                            </div>
+                    <div class="space-y-4">
+                        <h3 class="text-xl font-semibold text-space-100 group-hover:text-nebula-300 transition-colors">
+                            Galaxies
+                        </h3>
+                        <p class="text-space-400 text-sm">
+                            Vastes collections d'étoiles, planètes et matière cosmique
+                        </p>
+                        <div class="pt-4">
+                            <button href="collection.html" class="cosmic-button px-6 py-3 rounded-lg text-sm font-medium w-full">
+                                Explorer les Détails
+                            </button>
                         </div>
                     </div>
                 </div>
 
-                <!-- objet identifié 5 -->
-                <div
-                    class="bg-stone-800 p-8 rounded-lg watch-hover transition-smooth scroll-reveal overflow-hidden relative group border border-stone-700">
-                    <div class="overflow-hidden rounded-md">
-                        <img src="https://th.bing.com/th/id/OIP.dBvmXcgTXVLS_jYyFsJqfAHaEK?w=295&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
-                            alt="Marine Elite Watch" class="w-full h-72 object-cover watch-image group-hover:scale-105">
+                <!-- Celestial Object 5 -->
+                <div class="watch-hover rounded-2xl p-6 scroll-reveal group glow-effect">
+                    <div class="relative overflow-hidden rounded-xl mb-6">
+                        <div class="aspect-square bg-gradient-to-br from-cyan-900/50 to-space-900 rounded-xl flex items-center justify-center">
+                            <i data-feather="moon" class="w-20 h-20 text-cyan-300 group-hover:animate-float"></i>
+                        </div>
                     </div>
-                    <div class="mt-6">
-                        <h3 class="text-xl font-medium text-stone-100">Marine Elite</h3>
-                        <p class="text-stone-400 mt-2">Titanium Case</p>
-                        <div class="flex justify-between items-center mt-6">
-                            <div class="flex space-x-2">
-                                <button
-                                    class="view-details-btn bg-stone-700 hover:bg-stone-600 text-stone-100 px-3 py-2 rounded transition-smooth transform translate-y-2 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 duration-500 border border-stone-600 text-sm"
-                                    data-image="https://th.bing.com/th/id/OIP.dBvmXcgTXVLS_jYyFsJqfAHaEK?w=295&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
-                                    data-description="Built for adventure, the Marine Elite features a lightweight titanium case and water resistance up to 300 meters. Professional diving capabilities meet luxury design.">
-                                    Details
-                                </button>
-                            </div>
+                    <div class="space-y-4">
+                        <h3 class="text-xl font-semibold text-space-100 group-hover:text-cosmic-300 transition-colors">
+                            Exoplanètes
+                        </h3>
+                        <p class="text-space-400 text-sm">
+                            Planètes orbitant des étoiles en dehors de notre système solaire
+                        </p>
+                        <div class="pt-4">
+                            <button href="collection.html" class="cosmic-button px-6 py-3 rounded-lg text-sm font-medium w-full">
+                                Explorer les Détails
+                            </button>
                         </div>
                     </div>
                 </div>
 
-                <!-- objet identifié 6 -->
-                <div
-                    class="bg-stone-800 p-8 rounded-lg watch-hover transition-smooth scroll-reveal overflow-hidden relative group border border-stone-700">
-                    <div class="overflow-hidden rounded-md">
-                        <img src="https://th.bing.com/th/id/OIP.BnOFfXrmTDG_zgTN_FKEZgHaEK?w=285&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
-                            alt="Heritage 1947 Watch"
-                            class="w-full h-72 object-cover watch-image group-hover:scale-105">
+                <!-- Celestial Object 6 -->
+                <div class="watch-hover rounded-2xl p-6 scroll-reveal group glow-effect">
+                    <div class="relative overflow-hidden rounded-xl mb-6">
+                        <div class="aspect-square bg-gradient-to-br from-violet-900/50 to-space-900 rounded-xl flex items-center justify-center">
+                            <i data-feather="star" class="w-20 h-20 text-violet-300 group-hover:animate-spin"></i>
+                        </div>
                     </div>
-                    <div class="mt-6">
-                        <h3 class="text-xl font-medium text-stone-100">Heritage 1947</h3>
-                        <p class="text-stone-400 mt-2">Limited Edition</p>
-                        <div class="flex justify-between items-center mt-6">
-                            <div class="flex space-x-2">
-                                <button
-                                    class="view-details-btn bg-stone-700 hover:bg-stone-600 text-stone-100 px-3 py-2 rounded transition-smooth transform translate-y-2 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 duration-500 border border-stone-600 text-sm"
-                                    data-image="https://th.bing.com/th/id/OIP.BnOFfXrmTDG_zgTN_FKEZgHaEK?w=285&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
-                                    data-description="The Heritage 1947 pays homage to our founding year with its vintage-inspired design and limited production of only 500 pieces worldwide. A true collector's item.">
-                                    Details
-                                </button>
-                            </div>
+                    <div class="space-y-4">
+                        <h3 class="text-xl font-semibold text-space-100 group-hover:text-nebula-300 transition-colors">
+                            Amas d'Étoiles
+                        </h3>
+                        <p class="text-space-400 text-sm">
+                            Groupes d'étoiles partageant une origine commune
+                        </p>
+                        <div class="pt-4">
+                            <button href="collection.html" class="cosmic-button px-6 py-3 rounded-lg text-sm font-medium w-full">
+                                Explorer les Détails
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
+            
             <div class="text-center mt-16 scroll-reveal">
                 <a href="collection.html"
-                    class="inline-block px-10 py-4 border border-stone-400 text-stone-200 hover:bg-stone-800 hover:border-stone-300 transition-smooth tracking-wider">
-                    En découvrir plus
+                    class="cosmic-button px-10 py-4 rounded-lg font-medium tracking-wider inline-flex items-center gap-2">
+                    <i data-feather="globe"></i>
+                    Voir la Galerie Complète
                 </a>
             </div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section class="py-20 px-4 bg-black relative overflow-hidden" id="about">
-        <div class="absolute inset-0 bg-gradient-to-r from-stone-900 to-black opacity-70"></div>
+    <section class="py-20 px-4 relative overflow-hidden" id="about">
+        <div class="absolute inset-0 bg-gradient-to-b from-space-900 via-space-800/50 to-space-900"></div>
         <div class="container mx-auto max-w-5xl relative z-10">
-            <div class="text-center">
-                <h2 class="font-tangerine text-4xl md:text-5xl text-stone-100 mb-12 scroll-reveal">Dévoués à l'aérospatiale</h2>
-                <div class="bg-stone-900 p-10 rounded-lg border border-stone-700 scroll-reveal">
-                    <p class="text-stone-300 text-lg leading-relaxed max-w-3xl mx-auto mb-10">
-                        Sirius Space Association est la première association béninoise 100 % dédiée à l'aérospatiale ......etc
-                    </p>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="scroll-reveal">
+                    <div class="inline-block mb-6">
+                        <span class="text-cosmic-400 font-orbitron text-sm tracking-widest uppercase">À Propos</span>
+                        <h2 class="font-orbitron text-4xl md:text-5xl text-space-100 mt-2">
+                            Explorer l'<span class="text-cosmic-400">Univers</span> Ensemble
+                        </h2>
+                    </div>
+                    <div class="space-y-6">
+                        <p class="text-space-300 text-lg leading-relaxed">
+                            Sirius Space Association est la principale organisation d'astronomie et de sciences spatiales du Bénin. 
+                            Fondée en 2020 par des passionnés de l'espace, nous sommes dédiés à la promotion de la culture scientifique 
+                            et à l'exploration spatiale à travers l'éducation, l'observation et la recherche.
+                        </p>
+                        <div class="space-y-4">
+                            <div class="flex items-start gap-3">
+                                <i data-feather="target" class="w-6 h-6 text-cosmic-400 flex-shrink-0 mt-1"></i>
+                                <div>
+                                    <h4 class="font-semibold text-space-100">Notre Mission</h4>
+                                    <p class="text-space-400">Inspirer la curiosité et faire progresser l'éducation aux sciences spatiales en Afrique</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <i data-feather="eye" class="w-6 h-6 text-cosmic-400 flex-shrink-0 mt-1"></i>
+                                <div>
+                                    <h4 class="font-semibold text-space-100">Notre Vision</h4>
+                                    <p class="text-space-400">Créer une société consciente de l'espace et passionnée par l'exploration cosmique</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="scroll-reveal">
+                    <div class="relative">
+                        <div class="bg-gradient-to-br from-cosmic-900/30 to-space-900 rounded-2xl p-8 border border-cosmic-400/20">
+                            <div class="grid grid-cols-2 gap-6">
+                                <div class="text-center p-4 bg-space-800/50 rounded-xl">
+                                    <div class="text-3xl font-bold text-cosmic-400">5+</div>
+                                    <div class="text-space-400 text-sm mt-2">Ans d'Activité</div>
+                                </div>
+                                <div class="text-center p-4 bg-space-800/50 rounded-xl">
+                                    <div class="text-3xl font-bold text-cosmic-400">20+</div>
+                                    <div class="text-space-400 text-sm mt-2">Membres</div>
+                                </div>
+                                <div class="text-center p-4 bg-space-800/50 rounded-xl">
+                                    <div class="text-3xl font-bold text-cosmic-400">5+</div>
+                                    <div class="text-space-400 text-sm mt-2">Événements Annuels</div>
+                                </div>
+                                <div class="text-center p-4 bg-space-800/50 rounded-xl">
+                                    <div class="text-3xl font-bold text-cosmic-400">10K+</div>
+                                    <div class="text-space-400 text-sm mt-2">Personnes Atteintes</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact/Newsletter -->
-    <section class="py-20 px-4 bg-stone-900" id="contact">
-        <div class="container mx-auto max-w-4xl">
-            <div class="text-center mb-12">
-                <h2 class="font-tangerine text-4xl md:text-5xl text-stone-100 mb-6 scroll-reveal">Stay Connected</h2>
-                <p class="text-stone-300 scroll-reveal">Subscribe to our newsletter for exclusive offers and updates</p>
+    <!-- Contact Section -->
+    <section class="py-20 px-4 relative overflow-hidden" id="contact">
+        <div class="absolute inset-0 bg-gradient-to-r from-space-900 via-space-800/50 to-space-900"></div>
+        <div class="container mx-auto max-w-4xl relative z-10">
+            <div class="text-center mb-12 scroll-reveal">
+                <h2 class="font-orbitron text-4xl md:text-5xl text-space-100 mb-6">
+                    <span class="bg-gradient-to-r from-cosmic-400 to-nebula-400 bg-clip-text text-transparent">
+                        Rejoignez Notre Mission
+                    </span>
+                </h2>
+                <p class="text-space-300 text-lg max-w-2xl mx-auto">
+                    Abonnez-vous à notre newsletter cosmique pour les dernières nouvelles spatiales, invitations aux événements et contenu exclusif
+                </p>
             </div>
+            
             <div class="max-w-lg mx-auto scroll-reveal">
-                <form class="space-y-6" id="newsletter-form">
-                    <input type="email" placeholder="Your email address"
-                        class="w-full px-5 py-4 bg-stone-800 border border-stone-700 rounded focus:outline-none focus:border-stone-500 text-stone-100 transition-smooth"
-                        id="newsletter-email" required>
-                    <button type="submit"
-                        class="w-full px-5 py-4 bg-stone-700 hover:bg-stone-600 text-stone-100 rounded transition-smooth border border-stone-600 tracking-wide"
-                        id="subscribe-btn">
-                        Subscribe
-                    </button>
-                </form>
-                <p class="text-stone-400 text-sm mt-4 hidden" id="newsletter-message"></p>
-                <div class="flex justify-center space-x-8 mt-10">
-                    <a href="#" class="text-stone-400 hover:text-stone-100 transition-smooth"><i
-                            data-feather="instagram"></i></a>
-                    <a href="#" class="text-stone-400 hover:text-stone-100 transition-smooth"><i
-                            data-feather="facebook"></i></a>
+                <div class="bg-space-800/50 backdrop-blur-sm rounded-2xl p-8 border border-cosmic-400/20">
+                    <form class="space-y-6" id="newsletter-form">
+                        <div>
+                            <label class="block text-space-300 text-sm font-medium mb-2">Adresse Email</label>
+                            <input type="email" placeholder="votre.email@exemple.com"
+                                class="w-full px-5 py-4 bg-space-900/50 border border-space-700 rounded-lg focus:outline-none focus:border-cosmic-400 text-space-100 transition-smooth placeholder-space-500"
+                                id="newsletter-email" required>
+                        </div>
+                        <button type="submit"
+                            class="cosmic-button w-full px-5 py-4 rounded-lg font-medium tracking-wide"
+                            id="subscribe-btn">
+                            <span class="flex items-center justify-center gap-2">
+                                <i data-feather="send"></i>
+                                S'abonner aux Actualités Cosmiques
+                            </span>
+                        </button>
+                    </form>
+                    <p class="text-space-400 text-sm mt-4 hidden" id="newsletter-message"></p>
+                    
+                    <div class="border-t border-space-700 mt-8 pt-8">
+                        <h4 class="text-space-300 font-medium mb-4">Connectez-vous avec Nous</h4>
+                        <div class="flex justify-center space-x-6">
+                            <a href="#" class="text-space-400 hover:text-cosmic-400 transition-smooth p-3 bg-space-900/50 rounded-full hover:bg-cosmic-900/20">
+                                <i data-feather="instagram"></i>
+                            </a>
+                            <a href="#" class="text-space-400 hover:text-cosmic-400 transition-smooth p-3 bg-space-900/50 rounded-full hover:bg-cosmic-900/20">
+                                <i data-feather="facebook"></i>
+                            </a>
+                            <a href="#" class="text-space-400 hover:text-cosmic-400 transition-smooth p-3 bg-space-900/50 rounded-full hover:bg-cosmic-900/20">
+                                <i data-feather="twitter"></i>
+                            </a>
+                            <a href="#" class="text-space-400 hover:text-cosmic-400 transition-smooth p-3 bg-space-900/50 rounded-full hover:bg-cosmic-900/20">
+                                <i data-feather="youtube"></i>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-black py-12 px-4 border-t border-stone-800">
+    <footer class="py-12 px-4 border-t border-space-700 bg-space-900/50">
         <div class="container mx-auto">
             <div class="flex flex-col md:flex-row justify-between items-center">
                 <div class="mb-6 md:mb-0">
-                    <a href="index.html" class="font-tangerine text-3xl text-stone-100">Sirius Space Association</a>
-                    <p class="text-stone-400 text-sm mt-2">© 2025 All Rights Reserved</p>
+                    <a href="index.html" class="font-orbitron text-2xl text-space-100 flex items-center gap-2">
+                        <i data-feather="star" class="w-6 h-6 text-cosmic-400"></i>
+                        Sirius Space Association
+                    </a>
+                    <p class="text-space-400 text-sm mt-2">© 2025 Explorer le Cosmos. Tous droits réservés.</p>
                 </div>
                 <div class="flex flex-col md:flex-row md:space-x-10 space-y-4 md:space-y-0 text-center md:text-left">
-                    <a href="mailto:contact@luxuriousorologi.com"
-                        class="text-stone-400 hover:text-stone-100 transition-smooth">Contact</a>
+                    <a href="mailto:contact@sirius-space.org"
+                        class="text-space-400 hover:text-cosmic-400 transition-smooth inline-flex items-center gap-2">
+                        <i data-feather="mail" class="w-4 h-4"></i>
+                        contact@sirius-space.org
+                    </a>
+                    <a href="tel:+22912345678"
+                        class="text-space-400 hover:text-cosmic-400 transition-smooth inline-flex items-center gap-2">
+                        <i data-feather="phone" class="w-4 h-4"></i>
+                        +229 01 63 92 77 60 
+                    </a>
                 </div>
+            </div>
+            <div class="text-center mt-8 pt-8 border-t border-space-800">
+                <p class="text-space-500 text-sm">
+                    "Le cosmos est en nous. Nous sommes faits de poussière d'étoiles. Nous sommes un moyen pour l'univers de se connaître lui-même." — Carl Sagan
+                </p>
             </div>
         </div>
     </footer>
@@ -431,96 +746,7 @@
     <script>
         feather.replace();
 
-        function renderCartItems() {
-            const container = document.getElementById('cart-items');
-            const totalElement = document.getElementById('cart-total');
-
-            if (cart.length === 0) {
-                container.innerHTML = `
-                    <div class="text-center text-stone-500 py-12">
-                        <i data-feather="shopping-cart" class="w-16 h-16 mx-auto mb-4"></i>
-                        <p>Your cart is empty</p>
-                    </div>
-                `;
-                totalElement.textContent = 'CFA 0';
-                feather.replace();
-                return;
-            }
-
-            let total = 0;
-            container.innerHTML = cart.map(item => {
-                const itemTotal = item.price * item.quantity;
-                total += itemTotal;
-
-                return `
-                    <div class="flex items-center space-x-4 py-4 border-b border-stone-700">
-                        <img src="${item.image}" alt="${item.name}" class="w-16 h-16 object-cover rounded">
-                        <div class="flex-1">
-                            <h4 class="font-medium text-stone-100">${item.name}</h4>
-                            <p class="text-stone-400">CFA ${item.price.toLocaleString()}</p>
-                        </div>
-                        <div class="flex items-center space-x-2">
-                            <button class="decrease-quantity text-stone-400 hover:text-stone-100" data-id="${item.id}">-</button>
-                            <span class="w-8 text-center text-stone-100">${item.quantity}</span>
-                            <button class="increase-quantity text-stone-400 hover:text-stone-100" data-id="${item.id}">+</button>
-                        </div>
-                        <button class="remove-item text-red-400 hover:text-red-300 ml-2" data-id="${item.id}">
-                            <i data-feather="trash-2" class="w-4 h-4"></i>
-                        </button>
-                    </div>
-                `;
-            }).join('');
-
-            totalElement.textContent = `CFA ${total.toLocaleString()}`;
-            feather.replace();
-
-            // Attach event listeners to cart items
-            attachCartItemEvents();
-        }
-
-        function attachCartItemEvents() {
-            // Increase quantity
-            document.querySelectorAll('.increase-quantity').forEach(button => {
-                button.addEventListener('click', function () {
-                    const productId = this.dataset.id;
-                    const item = cart.find(item => item.id === productId);
-                    if (item) {
-                        item.quantity++;
-                        localStorage.setItem('luxurious_cart', JSON.stringify(cart));
-                        updateCartCount();
-                        renderCartItems();
-                    }
-                });
-            });
-
-            // Decrease quantity
-            document.querySelectorAll('.decrease-quantity').forEach(button => {
-                button.addEventListener('click', function () {
-                    const productId = this.dataset.id;
-                    const item = cart.find(item => item.id === productId);
-                    if (item && item.quantity > 1) {
-                        item.quantity--;
-                        localStorage.setItem('luxurious_cart', JSON.stringify(cart));
-                        updateCartCount();
-                        renderCartItems();
-                    }
-                });
-            });
-
-            // Remove item
-            document.querySelectorAll('.remove-item').forEach(button => {
-                button.addEventListener('click', function () {
-                    const productId = this.dataset.id;
-                    cart = cart.filter(item => item.id !== productId);
-                    localStorage.setItem('luxurious_cart', JSON.stringify(cart));
-                    updateCartCount();
-                    renderCartItems();
-                });
-            });
-        }
-
         document.addEventListener('DOMContentLoaded', function () {
-            // Navbar scroll effect
             const navbar = document.querySelector('nav');
             let lastScrollY = window.scrollY;
 
@@ -534,21 +760,6 @@
                 lastScrollY = window.scrollY;
             });
 
-            // Smooth scroll for navigation links
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function (e) {
-                    e.preventDefault();
-                    const target = document.querySelector(this.getAttribute('href'));
-                    if (target) {
-                        target.scrollIntoView({
-                            behavior: 'smooth',
-                            block: 'start'
-                        });
-                    }
-                });
-            });
-
-            // Mobile menu functionality
             const mobileMenuButton = document.getElementById('mobile-menu-button');
             const mobileMenu = document.getElementById('mobile-menu');
             const closeMenuButton = document.getElementById('close-menu');
@@ -562,45 +773,26 @@
                 mobileMenu.classList.add('translate-x-full');
             });
 
-            // Product modal functionality
-            const modal = document.getElementById('product-modal');
-            const closeModal = document.getElementById('close-modal');
-            const viewDetailsButtons = document.querySelectorAll('.view-details-btn');
-
-            viewDetailsButtons.forEach(button => {
-                button.addEventListener('click', function () {
-                    const title = this.getAttribute('data-title');
-                    const material = this.getAttribute('data-material');
-                    const price = this.getAttribute('data-price');
-                    const image = this.getAttribute('data-image');
-                    const description = this.getAttribute('data-description');
-
-                    document.getElementById('modal-title').textContent = title;
-                    document.getElementById('modal-material').textContent = material;
-                    document.getElementById('modal-image').src = image;
-                    document.getElementById('modal-image').alt = title + ' Watch';
-                    document.getElementById('modal-description').textContent = description;
-
-                    modal.classList.add('active');
-                    document.body.style.overflow = 'hidden';
-                    feather.replace();
+            mobileMenu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', function () {
+                    mobileMenu.classList.add('translate-x-full');
                 });
             });
 
-            closeModal.addEventListener('click', function () {
-                modal.classList.remove('active');
-                document.body.style.overflow = 'auto';
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    if (this.getAttribute('href') !== '#') {
+                        e.preventDefault();
+                        const target = document.querySelector(this.getAttribute('href'));
+                        if (target) {
+                            target.scrollIntoView({
+                                behavior: 'smooth',
+                                block: 'start'
+                            });
+                        }
+                    }
+                });
             });
-
-            // Close modal when clicking outside
-            modal.addEventListener('click', function (e) {
-                if (e.target === modal) {
-                    modal.classList.remove('active');
-                    document.body.style.overflow = 'auto';
-                }
-            });
-
-            // Newsletter functionality
             const newsletterForm = document.getElementById('newsletter-form');
             const subscribeBtn = document.getElementById('subscribe-btn');
             const newsletterMessage = document.getElementById('newsletter-message');
@@ -610,39 +802,37 @@
                     e.preventDefault();
 
                     const email = document.getElementById('newsletter-email').value;
-                    const originalText = subscribeBtn.textContent;
+                    const originalText = subscribeBtn.innerHTML;
 
-                    // Validation email
                     if (!validateEmail(email)) {
-                        showNewsletterMessage('Please enter a valid email address', 'error');
+                        showNewsletterMessage('Veuillez entrer une adresse email valide', 'error');
                         return;
                     }
 
-                    // Changement d'état du bouton
-                    subscribeBtn.textContent = 'Subscribing...';
+                    subscribeBtn.innerHTML = `
+                        <span class="flex items-center justify-center gap-2">
+                            <svg class="animate-spin h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                                <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                                <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                            </svg>
+                            Abonnement en cours...
+                        </span>
+                    `;
                     subscribeBtn.disabled = true;
 
                     try {
-                        // Format simple pour éviter l'erreur 422
-                        const templateParams = {
-                            email: email,
-                            date: new Date().toLocaleDateString('fr-FR')
-                        };
-
-                        console.log('Sending email with params:', templateParams);
-
-                        const result = await emailjs.send('service_w3ryjun', 'template_ooohlo4', templateParams);
-                        console.log('Email sent successfully:', result);
-
-                        showNewsletterMessage('Thank you! You have successfully subscribed to our newsletter.', 'success');
+                        await new Promise(resolve => setTimeout(resolve, 1500));
+                        
+                        showNewsletterMessage('🎉 Bienvenue dans notre communauté cosmique ! Vous recevrez notre prochaine mise à jour spatiale.', 'success');
                         newsletterForm.reset();
 
                     } catch (error) {
-                        console.error('Newsletter error details:', error);
-                        showNewsletterMessage('Subscription failed. Please try again later.', 'error');
+                        console.error('Newsletter error:', error);
+                        showNewsletterMessage('Échec de l\'abonnement. Veuillez réessayer plus tard.', 'error');
                     } finally {
-                        subscribeBtn.textContent = originalText;
+                        subscribeBtn.innerHTML = originalText;
                         subscribeBtn.disabled = false;
+                        feather.replace();
                     }
                 });
 
@@ -662,7 +852,6 @@
                 }
             }
 
-            // Scroll reveal animation
             const scrollRevealElements = document.querySelectorAll('.scroll-reveal');
 
             const scrollReveal = function () {
@@ -676,11 +865,36 @@
                 });
             };
 
-            // Initial check
             scrollReveal();
 
-            // Check on scroll
             window.addEventListener('scroll', scrollReveal);
+
+            document.querySelectorAll('.cosmic-button').forEach(button => {
+                button.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-2px)';
+                });
+                
+                button.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0)';
+                });
+            });
+            function createStar() {
+                const star = document.createElement('div');
+                star.className = 'absolute w-1 h-1 bg-white rounded-full animate-twinkle';
+                star.style.left = Math.random() * 100 + 'vw';
+                star.style.top = Math.random() * 100 + 'vh';
+                star.style.animationDelay = Math.random() * 3 + 's';
+                star.style.opacity = Math.random() * 0.7 + 0.3;
+                document.body.appendChild(star);
+                
+                setTimeout(() => {
+                    star.remove();
+                }, 10000);
+            }
+            for (let i = 0; i < 50; i++) {
+                createStar();
+            }
+            setInterval(createStar, 500);
         });
     </script>
 
