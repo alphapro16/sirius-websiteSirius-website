@@ -7,121 +7,12 @@
     <title>Galerie Cosmique | Sirius Space Association</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="index.css">
     <link rel="icon" href="icone_luxurious-removebg-preview.png">
     <link
         href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&family=Poppins:wght@300;400;500;600&family=Orbitron:wght@400;500;600;700&display=swap"
         rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/feather-icons"></script>
-    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
-    <script>
-        tailwind.config = {
-            darkMode: 'class',
-            theme: {
-                extend: {
-                    fontFamily: {
-                        tangerine: ['Tangerine', 'cursive'],
-                        poppins: ['Poppins', 'sans-serif'],
-                        orbitron: ['Orbitron', 'sans-serif'],
-                    },
-                    colors: {
-                        cosmic: {
-                            50: '#f0f9ff',
-                            100: '#e0f2fe',
-                            200: '#bae6fd',
-                            300: '#7dd3fc',
-                            400: '#38bdf8',
-                            500: '#0ea5e9',
-                            600: '#0284c7',
-                            700: '#0369a1',
-                            800: '#075985',
-                            900: '#0c4a6e',
-                        },
-                        nebula: {
-                            50: '#faf5ff',
-                            100: '#f3e8ff',
-                            200: '#e9d5ff',
-                            300: '#d8b4fe',
-                            400: '#c084fc',
-                            500: '#a855f7',
-                            600: '#9333ea',
-                            700: '#7e22ce',
-                            800: '#6b21a8',
-                            900: '#581c87',
-                        },
-                        space: {
-                            50: '#f8fafc',
-                            100: '#f1f5f9',
-                            200: '#e2e8f0',
-                            300: '#cbd5e1',
-                            400: '#94a3b8',
-                            500: '#64748b',
-                            600: '#475569',
-                            700: '#334155',
-                            800: '#1e293b',
-                            900: '#0f172a',
-                        }
-                    },
-                    backgroundImage: {
-                        'space-gradient': 'linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #312e81 100%)',
-                        'nebula-gradient': 'radial-gradient(circle at 20% 50%, rgba(120, 119, 198, 0.3) 0%, rgba(30, 27, 75, 0) 50%)',
-                        'starfield': 'radial-gradient(2px 2px at 20px 30px, #eee, transparent), radial-gradient(1px 1px at 40px 70px, #fff, transparent), radial-gradient(2px 2px at 50px 160px, #ddd, transparent), radial-gradient(3px 3px at 90px 40px, #fff, transparent), radial-gradient(1px 1px at 130px 80px, #fff, transparent), radial-gradient(2px 2px at 160px 120px, #ddd, transparent)',
-                    },
-                    animation: {
-                        'fade-in': 'fadeIn 0.8s ease-in-out',
-                        'slide-up': 'slideUp 0.8s ease-out',
-                        'slide-down': 'slideDown 0.8s ease-out',
-                        'float': 'float 8s ease-in-out infinite',
-                        'zoom-in': 'zoomIn 0.8s ease-out',
-                        'pulse-glow': 'pulseGlow 4s ease-in-out infinite',
-                        'twinkle': 'twinkle 3s ease-in-out infinite',
-                        'orbit': 'orbit 20s linear infinite',
-                    },
-                    keyframes: {
-                        fadeIn: {
-                            '0%': { opacity: '0' },
-                            '100%': { opacity: '1' },
-                        },
-                        slideUp: {
-                            '0%': { transform: 'translateY(30px)', opacity: '0' },
-                            '100%': { transform: 'translateY(0)', opacity: '1' },
-                        },
-                        slideDown: {
-                            '0%': { transform: 'translateY(-30px)', opacity: '0' },
-                            '100%': { transform: 'translateY(0)', opacity: '1' },
-                        },
-                        float: {
-                            '0%, 100%': { transform: 'translateY(0)' },
-                            '50%': { transform: 'translateY(-8px)' },
-                        },
-                        zoomIn: {
-                            '0%': { transform: 'scale(0.95)', opacity: '0' },
-                            '100%': { transform: 'scale(1)', opacity: '1' },
-                        },
-                        pulseGlow: {
-                            '0%, 100%': { 
-                                boxShadow: '0 0 20px rgba(56, 189, 248, 0.3), 0 0 40px rgba(56, 189, 248, 0.2)',
-                                transform: 'scale(1)'
-                            },
-                            '50%': { 
-                                boxShadow: '0 0 30px rgba(56, 189, 248, 0.5), 0 0 60px rgba(56, 189, 248, 0.3)',
-                                transform: 'scale(1.02)'
-                            },
-                        },
-                        twinkle: {
-                            '0%, 100%': { opacity: '0.3' },
-                            '50%': { opacity: '1' },
-                        },
-                        orbit: {
-                            '0%': { transform: 'rotate(0deg) translateX(100px) rotate(0deg)' },
-                            '100%': { transform: 'rotate(360deg) translateX(100px) rotate(-360deg)' },
-                        }
-                    }
-                }
-            }
-        }
-    </script>
     <style>
         .space-theme {
             --cosmic-primary: #0ea5e9;
@@ -137,6 +28,7 @@
             min-height: 100vh;
             position: relative;
             overflow-x: hidden;
+            font-family: 'Poppins', sans-serif;
         }
 
         body::before {
@@ -175,19 +67,6 @@
             overflow: hidden;
         }
 
-        .hero-bg::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: 
-                radial-gradient(circle at 20% 30%, rgba(56, 189, 248, 0.15) 0%, transparent 50%),
-                radial-gradient(circle at 80% 70%, rgba(168, 85, 247, 0.1) 0%, transparent 50%);
-            z-index: 1;
-        }
-
         .gallery-card {
             background: linear-gradient(145deg, rgba(30, 41, 59, 0.8) 0%, rgba(15, 23, 42, 0.9) 100%);
             border: 1px solid rgba(56, 189, 248, 0.2);
@@ -202,26 +81,11 @@
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3), 0 0 30px rgba(56, 189, 248, 0.2);
         }
 
-        .gallery-card::before {
-            content: '';
-            position: absolute;
-            top: -50%;
-            left: -50%;
-            width: 200%;
-            height: 200%;
-            background: linear-gradient(45deg, transparent, rgba(56, 189, 248, 0.1), transparent);
-            transform: rotate(45deg);
-            transition: transform 0.6s ease;
-        }
-
-        .gallery-card:hover::before {
-            transform: rotate(45deg) translate(50%, 50%);
-        }
-
         .subtheme-item {
             background: rgba(30, 41, 59, 0.6);
             border: 1px solid rgba(56, 189, 248, 0.1);
             transition: all 0.3s ease;
+            cursor: pointer;
         }
 
         .subtheme-item:hover {
@@ -230,87 +94,45 @@
             transform: translateX(5px);
         }
 
-        .modal-content {
-            background: linear-gradient(145deg, #1e293b 0%, #0f172a 100%);
-            border: 1px solid rgba(56, 189, 248, 0.3);
-            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5), 0 0 40px rgba(56, 189, 248, 0.2);
-        }
-
-        .text-shadow {
-            text-shadow: 0 4px 20px rgba(56, 189, 248, 0.5);
-        }
-
-        .transition-smooth {
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-
-        .scroll-reveal {
-            opacity: 0;
-            transform: translateY(30px);
-            transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-
-        .scroll-reveal.active {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        .cosmic-button {
-            background: linear-gradient(135deg, #0ea5e9 0%, #7e22ce 100%);
-            border: 1px solid rgba(56, 189, 248, 0.5);
-            color: white;
-            transition: all 0.3s ease;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .cosmic-button::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
-            transition: left 0.6s ease;
-        }
-
-        .cosmic-button:hover::before {
-            left: 100%;
-        }
-
-        .cosmic-button:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 10px 25px rgba(14, 165, 233, 0.3), 0 0 20px rgba(126, 34, 206, 0.2);
-        }
-
-        .planet {
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-            background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
-            position: absolute;
-            animation: orbit 20s linear infinite;
-            box-shadow: 
-                inset -20px -20px 40px rgba(0, 0, 0, 0.3),
-                inset 20px 20px 40px rgba(255, 255, 255, 0.1),
-                0 0 60px rgba(59, 130, 246, 0.5);
-        }
-
-        .image-placeholder {
-            background: linear-gradient(45deg, rgba(30, 27, 75, 0.7), rgba(15, 23, 42, 0.9));
-            position: relative;
-            overflow: hidden;
-        }
-
-        .image-placeholder::before {
-            content: '';
-            position: absolute;
+        .modal-overlay {
+            position: fixed;
             top: 0;
             left: 0;
             right: 0;
             bottom: 0;
-            background: radial-gradient(circle at 30% 30%, rgba(56, 189, 248, 0.1) 0%, transparent 50%);
+            background: rgba(0, 0, 0, 0.85);
+            z-index: 1000;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .modal-overlay.active {
+            display: flex;
+            animation: fadeIn 0.3s ease;
+        }
+
+        .modal-container {
+            background: linear-gradient(145deg, #1e293b 0%, #0f172a 100%);
+            border: 1px solid rgba(56, 189, 248, 0.3);
+            border-radius: 20px;
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5), 0 0 40px rgba(56, 189, 248, 0.2);
+            max-width: 900px;
+            width: 100%;
+            max-height: 85vh;
+            overflow-y: auto;
+            animation: slideUp 0.3s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideUp {
+            from { transform: translateY(20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
         }
 
         .theme-tab {
@@ -329,108 +151,95 @@
             background: rgba(56, 189, 248, 0.15);
             border-color: rgba(56, 189, 248, 0.5);
         }
+
+        .theme-content {
+            display: none;
+        }
+
+        .theme-content.active {
+            display: block;
+            animation: fadeIn 0.5s ease;
+        }
+
+        .image-placeholder {
+            background: linear-gradient(45deg, rgba(30, 27, 75, 0.7), rgba(15, 23, 42, 0.9));
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .text-shadow {
+            text-shadow: 0 4px 20px rgba(56, 189, 248, 0.5);
+        }
     </style>
 </head>
 
-<body class="font-poppins min-h-screen overflow-x-hidden">
+<body class="min-h-screen overflow-x-hidden">
     <!-- Fixed Navbar -->
-    <nav
-        class="fixed top-0 left-0 right-0 z-50 nav-border transition-all duration-500 transform -translate-y-full nav-scroll">
-        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-            <a href="index.html" class="font-orbitron text-2xl md:text-3xl text-cosmic-400 animate-fade-in flex items-center gap-2">
-                <i data-feather="star" class="w-6 h-6 text-cosmic-400"></i>
+    <nav class="fixed top-0 left-0 right-0 z-50 nav-border py-4">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <a href="index.html" class="font-['Orbitron'] text-2xl md:text-3xl text-[#38bdf8] flex items-center gap-2">
+                <i data-feather="star" class="w-6 h-6 text-[#38bdf8]"></i>
                 Sirius Space Association
             </a>
             <div class="hidden md:flex space-x-10">
-                <a href="index.html"
-                    class="text-space-300 hover:text-cosmic-400 transition-smooth relative after:content-[''] after:absolute after:w-0 after:h-px after:bg-cosmic-400 after:left-0 after:-bottom-1 after:transition-all after:duration-300 hover:after:w-full">Accueil</a>
-                <a href="galerie.html"
-                    class="text-space-300 hover:text-cosmic-400 transition-smooth relative after:content-[''] after:absolute after:w-0 after:h-px after:bg-cosmic-400 after:left-0 after:-bottom-1 after:transition-all after:duration-300 hover:after:w-full">Galerie</a>
-                <a href="index.html#about"
-                    class="text-space-300 hover:text-cosmic-400 transition-smooth relative after:content-[''] after:absolute after:w-0 after:h-px after:bg-cosmic-400 after:left-0 after:-bottom-1 after:transition-all after:duration-300 hover:after:w-full">À Propos</a>
-                <a href="index.html#contact"
-                    class="text-space-300 hover:text-cosmic-400 transition-smooth relative after:content-[''] after:absolute after:w-0 after:h-px after:bg-cosmic-400 after:left-0 after:-bottom-1 after:transition-all after:duration-300 hover:after:w-full">Contact</a>
+                <a href="index.html" class="text-[#cbd5e1] hover:text-[#38bdf8] transition duration-300">Accueil</a>
+                <a href="galerie.html" class="text-[#cbd5e1] hover:text-[#38bdf8] transition duration-300">Galerie</a>
+                <a href="index.html#about" class="text-[#cbd5e1] hover:text-[#38bdf8] transition duration-300">À Propos</a>
+                <a href="index.html#contact" class="text-[#cbd5e1] hover:text-[#38bdf8] transition duration-300">Contact</a>
             </div>
-            <div class="flex items-center space-x-6">
-                <button class="md:hidden text-space-300 hover:text-cosmic-400" id="mobile-menu-button">
-                    <i data-feather="menu"></i>
-                </button>
-            </div>
+            <button class="md:hidden text-[#cbd5e1] hover:text-[#38bdf8]" id="mobile-menu-button">
+                <i data-feather="menu"></i>
+            </button>
         </div>
     </nav>
 
-    <!-- Mobile Menu -->
-    <div class="fixed top-0 left-0 w-full h-full bg-space-900 z-40 flex flex-col items-center justify-center space-y-10 transform translate-x-full transition-transform duration-500 md:hidden"
-        id="mobile-menu">
-        <div class="absolute top-0 left-0 w-full h-full bg-space-900 opacity-95"></div>
-        <div class="relative z-10">
-            <button class="absolute top-8 right-8 text-space-300 hover:text-cosmic-400" id="close-menu">
-                <i data-feather="x"></i>
-            </button>
-            <a href="index.html" class="text-3xl text-space-300 hover:text-cosmic-400 transition-smooth py-2 block">Accueil</a>
-            <a href="galerie.html"
-                class="text-3xl text-space-300 hover:text-cosmic-400 transition-smooth py-2 block">Galerie</a>
-            <a href="index.html#about" class="text-3xl text-space-300 hover:text-cosmic-400 transition-smooth py-2 block">À propos</a>
-            <a href="index.html#contact" class="text-3xl text-space-300 hover:text-cosmic-400 transition-smooth py-2 block">Contact</a>
-        </div>
-    </div>
-
-    <!-- Floating Stars -->
-    <div class="fixed top-1/4 left-10 w-4 h-4 bg-cosmic-400 rounded-full animate-twinkle z-0"></div>
-    <div class="fixed top-1/3 right-20 w-3 h-3 bg-cosmic-300 rounded-full animate-twinkle z-0" style="animation-delay: 1s"></div>
-    <div class="fixed bottom-1/4 left-1/4 w-2 h-2 bg-cosmic-200 rounded-full animate-twinkle z-0" style="animation-delay: 2s"></div>
-
     <!-- Hero Section -->
-    <section class="hero-bg relative min-h-[60vh] flex items-center justify-center text-center px-4 pt-24 pb-16 overflow-hidden">
-        <div class="absolute inset-0 bg-gradient-to-b from-space-900/80 to-space-900 z-0"></div>
-        
-        <div class="max-w-4xl mx-auto relative z-20">
+    <section class="hero-bg relative min-h-[60vh] flex items-center justify-center text-center px-4 pt-24 pb-16">
+        <div class="max-w-4xl mx-auto">
             <div class="mb-8">
-                <div class="inline-block p-4 rounded-full bg-gradient-to-r from-cosmic-600/20 to-nebula-600/20 border border-cosmic-400/30 mb-6">
-                    <i data-feather="image" class="w-12 h-12 text-cosmic-400"></i>
+                <div class="inline-block p-4 rounded-full bg-gradient-to-r from-[#0284c7]/20 to-[#9333ea]/20 border border-[#38bdf8]/30 mb-6">
+                    <i data-feather="image" class="w-12 h-12 text-[#38bdf8]"></i>
                 </div>
-                <h1 class="font-orbitron text-4xl md:text-6xl text-space-100 mb-6 text-shadow tracking-tighter">
-                    <span class="bg-gradient-to-r from-cosmic-400 to-nebula-400 bg-clip-text text-transparent">
+                <h1 class="font-['Orbitron'] text-4xl md:text-6xl text-[#f1f5f9] mb-6 text-shadow">
+                    <span class="bg-gradient-to-r from-[#38bdf8] to-[#a855f7] bg-clip-text text-transparent">
                         Galerie Cosmique
                     </span>
                 </h1>
-                <p class="text-xl md:text-2xl text-space-300 mb-10 max-w-2xl mx-auto font-light">
+                <p class="text-xl md:text-2xl text-[#cbd5e1] mb-10 max-w-2xl mx-auto">
                     Explorez les merveilles de l'univers à travers nos collections thématiques
                 </p>
             </div>
         </div>
-
-        <!-- Scroll Indicator -->
-        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-            <i data-feather="chevron-down" class="w-8 h-8 text-cosmic-400"></i>
-        </div>
     </section>
 
     <!-- Theme Navigation -->
-    <section class="py-8 px-4 bg-space-900/50">
+    <section class="py-8 px-4 bg-[#0f172a]/50">
         <div class="container mx-auto">
             <div class="flex flex-wrap justify-center gap-4" id="theme-tabs">
-                <button class="theme-tab px-6 py-3 rounded-lg text-space-300 hover:text-cosmic-400 transition-all flex items-center gap-2 active" data-theme="solaire">
+                <button class="theme-tab px-6 py-3 rounded-lg text-[#cbd5e1] hover:text-[#38bdf8] flex items-center gap-2 active" data-theme="solaire">
                     <i data-feather="sun"></i>
                     Système Solaire
                 </button>
-                <button class="theme-tab px-6 py-3 rounded-lg text-space-300 hover:text-cosmic-400 transition-all flex items-center gap-2" data-theme="nebulae">
+                <button class="theme-tab px-6 py-3 rounded-lg text-[#cbd5e1] hover:text-[#38bdf8] flex items-center gap-2" data-theme="nebulae">
                     <i data-feather="wind"></i>
                     Nébuleuses
                 </button>
-                <button class="theme-tab px-6 py-3 rounded-lg text-space-300 hover:text-cosmic-400 transition-all flex items-center gap-2" data-theme="galaxies">
+                <button class="theme-tab px-6 py-3 rounded-lg text-[#cbd5e1] hover:text-[#38bdf8] flex items-center gap-2" data-theme="galaxies">
                     <i data-feather="activity"></i>
                     Galaxies
                 </button>
-                <button class="theme-tab px-6 py-3 rounded-lg text-space-300 hover:text-cosmic-400 transition-all flex items-center gap-2" data-theme="trous-noirs">
+                <button class="theme-tab px-6 py-3 rounded-lg text-[#cbd5e1] hover:text-[#38bdf8] flex items-center gap-2" data-theme="trous-noirs">
                     <i data-feather="zap"></i>
                     Trous Noirs
                 </button>
-                <button class="theme-tab px-6 py-3 rounded-lg text-space-300 hover:text-cosmic-400 transition-all flex items-center gap-2" data-theme="exoplanetes">
+                <button class="theme-tab px-6 py-3 rounded-lg text-[#cbd5e1] hover:text-[#38bdf8] flex items-center gap-2" data-theme="exoplanetes">
                     <i data-feather="moon"></i>
                     Exoplanètes
                 </button>
-                <button class="theme-tab px-6 py-3 rounded-lg text-space-300 hover:text-cosmic-400 transition-all flex items-center gap-2" data-theme="amas">
+                <button class="theme-tab px-6 py-3 rounded-lg text-[#cbd5e1] hover:text-[#38bdf8] flex items-center gap-2" data-theme="amas">
                     <i data-feather="star"></i>
                     Amas Stellaire
                 </button>
@@ -445,90 +254,74 @@
             <!-- Système Solaire -->
             <div class="theme-content active" id="solaire">
                 <div class="mb-12 text-center">
-                    <h2 class="font-orbitron text-3xl md:text-4xl text-space-100 mb-4">
+                    <h2 class="font-['Orbitron'] text-3xl md:text-4xl text-[#f1f5f9] mb-4">
                         Système Solaire
                     </h2>
-                    <p class="text-space-300 max-w-3xl mx-auto">
+                    <p class="text-[#cbd5e1] max-w-3xl mx-auto">
                         Découvrez notre système solaire, un système planétaire composé du Soleil et des objets célestes gravitant autour de lui.
                     </p>
                 </div>
 
                 <div class="grid md:grid-cols-3 gap-8 mb-12">
                     <!-- Soleil -->
-                    <div class="gallery-card rounded-2xl p-6 scroll-reveal">
-                        <div class="image-placeholder aspect-video rounded-xl mb-6 flex items-center justify-center">
+                    <div class="gallery-card rounded-2xl p-6">
+                        <div class="image-placeholder aspect-video rounded-xl mb-6">
                             <i data-feather="sun" class="w-16 h-16 text-yellow-500"></i>
                         </div>
-                        <h3 class="text-xl font-semibold text-space-100 mb-3">Le Soleil</h3>
-                        <p class="text-space-400 text-sm mb-4">
+                        <h3 class="text-xl font-semibold text-[#f1f5f9] mb-3">Le Soleil</h3>
+                        <p class="text-[#94a3b8] text-sm mb-4">
                             Étoile centrale de notre système solaire, source d'énergie et de lumière.
                         </p>
                         <div class="space-y-2">
-                            <div class="subtheme-item px-4 py-2 rounded-lg flex items-center justify-between cursor-pointer" data-subtheme="soleil">
-                                <span class="text-space-300">Caractéristiques</span>
-                                <i data-feather="chevron-right" class="w-4 h-4 text-cosmic-400"></i>
+                            <div class="subtheme-item px-4 py-2 rounded-lg flex items-center justify-between" data-item="soleil">
+                                <span class="text-[#cbd5e1]">Caractéristiques</span>
+                                <i data-feather="chevron-right" class="w-4 h-4 text-[#38bdf8]"></i>
                             </div>
-                            <div class="subtheme-item px-4 py-2 rounded-lg flex items-center justify-between cursor-pointer" data-subtheme="eruptions">
-                                <span class="text-space-300">Éruptions solaires</span>
-                                <i data-feather="chevron-right" class="w-4 h-4 text-cosmic-400"></i>
+                            <div class="subtheme-item px-4 py-2 rounded-lg flex items-center justify-between" data-item="eruptions">
+                                <span class="text-[#cbd5e1]">Éruptions solaires</span>
+                                <i data-feather="chevron-right" class="w-4 h-4 text-[#38bdf8]"></i>
                             </div>
                         </div>
                     </div>
 
                     <!-- Planètes telluriques -->
-                    <div class="gallery-card rounded-2xl p-6 scroll-reveal">
-                        <div class="image-placeholder aspect-video rounded-xl mb-6 flex items-center justify-center">
+                    <div class="gallery-card rounded-2xl p-6">
+                        <div class="image-placeholder aspect-video rounded-xl mb-6">
                             <i data-feather="globe" class="w-16 h-16 text-blue-400"></i>
                         </div>
-                        <h3 class="text-xl font-semibold text-space-100 mb-3">Planètes Telluriques</h3>
-                        <p class="text-space-400 text-sm mb-4">
+                        <h3 class="text-xl font-semibold text-[#f1f5f9] mb-3">Planètes Telluriques</h3>
+                        <p class="text-[#94a3b8] text-sm mb-4">
                             Planètes rocheuses similaires à la Terre : Mercure, Vénus, Terre et Mars.
                         </p>
                         <div class="space-y-2">
-                            <div class="subtheme-item px-4 py-2 rounded-lg flex items-center justify-between cursor-pointer" data-subtheme="mercure">
-                                <span class="text-space-300">Mercure</span>
-                                <i data-feather="chevron-right" class="w-4 h-4 text-cosmic-400"></i>
+                            <div class="subtheme-item px-4 py-2 rounded-lg flex items-center justify-between" data-item="mercure">
+                                <span class="text-[#cbd5e1]">Mercure</span>
+                                <i data-feather="chevron-right" class="w-4 h-4 text-[#38bdf8]"></i>
                             </div>
-                            <div class="subtheme-item px-4 py-2 rounded-lg flex items-center justify-between cursor-pointer" data-subtheme="venus">
-                                <span class="text-space-300">Vénus</span>
-                                <i data-feather="chevron-right" class="w-4 h-4 text-cosmic-400"></i>
-                            </div>
-                            <div class="subtheme-item px-4 py-2 rounded-lg flex items-center justify-between cursor-pointer" data-subtheme="terre">
-                                <span class="text-space-300">Terre</span>
-                                <i data-feather="chevron-right" class="w-4 h-4 text-cosmic-400"></i>
-                            </div>
-                            <div class="subtheme-item px-4 py-2 rounded-lg flex items-center justify-between cursor-pointer" data-subtheme="mars">
-                                <span class="text-space-300">Mars</span>
-                                <i data-feather="chevron-right" class="w-4 h-4 text-cosmic-400"></i>
+                            <div class="subtheme-item px-4 py-2 rounded-lg flex items-center justify-between" data-item="venus">
+                                <span class="text-[#cbd5e1]">Vénus</span>
+                                <i data-feather="chevron-right" class="w-4 h-4 text-[#38bdf8]"></i>
                             </div>
                         </div>
                     </div>
 
                     <!-- Géantes gazeuses -->
-                    <div class="gallery-card rounded-2xl p-6 scroll-reveal">
-                        <div class="image-placeholder aspect-video rounded-xl mb-6 flex items-center justify-center">
+                    <div class="gallery-card rounded-2xl p-6">
+                        <div class="image-placeholder aspect-video rounded-xl mb-6">
                             <i data-feather="wind" class="w-16 h-16 text-purple-400"></i>
                         </div>
-                        <h3 class="text-xl font-semibold text-space-100 mb-3">Géantes Gazeuses</h3>
-                        <p class="text-space-400 text-sm mb-4">
+                        <h3 class="text-xl font-semibold text-[#f1f5f9] mb-3">Géantes Gazeuses</h3>
+                        <p class="text-[#94a3b8] text-sm mb-4">
                             Planètes géantes composées principalement d'hydrogène et d'hélium.
                         </p>
                         <div class="space-y-2">
-                            <div class="subtheme-item px-4 py-2 rounded-lg flex items-center justify-between cursor-pointer" data-subtheme="jupiter">
-                                <span class="text-space-300">Jupiter</span>
-                                <i data-feather="chevron-right" class="w-4 h-4 text-cosmic-400"></i>
+                            <div class="subtheme-item px-4 py-2 rounded-lg flex items-center justify-between" data-item="jupiter">
+                                <span class="text-[#cbd5e1]">Jupiter</span>
+                                <i data-feather="chevron-right" class="w-4 h-4 text-[#38bdf8]"></i>
                             </div>
-                            <div class="subtheme-item px-4 py-2 rounded-lg flex items-center justify-between cursor-pointer" data-subtheme="saturne">
-                                <span class="text-space-300">Saturne</span>
-                                <i data-feather="chevron-right" class="w-4 h-4 text-cosmic-400"></i>
-                            </div>
-                            <div class="subtheme-item px-4 py-2 rounded-lg flex items-center justify-between cursor-pointer" data-subtheme="uranus">
-                                <span class="text-space-300">Uranus</span>
-                                <i data-feather="chevron-right" class="w-4 h-4 text-cosmic-400"></i>
-                            </div>
-                            <div class="subtheme-item px-4 py-2 rounded-lg flex items-center justify-between cursor-pointer" data-subtheme="neptune">
-                                <span class="text-space-300">Neptune</span>
-                                <i data-feather="chevron-right" class="w-4 h-4 text-cosmic-400"></i>
+                            <div class="subtheme-item px-4 py-2 rounded-lg flex items-center justify-between" data-item="saturne">
+                                <span class="text-[#cbd5e1]">Saturne</span>
+                                <i data-feather="chevron-right" class="w-4 h-4 text-[#38bdf8]"></i>
                             </div>
                         </div>
                     </div>
@@ -536,76 +329,30 @@
             </div>
 
             <!-- Nébuleuses -->
-            <div class="theme-content hidden" id="nebulae">
+            <div class="theme-content" id="nebulae">
                 <div class="mb-12 text-center">
-                    <h2 class="font-orbitron text-3xl md:text-4xl text-space-100 mb-4">
+                    <h2 class="font-['Orbitron'] text-3xl md:text-4xl text-[#f1f5f9] mb-4">
                         Nébuleuses
                     </h2>
-                    <p class="text-space-300 max-w-3xl mx-auto">
+                    <p class="text-[#cbd5e1] max-w-3xl mx-auto">
                         Nuages cosmiques de gaz et de poussière où naissent les étoiles, ou qui résultent de la mort d'étoiles.
                     </p>
                 </div>
 
                 <div class="grid md:grid-cols-3 gap-8 mb-12">
                     <!-- Nébuleuses d'émission -->
-                    <div class="gallery-card rounded-2xl p-6 scroll-reveal">
-                        <div class="image-placeholder aspect-video rounded-xl mb-6 flex items-center justify-center">
+                    <div class="gallery-card rounded-2xl p-6">
+                        <div class="image-placeholder aspect-video rounded-xl mb-6">
                             <i data-feather="droplet" class="w-16 h-16 text-red-400"></i>
                         </div>
-                        <h3 class="text-xl font-semibold text-space-100 mb-3">Nébuleuses d'Émission</h3>
-                        <p class="text-space-400 text-sm mb-4">
+                        <h3 class="text-xl font-semibold text-[#f1f5f9] mb-3">Nébuleuses d'Émission</h3>
+                        <p class="text-[#94a3b8] text-sm mb-4">
                             Nuages de gaz ionisé émettant leur propre lumière, souvent rouges.
                         </p>
                         <div class="space-y-2">
-                            <div class="subtheme-item px-4 py-2 rounded-lg flex items-center justify-between cursor-pointer" data-subtheme="orion">
-                                <span class="text-space-300">Nébuleuse d'Orion</span>
-                                <i data-feather="chevron-right" class="w-4 h-4 text-cosmic-400"></i>
-                            </div>
-                            <div class="subtheme-item px-4 py-2 rounded-lg flex items-center justify-between cursor-pointer" data-subtheme="lagune">
-                                <span class="text-space-300">Nébuleuse de la Lagune</span>
-                                <i data-feather="chevron-right" class="w-4 h-4 text-cosmic-400"></i>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Nébuleuses de réflexion -->
-                    <div class="gallery-card rounded-2xl p-6 scroll-reveal">
-                        <div class="image-placeholder aspect-video rounded-xl mb-6 flex items-center justify-center">
-                            <i data-feather="cloud" class="w-16 h-16 text-blue-300"></i>
-                        </div>
-                        <h3 class="text-xl font-semibold text-space-100 mb-3">Nébuleuses de Réflexion</h3>
-                        <p class="text-space-400 text-sm mb-4">
-                            Nuages de poussière réfléchissant la lumière des étoiles voisines.
-                        </p>
-                        <div class="space-y-2">
-                            <div class="subtheme-item px-4 py-2 rounded-lg flex items-center justify-between cursor-pointer" data-subtheme="pleiades">
-                                <span class="text-space-300">Nébuleuse des Pléiades</span>
-                                <i data-feather="chevron-right" class="w-4 h-4 text-cosmic-400"></i>
-                            </div>
-                            <div class="subtheme-item px-4 py-2 rounded-lg flex items-center justify-between cursor-pointer" data-subtheme="tete-sorciere">
-                                <span class="text-space-300">Nébuleuse de la Tête de Sorcière</span>
-                                <i data-feather="chevron-right" class="w-4 h-4 text-cosmic-400"></i>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Nébuleuses planétaires -->
-                    <div class="gallery-card rounded-2xl p-6 scroll-reveal">
-                        <div class="image-placeholder aspect-video rounded-xl mb-6 flex items-center justify-center">
-                            <i data-feather="circle" class="w-16 h-16 text-green-400"></i>
-                        </div>
-                        <h3 class="text-xl font-semibold text-space-100 mb-3">Nébuleuses Planétaires</h3>
-                        <p class="text-space-400 text-sm mb-4">
-                            Enveloppes gazeuses expulsées par des étoiles en fin de vie.
-                        </p>
-                        <div class="space-y-2">
-                            <div class="subtheme-item px-4 py-2 rounded-lg flex items-center justify-between cursor-pointer" data-subtheme="helix">
-                                <span class="text-space-300">Nébuleuse de l'Hélice</span>
-                                <i data-feather="chevron-right" class="w-4 h-4 text-cosmic-400"></i>
-                            </div>
-                            <div class="subtheme-item px-4 py-2 rounded-lg flex items-center justify-between cursor-pointer" data-subtheme="anneau">
-                                <span class="text-space-300">Nébuleuse de l'Anneau</span>
-                                <i data-feather="chevron-right" class="w-4 h-4 text-cosmic-400"></i>
+                            <div class="subtheme-item px-4 py-2 rounded-lg flex items-center justify-between" data-item="orion">
+                                <span class="text-[#cbd5e1]">Nébuleuse d'Orion</span>
+                                <i data-feather="chevron-right" class="w-4 h-4 text-[#38bdf8]"></i>
                             </div>
                         </div>
                     </div>
@@ -613,76 +360,30 @@
             </div>
 
             <!-- Galaxies -->
-            <div class="theme-content hidden" id="galaxies">
+            <div class="theme-content" id="galaxies">
                 <div class="mb-12 text-center">
-                    <h2 class="font-orbitron text-3xl md:text-4xl text-space-100 mb-4">
+                    <h2 class="font-['Orbitron'] text-3xl md:text-4xl text-[#f1f5f9] mb-4">
                         Galaxies
                     </h2>
-                    <p class="text-space-300 max-w-3xl mx-auto">
+                    <p class="text-[#cbd5e1] max-w-3xl mx-auto">
                         Vastes systèmes d'étoiles, de gaz, de poussière et de matière noire maintenus ensemble par la gravitation.
                     </p>
                 </div>
 
                 <div class="grid md:grid-cols-3 gap-8 mb-12">
                     <!-- Galaxies spirales -->
-                    <div class="gallery-card rounded-2xl p-6 scroll-reveal">
-                        <div class="image-placeholder aspect-video rounded-xl mb-6 flex items-center justify-center">
+                    <div class="gallery-card rounded-2xl p-6">
+                        <div class="image-placeholder aspect-video rounded-xl mb-6">
                             <i data-feather="rotate-cw" class="w-16 h-16 text-indigo-400"></i>
                         </div>
-                        <h3 class="text-xl font-semibold text-space-100 mb-3">Galaxies Spirales</h3>
-                        <p class="text-space-400 text-sm mb-4">
+                        <h3 class="text-xl font-semibold text-[#f1f5f9] mb-3">Galaxies Spirales</h3>
+                        <p class="text-[#94a3b8] text-sm mb-4">
                             Galaxies avec un disque plat et des bras spiraux s'étendant du centre.
                         </p>
                         <div class="space-y-2">
-                            <div class="subtheme-item px-4 py-2 rounded-lg flex items-center justify-between cursor-pointer" data-subtheme="voie-lactee">
-                                <span class="text-space-300">Voie Lactée</span>
-                                <i data-feather="chevron-right" class="w-4 h-4 text-cosmic-400"></i>
-                            </div>
-                            <div class="subtheme-item px-4 py-2 rounded-lg flex items-center justify-between cursor-pointer" data-subtheme="andromede">
-                                <span class="text-space-300">Andromède</span>
-                                <i data-feather="chevron-right" class="w-4 h-4 text-cosmic-400"></i>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Galaxies elliptiques -->
-                    <div class="gallery-card rounded-2xl p-6 scroll-reveal">
-                        <div class="image-placeholder aspect-video rounded-xl mb-6 flex items-center justify-center">
-                            <i data-feather="disc" class="w-16 h-16 text-yellow-400"></i>
-                        </div>
-                        <h3 class="text-xl font-semibold text-space-100 mb-3">Galaxies Elliptiques</h3>
-                        <p class="text-space-400 text-sm mb-4">
-                            Galaxies de forme ellipsoïdale, généralement peu de gaz et d'étoiles jeunes.
-                        </p>
-                        <div class="space-y-2">
-                            <div class="subtheme-item px-4 py-2 rounded-lg flex items-center justify-between cursor-pointer" data-subtheme="m87">
-                                <span class="text-space-300">M87</span>
-                                <i data-feather="chevron-right" class="w-4 h-4 text-cosmic-400"></i>
-                            </div>
-                            <div class="subtheme-item px-4 py-2 rounded-lg flex items-center justify-between cursor-pointer" data-subtheme="centaurus">
-                                <span class="text-space-300">Centaurus A</span>
-                                <i data-feather="chevron-right" class="w-4 h-4 text-cosmic-400"></i>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Galaxies irrégulières -->
-                    <div class="gallery-card rounded-2xl p-6 scroll-reveal">
-                        <div class="image-placeholder aspect-video rounded-xl mb-6 flex items-center justify-center">
-                            <i data-feather="zap" class="w-16 h-16 text-pink-400"></i>
-                        </div>
-                        <h3 class="text-xl font-semibold text-space-100 mb-3">Galaxies Irrégulières</h3>
-                        <p class="text-space-400 text-sm mb-4">
-                            Galaxies sans forme régulière, souvent le résultat d'interactions gravitationnelles.
-                        </p>
-                        <div class="space-y-2">
-                            <div class="subtheme-item px-4 py-2 rounded-lg flex items-center justify-between cursor-pointer" data-subtheme="magellan">
-                                <span class="text-space-300">Nuages de Magellan</span>
-                                <i data-feather="chevron-right" class="w-4 h-4 text-cosmic-400"></i>
-                            </div>
-                            <div class="subtheme-item px-4 py-2 rounded-lg flex items-center justify-between cursor-pointer" data-subtheme="antennes">
-                                <span class="text-space-300">Galaxies des Antennes</span>
-                                <i data-feather="chevron-right" class="w-4 h-4 text-cosmic-400"></i>
+                            <div class="subtheme-item px-4 py-2 rounded-lg flex items-center justify-between" data-item="andromede">
+                                <span class="text-[#cbd5e1]">Andromède</span>
+                                <i data-feather="chevron-right" class="w-4 h-4 text-[#38bdf8]"></i>
                             </div>
                         </div>
                     </div>
@@ -690,113 +391,92 @@
             </div>
 
             <!-- Trous Noirs -->
-            <div class="theme-content hidden" id="trous-noirs">
+            <div class="theme-content" id="trous-noirs">
                 <div class="mb-12 text-center">
-                    <h2 class="font-orbitron text-3xl md:text-4xl text-space-100 mb-4">
+                    <h2 class="font-['Orbitron'] text-3xl md:text-4xl text-[#f1f5f9] mb-4">
                         Trous Noirs
                     </h2>
-                    <p class="text-space-300 max-w-3xl mx-auto">
+                    <p class="text-[#cbd5e1] max-w-3xl mx-auto">
                         Régions de l'espace où la gravité est si intense que rien, pas même la lumière, ne peut s'en échapper.
                     </p>
                 </div>
 
                 <div class="grid md:grid-cols-3 gap-8 mb-12">
-                    <!-- Trous noirs stellaires -->
-                    <div class="gallery-card rounded-2xl p-6 scroll-reveal">
-                        <div class="image-placeholder aspect-video rounded-xl mb-6 flex items-center justify-center">
-                            <i data-feather="target" class="w-16 h-16 text-red-500"></i>
-                        </div>
-                        <h3 class="text-xl font-semibold text-space-100 mb-3">Trous Noirs Stellaires</h3>
-                        <p class="text-space-400 text-sm mb-4">
-                            Formés par l'effondrement d'étoiles massives en fin de vie.
-                        </p>
-                        <div class="space-y-2">
-                            <div class="subtheme-item px-4 py-2 rounded-lg flex items-center justify-between cursor-pointer" data-subtheme="cygnus">
-                                <span class="text-space-300">Cygnus X-1</span>
-                                <i data-feather="chevron-right" class="w-4 h-4 text-cosmic-400"></i>
-                            </div>
-                            <div class="subtheme-item px-4 py-2 rounded-lg flex items-center justify-between cursor-pointer" data-subtheme="microquasars">
-                                <span class="text-space-300">Microquasars</span>
-                                <i data-feather="chevron-right" class="w-4 h-4 text-cosmic-400"></i>
-                            </div>
-                        </div>
-                    </div>
-
                     <!-- Trous noirs supermassifs -->
-                    <div class="gallery-card rounded-2xl p-6 scroll-reveal">
-                        <div class="image-placeholder aspect-video rounded-xl mb-6 flex items-center justify-center">
+                    <div class="gallery-card rounded-2xl p-6">
+                        <div class="image-placeholder aspect-video rounded-xl mb-6">
                             <i data-feather="box" class="w-16 h-16 text-purple-500"></i>
                         </div>
-                        <h3 class="text-xl font-semibold text-space-100 mb-3">Trous Noirs Supermassifs</h3>
-                        <p class="text-space-400 text-sm mb-4">
+                        <h3 class="text-xl font-semibold text-[#f1f5f9] mb-3">Trous Noirs Supermassifs</h3>
+                        <p class="text-[#94a3b8] text-sm mb-4">
                             Au centre des galaxies, des millions à milliards de masses solaires.
                         </p>
                         <div class="space-y-2">
-                            <div class="subtheme-item px-4 py-2 rounded-lg flex items-center justify-between cursor-pointer" data-subtheme="sagittarius">
-                                <span class="text-space-300">Sagittarius A*</span>
-                                <i data-feather="chevron-right" class="w-4 h-4 text-cosmic-400"></i>
-                            </div>
-                            <div class="subtheme-item px-4 py-2 rounded-lg flex items-center justify-between cursor-pointer" data-subtheme="m87-trou">
-                                <span class="text-space-300">Trou noir M87*</span>
-                                <i data-feather="chevron-right" class="w-4 h-4 text-cosmic-400"></i>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Théories et observations -->
-                    <div class="gallery-card rounded-2xl p-6 scroll-reveal">
-                        <div class="image-placeholder aspect-video rounded-xl mb-6 flex items-center justify-center">
-                            <i data-feather="eye" class="w-16 h-16 text-cyan-400"></i>
-                        </div>
-                        <h3 class="text-xl font-semibold text-space-100 mb-3">Observations Modernes</h3>
-                        <p class="text-space-400 text-sm mb-4">
-                            Découvertes récentes et techniques d'observation des trous noirs.
-                        </p>
-                        <div class="space-y-2">
-                            <div class="subtheme-item px-4 py-2 rounded-lg flex items-center justify-between cursor-pointer" data-subtheme="event-horizon">
-                                <span class="text-space-300">Télescope Event Horizon</span>
-                                <i data-feather="chevron-right" class="w-4 h-4 text-cosmic-400"></i>
-                            </div>
-                            <div class="subtheme-item px-4 py-2 rounded-lg flex items-center justify-between cursor-pointer" data-subtheme="ondes-gravitationnelles">
-                                <span class="text-space-300">Ondes gravitationnelles</span>
-                                <i data-feather="chevron-right" class="w-4 h-4 text-cosmic-400"></i>
+                            <div class="subtheme-item px-4 py-2 rounded-lg flex items-center justify-between" data-item="sagittarius">
+                                <span class="text-[#cbd5e1]">Sagittarius A*</span>
+                                <i data-feather="chevron-right" class="w-4 h-4 text-[#38bdf8]"></i>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Modal for Image Details -->
-            <div class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/70 hidden" id="image-modal">
-                <div class="modal-content rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto">
-                    <div class="p-6">
-                        <div class="flex justify-between items-start mb-6">
-                            <h3 class="font-orbitron text-2xl text-space-100" id="modal-title"></h3>
-                            <button class="text-space-400 hover:text-cosmic-400" id="close-modal">
-                                <i data-feather="x" class="w-6 h-6"></i>
-                            </button>
+            <!-- Exoplanètes -->
+            <div class="theme-content" id="exoplanetes">
+                <div class="mb-12 text-center">
+                    <h2 class="font-['Orbitron'] text-3xl md:text-4xl text-[#f1f5f9] mb-4">
+                        Exoplanètes
+                    </h2>
+                    <p class="text-[#cbd5e1] max-w-3xl mx-auto">
+                        Planètes orbitant autour d'autres étoiles que le Soleil. Des milliers ont été découvertes ces dernières années.
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-8 mb-12">
+                    <!-- Exoplanètes rocheuses -->
+                    <div class="gallery-card rounded-2xl p-6">
+                        <div class="image-placeholder aspect-video rounded-xl mb-6">
+                            <i data-feather="globe" class="w-16 h-16 text-orange-400"></i>
                         </div>
-                        
-                        <div class="grid md:grid-cols-2 gap-8">
-                            <div class="image-placeholder aspect-square rounded-xl flex items-center justify-center" id="modal-image">
-                                <i data-feather="image" class="w-20 h-20 text-cosmic-400"></i>
+                        <h3 class="text-xl font-semibold text-[#f1f5f9] mb-3">Exoplanètes Rocheuses</h3>
+                        <p class="text-[#94a3b8] text-sm mb-4">
+                            Planètes similaires à la Terre, composées principalement de roches et de métaux.
+                        </p>
+                        <div class="space-y-2">
+                            <div class="subtheme-item px-4 py-2 rounded-lg flex items-center justify-between" data-item="proxima-b">
+                                <span class="text-[#cbd5e1]">Proxima Centauri b</span>
+                                <i data-feather="chevron-right" class="w-4 h-4 text-[#38bdf8]"></i>
                             </div>
-                            
-                            <div>
-                                <div class="mb-6">
-                                    <h4 class="text-lg font-semibold text-space-100 mb-2">Description</h4>
-                                    <p class="text-space-300" id="modal-description"></p>
-                                </div>
-                                
-                                <div class="mb-6">
-                                    <h4 class="text-lg font-semibold text-space-100 mb-2">Caractéristiques</h4>
-                                    <ul class="space-y-2" id="modal-features"></ul>
-                                </div>
-                                
-                                <div>
-                                    <h4 class="text-lg font-semibold text-space-100 mb-2">Découverte</h4>
-                                    <p class="text-space-300" id="modal-discovery"></p>
-                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Amas Stellaire -->
+            <div class="theme-content" id="amas">
+                <div class="mb-12 text-center">
+                    <h2 class="font-['Orbitron'] text-3xl md:text-4xl text-[#f1f5f9] mb-4">
+                        Amas Stellaire
+                    </h2>
+                    <p class="text-[#cbd5e1] max-w-3xl mx-auto">
+                        Groupes d'étoiles liées gravitationnellement, nées généralement de la même nébuleuse.
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-8 mb-12">
+                    <!-- Amas ouverts -->
+                    <div class="gallery-card rounded-2xl p-6">
+                        <div class="image-placeholder aspect-video rounded-xl mb-6">
+                            <i data-feather="star" class="w-16 h-16 text-yellow-300"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-[#f1f5f9] mb-3">Amas Ouverts</h3>
+                        <p class="text-[#94a3b8] text-sm mb-4">
+                            Groupes d'étoiles jeunes, peu denses, situés dans le disque galactique.
+                        </p>
+                        <div class="space-y-2">
+                            <div class="subtheme-item px-4 py-2 rounded-lg flex items-center justify-between" data-item="pleiades-amas">
+                                <span class="text-[#cbd5e1]">Pléiades</span>
+                                <i data-feather="chevron-right" class="w-4 h-4 text-[#38bdf8]"></i>
                             </div>
                         </div>
                     </div>
@@ -805,74 +485,206 @@
         </div>
     </section>
 
+    <!-- Modal -->
+    <div class="modal-overlay" id="image-modal">
+        <div class="modal-container">
+            <div class="p-8">
+                <div class="flex justify-between items-start mb-8">
+                    <div>
+                        <h3 class="font-['Orbitron'] text-3xl text-[#f1f5f9] mb-2" id="modal-title">Titre</h3>
+                        <div class="flex items-center gap-2 text-[#94a3b8]" id="modal-subtitle">Sous-titre</div>
+                    </div>
+                    <button class="text-[#94a3b8] hover:text-[#38bdf8] p-2 rounded-lg hover:bg-[#1e293b]" id="close-modal-btn">
+                        <i data-feather="x" class="w-6 h-6"></i>
+                    </button>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-8 mb-8">
+                    <div class="image-placeholder aspect-square rounded-xl" id="modal-image">
+                        <i data-feather="image" class="w-24 h-24 text-[#38bdf8]"></i>
+                    </div>
+                    
+                    <div>
+                        <div class="mb-8">
+                            <h4 class="text-lg font-semibold text-[#f1f5f9] mb-3 flex items-center gap-2">
+                                <i data-feather="file-text" class="w-5 h-5 text-[#38bdf8]"></i>
+                                Description
+                            </h4>
+                            <p class="text-[#cbd5e1] leading-relaxed" id="modal-description">Description...</p>
+                        </div>
+                        
+                        <div class="mb-8">
+                            <h4 class="text-lg font-semibold text-[#f1f5f9] mb-3 flex items-center gap-2">
+                                <i data-feather="list" class="w-5 h-5 text-[#38bdf8]"></i>
+                                Caractéristiques
+                            </h4>
+                            <ul class="space-y-3" id="modal-features">
+                                <!-- Les caractéristiques seront ajoutées ici -->
+                            </ul>
+                        </div>
+                        
+                        <div>
+                            <h4 class="text-lg font-semibold text-[#f1f5f9] mb-3 flex items-center gap-2">
+                                <i data-feather="compass" class="w-5 h-5 text-[#38bdf8]"></i>
+                                Découverte
+                            </h4>
+                            <p class="text-[#cbd5e1] leading-relaxed" id="modal-discovery">Découverte...</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="border-t border-[#334155] pt-6">
+                    <div class="flex items-center justify-between">
+                        <div class="text-[#94a3b8] text-sm">
+                            <span id="modal-theme">Thème</span> • <span id="modal-category">Catégorie</span>
+                        </div>
+                        <button class="bg-gradient-to-r from-[#0ea5e9] to-[#7e22ce] text-white px-6 py-2 rounded-lg flex items-center gap-2 border border-[#38bdf8]/50 hover:opacity-90 transition" id="share-btn">
+                            <i data-feather="share-2" class="w-4 h-4"></i>
+                            Partager
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Footer -->
-    <footer class="py-12 px-4 border-t border-space-700 bg-space-900/50">
+    <footer class="py-12 px-4 border-t border-[#334155] bg-[#0f172a]/50">
         <div class="container mx-auto">
             <div class="flex flex-col md:flex-row justify-between items-center">
                 <div class="mb-6 md:mb-0">
-                    <a href="index.html" class="font-orbitron text-2xl text-space-100 flex items-center gap-2">
-                        <i data-feather="star" class="w-6 h-6 text-cosmic-400"></i>
+                    <a href="index.html" class="font-['Orbitron'] text-2xl text-[#f1f5f9] flex items-center gap-2">
+                        <i data-feather="star" class="w-6 h-6 text-[#38bdf8]"></i>
                         Sirius Space Association
                     </a>
-                    <p class="text-space-400 text-sm mt-2">© 2025 Exploration du Cosmos. Tous droits réservés.</p>
+                    <p class="text-[#94a3b8] text-sm mt-2">© 2025 Exploration du Cosmos. Tous droits réservés.</p>
                 </div>
                 <div class="flex flex-col md:flex-row md:space-x-10 space-y-4 md:space-y-0 text-center md:text-left">
-                    <a href="mailto:contact@sirius-space.org"
-                        class="text-space-400 hover:text-cosmic-400 transition-smooth inline-flex items-center gap-2">
+                    <a href="mailto:contact@sirius-space.org" class="text-[#94a3b8] hover:text-[#38bdf8] transition inline-flex items-center gap-2">
                         <i data-feather="mail" class="w-4 h-4"></i>
                         contact@sirius-space.org
                     </a>
-                    <a href="tel:+22912345678"
-                        class="text-space-400 hover:text-cosmic-400 transition-smooth inline-flex items-center gap-2">
-                        <i data-feather="phone" class="w-4 h-4"></i>
-                        +229 01 63 92 77 60
-                    </a>
                 </div>
             </div>
-            <div class="text-center mt-8 pt-8 border-t border-space-800">
-                <p class="text-space-500 text-sm">
-                    "Le cosmos est en nous. Nous sommes faits de poussière d'étoiles. Nous sommes une façon pour l'univers de se connaître lui-même." — Carl Sagan
+            <div class="text-center mt-8 pt-8 border-t border-[#334155]">
+                <p class="text-[#64748b] text-sm">
+                    "Le cosmos est en nous. Nous sommes faits de poussière d'étoiles." — Carl Sagan
                 </p>
             </div>
         </div>
     </footer>
 
     <script>
-        feather.replace();
-
-        // Database des images et descriptions
+        // Base de données simplifiée mais complète
         const galleryData = {
             "soleil": {
                 title: "Le Soleil",
-                description: "Le Soleil est l'étoile au centre de notre système solaire. C'est une sphère presque parfaite de plasma chaud, avec des mouvements de convection internes qui génèrent un champ magnétique via un processus de dynamo.",
+                subtitle: "Étoile centrale de notre système solaire",
+                theme: "Système Solaire",
+                category: "Étoile",
+                description: "Le Soleil est l'étoile au centre de notre système solaire. C'est une sphère presque parfaite de plasma chaud, avec des mouvements de convection internes qui génèrent un champ magnétique via un processus de dynamo. Il représente à lui seul 99,86% de la masse totale du système solaire.",
                 features: [
                     "Âge: 4,6 milliards d'années",
                     "Température du noyau: 15 millions °C",
                     "Diamètre: 1,4 million de km",
                     "Type spectral: G2V",
-                    "Distance de la Terre: 149,6 millions de km"
+                    "Distance de la Terre: 149,6 millions de km",
+                    "Masse: 1,989 × 10³⁰ kg",
+                    "Luminosité: 3,828 × 10²⁶ W"
                 ],
-                discovery: "Observé depuis l'antiquité, le Soleil a été étudié scientifiquement depuis Galilée au XVIIe siècle."
+                discovery: "Observé depuis l'antiquité par toutes les civilisations, le Soleil a été étudié scientifiquement depuis Galilée au XVIIe siècle."
+            },
+            "eruptions": {
+                title: "Éruptions Solaires",
+                subtitle: "Explosions d'énergie à la surface du Soleil",
+                theme: "Système Solaire",
+                category: "Phénomène Stellaire",
+                description: "Les éruptions solaires sont des explosions d'énergie magnétique à la surface du Soleil qui libèrent des quantités colossales d'énergie. Elles peuvent perturber les communications radio sur Terre et créer des aurores boréales.",
+                features: [
+                    "Énergie libérée: 10²⁵ joules",
+                    "Durée: quelques minutes à heures",
+                    "Température: jusqu'à 20 millions °C",
+                    "Vitesse des particules: 1 000 km/s",
+                    "Classification: A, B, C, M, X",
+                    "Cycle solaire: 11 ans"
+                ],
+                discovery: "Observées pour la première fois en 1859 par Richard Carrington. Étudiées en détail par les satellites modernes comme SOHO et SDO."
             },
             "mercure": {
                 title: "Mercure",
-                description: "Planète la plus proche du Soleil, Mercure est une planète rocheuse avec une surface criblée de cratères d'impact similaires à celle de la Lune.",
+                subtitle: "Planète la plus proche du Soleil",
+                theme: "Système Solaire",
+                category: "Planète Tellurique",
+                description: "Planète la plus proche du Soleil, Mercure est une planète rocheuse avec une surface criblée de cratères d'impact similaires à celle de la Lune. Elle n'a pratiquement pas d'atmosphère, ce qui expose sa surface à des températures extrêmes.",
                 features: [
                     "Distance du Soleil: 57,9 millions de km",
                     "Période orbitale: 88 jours terrestres",
                     "Température: -173°C à 427°C",
+                    "Diamètre: 4 879 km",
                     "Pas d'atmosphère significative",
                     "Missions: Mariner 10, MESSENGER"
                 ],
                 discovery: "Connue depuis l'antiquité, Mercure a été visitée pour la première fois par la sonde Mariner 10 en 1974."
             },
+            "venus": {
+                title: "Vénus",
+                subtitle: "Jumelle de la Terre",
+                theme: "Système Solaire",
+                category: "Planète Tellurique",
+                description: "Vénus est souvent appelée la jumelle de la Terre à cause de sa taille et masse similaires. Cependant, son atmosphère dense de dioxyde de carbone crée un effet de serre extrême qui en fait la planète la plus chaude du système solaire.",
+                features: [
+                    "Distance du Soleil: 108,2 millions de km",
+                    "Pression atmosphérique: 92 bars",
+                    "Température moyenne: 462°C",
+                    "Rotation rétrograde",
+                    "Atmosphère: CO₂ (96,5%), N₂ (3,5%)",
+                    "Missions: Venera, Magellan, Venus Express"
+                ],
+                discovery: "Observée depuis l'antiquité, Vénus a été explorée par plus de 40 missions spatiales."
+            },
+            "jupiter": {
+                title: "Jupiter",
+                subtitle: "Géante gazeuse",
+                theme: "Système Solaire",
+                category: "Géante Gazeuse",
+                description: "Jupiter est la plus grande planète du système solaire, une géante gazeuse principalement composée d'hydrogène et d'hélium. Elle possède un système d'anneaux ténus et plus de 79 lunes connues, dont les quatre grandes lunes galiléennes.",
+                features: [
+                    "Distance du Soleil: 778,5 millions de km",
+                    "Diamètre: 142 984 km",
+                    "Masse: 1,898 × 10²⁷ kg",
+                    "Période de rotation: 9h 55min",
+                    "Grande Tache Rouge",
+                    "79 lunes connues"
+                ],
+                discovery: "Observée depuis l'antiquité, Jupiter a été étudiée par les sondes Pioneer, Voyager, Galileo et Juno."
+            },
+            "saturne": {
+                title: "Saturne",
+                subtitle: "Seigneur des anneaux",
+                theme: "Système Solaire",
+                category: "Géante Gazeuse",
+                description: "Saturne est la sixième planète du système solaire, célèbre pour son spectaculaire système d'anneaux composés principalement de particules de glace. C'est une géante gazeuse moins dense que l'eau.",
+                features: [
+                    "Distance du Soleil: 1,4 milliard de km",
+                    "Diamètre: 120 536 km",
+                    "Densité: 0,687 g/cm³",
+                    "Système d'anneaux majestueux",
+                    "83 lunes connues",
+                    "Mission: Cassini-Huygens (1997-2017)"
+                ],
+                discovery: "Observée depuis l'antiquité, Saturne a été explorée en détail par les missions Pioneer, Voyager et Cassini."
+            },
             "orion": {
                 title: "Nébuleuse d'Orion",
-                description: "La Nébuleuse d'Orion (M42) est une nébuleuse en émission située au cœur de la constellation d'Orion. C'est l'une des nébuleuses les plus brillantes et les plus photographiées.",
+                subtitle: "M42 - Nébuleuse de la constellation d'Orion",
+                theme: "Nébuleuses",
+                category: "Nébuleuse en Émission",
+                description: "La Nébuleuse d'Orion (M42) est une nébuleuse en émission située au cœur de la constellation d'Orion. C'est l'une des nébuleuses les plus brillantes et les plus photographiées. Elle est visible à l'œil nu et constitue une pouponnière d'étoiles active.",
                 features: [
                     "Distance: 1 344 années-lumière",
                     "Diamètre: 24 années-lumière",
                     "Âge: environ 3 millions d'années",
+                    "Température: 10 000 K",
                     "Région de formation d'étoiles",
                     "Visible à l'œil nu"
                 ],
@@ -880,217 +692,281 @@
             },
             "andromede": {
                 title: "Galaxie d'Andromède",
-                description: "Galaxie spirale la plus proche de la Voie Lactée, Andromède (M31) est visible à l'œil nu dans l'hémisphère nord et se dirige vers notre galaxie pour une collision future.",
+                subtitle: "M31 - Galaxie spirale",
+                theme: "Galaxies",
+                category: "Galaxie Spirale",
+                description: "Galaxie spirale la plus proche de la Voie Lactée, Andromède (M31) est visible à l'œil nu dans l'hémisphère nord et se dirige vers notre galaxie pour une collision future dans environ 4,5 milliards d'années.",
                 features: [
                     "Distance: 2,5 millions d'années-lumière",
                     "Diamètre: 220 000 années-lumière",
                     "Masse: environ 1 000 milliards de soleils",
                     "1 000 milliards d'étoiles estimées",
-                    "Collision avec la Voie Lactée prévue dans 4,5 milliards d'années"
+                    "Vitesse relative: 110 km/s",
+                    "Satellites: M32, M110"
                 ],
                 discovery: "Première mention en 964 par l'astronome perse Abd al-rahman al-Soufi, identifiée comme galaxie par Edwin Hubble en 1923."
             },
             "sagittarius": {
                 title: "Sagittarius A*",
-                description: "Trou noir supermassif situé au centre de notre galaxie, la Voie Lactée. C'est la source radio la plus brillante de la constellation du Sagittaire.",
+                subtitle: "Trou noir supermassif au centre de la Voie Lactée",
+                theme: "Trous Noirs",
+                category: "Trou Noir Supermassif",
+                description: "Trou noir supermassif situé au centre de notre galaxie, la Voie Lactée. C'est la source radio la plus brillante de la constellation du Sagittaire. Sa masse équivaut à environ 4,1 millions de fois celle du Soleil.",
                 features: [
                     "Masse: 4,1 millions de masses solaires",
                     "Distance du Soleil: 26 000 années-lumière",
                     "Horizon des événements: 24 millions de km",
                     "Première image en 2022",
-                    "Entouré d'étoiles en orbite rapide"
+                    "Entouré d'étoiles en orbite rapide",
+                    "Émission radio intense"
                 ],
                 discovery: "Détecté indirectement dans les années 1970, première image obtenue par l'Event Horizon Telescope en 2022."
+            },
+            "proxima-b": {
+                title: "Proxima Centauri b",
+                subtitle: "Exoplanète la plus proche de la Terre",
+                theme: "Exoplanètes",
+                category: "Super-Terre",
+                description: "Exoplanète en orbite autour de Proxima Centauri, l'étoile la plus proche du Soleil. Située dans la zone habitable de son étoile, elle pourrait potentiellement abriter de l'eau liquide à sa surface.",
+                features: [
+                    "Distance: 4,24 années-lumière",
+                    "Masse: 1,27 masses terrestres",
+                    "Période orbitale: 11,2 jours",
+                    "Température d'équilibre: -39°C",
+                    "Étoile: Proxima Centauri (naine rouge)",
+                    "Découverte: 2016"
+                ],
+                discovery: "Découverte en 2016 par l'observatoire européen austral (ESO) utilisant la méthode des vitesses radiales."
+            },
+            "pleiades-amas": {
+                title: "Les Pléiades",
+                subtitle: "M45 - Amas des Sept Sœurs",
+                theme: "Amas Stellaire",
+                category: "Amas Ouvert",
+                description: "Les Pléiades (M45) sont un amas ouvert visible à l'œil nu, célèbre dans de nombreuses cultures. Composé d'étoiles jeunes et chaudes, il est entouré d'une nébuleuse de réflexion bleue caractéristique.",
+                features: [
+                    "Distance: 444 années-lumière",
+                    "Âge: 100 millions d'années",
+                    "Diamètre: 8 années-lumière",
+                    "Nombre d'étoiles: environ 1 000",
+                    "Étoiles principales: 9 visibles",
+                    "Nébuleuse de réflexion bleue"
+                ],
+                discovery: "Connu depuis l'antiquité, mentionné dans de nombreux textes anciens. Charles Messier l'a catalogué comme M45 en 1769."
             }
         };
 
-        document.addEventListener('DOMContentLoaded', function () {
-            // Navbar scroll effect
-            const navbar = document.querySelector('nav');
-            let lastScrollY = window.scrollY;
-
-            window.addEventListener('scroll', function () {
-                if (window.scrollY > 100) {
-                    navbar.classList.remove('-translate-y-full');
-                } else {
-                    navbar.classList.add('-translate-y-full');
-                }
-
-                lastScrollY = window.scrollY;
-            });
-
-            // Mobile menu functionality
-            const mobileMenuButton = document.getElementById('mobile-menu-button');
-            const mobileMenu = document.getElementById('mobile-menu');
-            const closeMenuButton = document.getElementById('close-menu');
-
-            mobileMenuButton.addEventListener('click', function () {
-                mobileMenu.classList.remove('translate-x-full');
-                feather.replace();
-            });
-
-            closeMenuButton.addEventListener('click', function () {
-                mobileMenu.classList.add('translate-x-full');
-            });
-
-            mobileMenu.querySelectorAll('a').forEach(link => {
-                link.addEventListener('click', function () {
-                    mobileMenu.classList.add('translate-x-full');
-                });
-            });
-
-            // Theme switching
+        // Fonction principale qui s'exécute quand le DOM est chargé
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialiser Feather Icons
+            feather.replace();
+            
+            console.log('Galerie cosmique initialisée!');
+            
+            // 1. Gestion des onglets thématiques
             const themeTabs = document.querySelectorAll('.theme-tab');
             const themeContents = document.querySelectorAll('.theme-content');
-
+            
             themeTabs.forEach(tab => {
-                tab.addEventListener('click', function () {
-                    const theme = this.dataset.theme;
+                tab.addEventListener('click', function() {
+                    const theme = this.getAttribute('data-theme');
                     
-                    // Update active tab
+                    // Retirer la classe active de tous les onglets
                     themeTabs.forEach(t => t.classList.remove('active'));
+                    // Ajouter la classe active à l'onglet cliqué
                     this.classList.add('active');
                     
-                    // Show corresponding content
+                    // Cacher tous les contenus
                     themeContents.forEach(content => {
                         content.classList.remove('active');
-                        content.classList.add('hidden');
                     });
                     
+                    // Afficher le contenu correspondant
                     const activeContent = document.getElementById(theme);
                     if (activeContent) {
-                        activeContent.classList.remove('hidden');
                         activeContent.classList.add('active');
                     }
                 });
             });
-
-            // Subtheme click handlers
-            document.querySelectorAll('.subtheme-item').forEach(item => {
-                item.addEventListener('click', function () {
-                    const subtheme = this.dataset.subtheme;
-                    openModal(subtheme);
-                });
-            });
-
-            // Modal functionality
+            
+            // 2. Gestion des clics sur les items de galerie (MODALES)
+            const subthemeItems = document.querySelectorAll('.subtheme-item');
             const modal = document.getElementById('image-modal');
-            const closeModalBtn = document.getElementById('close-modal');
-            const modalTitle = document.getElementById('modal-title');
-            const modalDescription = document.getElementById('modal-description');
-            const modalFeatures = document.getElementById('modal-features');
-            const modalDiscovery = document.getElementById('modal-discovery');
-            const modalImage = document.getElementById('modal-image');
-
-            function openModal(subtheme) {
-                if (galleryData[subtheme]) {
-                    const data = galleryData[subtheme];
-                    
-                    modalTitle.textContent = data.title;
-                    modalDescription.textContent = data.description;
-                    modalDiscovery.textContent = data.discovery;
-                    
-                    // Clear previous features
-                    modalFeatures.innerHTML = '';
-                    data.features.forEach(feature => {
-                        const li = document.createElement('li');
-                        li.className = 'text-space-400 flex items-center';
-                        li.innerHTML = `<i data-feather="check-circle" class="w-4 h-4 text-cosmic-400 mr-2"></i>${feature}`;
-                        modalFeatures.appendChild(li);
-                    });
-                    
-                    // Change icon based on subtheme
-                    const iconMap = {
-                        'soleil': 'sun',
-                        'mercure': 'globe',
-                        'orion': 'droplet',
-                        'andromede': 'activity',
-                        'sagittarius': 'target'
-                    };
-                    
-                    const icon = iconMap[subtheme] || 'image';
-                    modalImage.innerHTML = `<i data-feather="${icon}" class="w-20 h-20 text-cosmic-400"></i>`;
-                    
-                    modal.classList.remove('hidden');
-                    feather.replace();
+            const closeModalBtn = document.getElementById('close-modal-btn');
+            
+            // Fonction pour ouvrir une modal
+            function openModal(itemId) {
+                const data = galleryData[itemId];
+                
+                if (!data) {
+                    console.warn(`Aucune donnée trouvée pour: ${itemId}`);
+                    alert('Contenu en développement!');
+                    return;
                 }
+                
+                // Remplir les informations de la modal
+                document.getElementById('modal-title').textContent = data.title;
+                document.getElementById('modal-subtitle').textContent = data.subtitle;
+                document.getElementById('modal-description').textContent = data.description;
+                document.getElementById('modal-discovery').textContent = data.discovery;
+                document.getElementById('modal-theme').textContent = data.theme;
+                document.getElementById('modal-category').textContent = data.category;
+                
+                // Remplir les caractéristiques
+                const featuresList = document.getElementById('modal-features');
+                featuresList.innerHTML = ''; // Vider la liste
+                
+                data.features.forEach(feature => {
+                    const li = document.createElement('li');
+                    li.className = 'flex items-start gap-3';
+                    li.innerHTML = `
+                        <i data-feather="check-circle" class="w-5 h-5 text-[#38bdf8] mt-0.5 flex-shrink-0"></i>
+                        <span class="text-[#cbd5e1]">${feature}</span>
+                    `;
+                    featuresList.appendChild(li);
+                });
+                
+                // Mettre à jour l'icône dans l'image
+                const modalImage = document.getElementById('modal-image');
+                const iconMap = {
+                    'soleil': 'sun',
+                    'eruptions': 'zap',
+                    'mercure': 'globe',
+                    'venus': 'globe',
+                    'jupiter': 'wind',
+                    'saturne': 'wind',
+                    'orion': 'droplet',
+                    'andromede': 'activity',
+                    'sagittarius': 'target',
+                    'proxima-b': 'moon',
+                    'pleiades-amas': 'star'
+                };
+                
+                const icon = iconMap[itemId] || 'image';
+                modalImage.innerHTML = `<i data-feather="${icon}" class="w-24 h-24 text-[#38bdf8]"></i>`;
+                
+                // Afficher la modal
+                modal.classList.add('active');
+                document.body.style.overflow = 'hidden'; // Empêcher le défilement
+                
+                // Re-initialiser les icônes Feather
+                feather.replace();
             }
-
-            closeModalBtn.addEventListener('click', function () {
-                modal.classList.add('hidden');
-            });
-
-            modal.addEventListener('click', function (e) {
-                if (e.target === modal) {
-                    modal.classList.add('hidden');
-                }
-            });
-
-            // Smooth scroll
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function (e) {
+            
+            // Attacher les événements de clic à chaque item
+            subthemeItems.forEach(item => {
+                item.addEventListener('click', function(e) {
                     e.preventDefault();
-                    const target = document.querySelector(this.getAttribute('href'));
-                    if (target) {
-                        target.scrollIntoView({
-                            behavior: 'smooth',
-                            block: 'start'
-                        });
+                    e.stopPropagation();
+                    
+                    const itemId = this.getAttribute('data-item');
+                    console.log(`Item cliqué: ${itemId}`);
+                    
+                    if (itemId && galleryData[itemId]) {
+                        openModal(itemId);
+                    } else {
+                        console.warn(`Item ID "${itemId}" non trouvé dans les données`);
+                        openModal('soleil'); // Ouvrir une modal par défaut pour le débogage
                     }
                 });
             });
-
-            // Scroll reveal animation
-            const scrollRevealElements = document.querySelectorAll('.scroll-reveal');
-
-            const scrollReveal = function () {
-                scrollRevealElements.forEach(element => {
-                    const elementTop = element.getBoundingClientRect().top;
-                    const elementVisible = 150;
-
-                    if (elementTop < window.innerHeight - elementVisible) {
-                        element.classList.add('active');
-                    }
-                });
+            
+            // 3. Fermer la modal
+            function closeModal() {
+                modal.classList.remove('active');
+                document.body.style.overflow = 'auto'; // Réactiver le défilement
+            }
+            
+            closeModalBtn.addEventListener('click', closeModal);
+            
+            // Fermer en cliquant à l'extérieur de la modal
+            modal.addEventListener('click', function(e) {
+                if (e.target === modal) {
+                    closeModal();
+                }
+            });
+            
+            // Fermer avec la touche Échap
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape' && modal.classList.contains('active')) {
+                    closeModal();
+                }
+            });
+            
+            // 4. Fonction de partage
+            document.getElementById('share-btn').addEventListener('click', function() {
+                const title = document.getElementById('modal-title').textContent;
+                const text = `Découvrez "${title}" sur la Galerie Cosmique de Sirius Space Association!`;
+                const url = window.location.href;
+                
+                if (navigator.share) {
+                    navigator.share({
+                        title: title,
+                        text: text,
+                        url: url
+                    });
+                } else {
+                    // Fallback pour les navigateurs sans support de l'API Share
+                    navigator.clipboard.writeText(`${text}\n${url}`).then(() => {
+                        alert('Lien copié dans le presse-papier!');
+                    });
+                }
+            });
+            
+            // 5. Menu mobile
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const navLinks = document.querySelectorAll('nav a');
+            
+            mobileMenuButton.addEventListener('click', function() {
+                alert('Menu mobile - En développement');
+                // Pour une version complète, vous auriez besoin d'ajouter un menu mobile dans le HTML
+            });
+            
+            // 6. Animation au défilement pour les cartes
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
             };
-
-            scrollReveal();
-            window.addEventListener('scroll', scrollReveal);
-
-            // Add floating effect to gallery cards
+            
+            const observer = new IntersectionObserver(function(entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, observerOptions);
+            
+            // Observer toutes les cartes de galerie
             document.querySelectorAll('.gallery-card').forEach(card => {
-                card.addEventListener('mouseenter', function() {
-                    this.style.transform = 'translateY(-5px)';
-                });
-                
-                card.addEventListener('mouseleave', function() {
-                    this.style.transform = 'translateY(0)';
-                });
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(20px)';
+                card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+                observer.observe(card);
             });
-
-            // Create interactive stars
-            function createStar() {
-                const star = document.createElement('div');
-                star.className = 'absolute w-1 h-1 bg-white rounded-full animate-twinkle';
-                star.style.left = Math.random() * 100 + 'vw';
-                star.style.top = Math.random() * 100 + 'vh';
-                star.style.animationDelay = Math.random() * 3 + 's';
-                star.style.opacity = Math.random() * 0.7 + 0.3;
-                document.body.appendChild(star);
-                
-                setTimeout(() => {
-                    star.remove();
-                }, 10000);
-            }
-
-            // Create initial stars
-            for (let i = 0; i < 30; i++) {
-                createStar();
-            }
-
-            // Continue creating stars
-            setInterval(createStar, 1000);
+            
+            // 7. Initialiser les cartes déjà visibles
+            setTimeout(() => {
+                document.querySelectorAll('.gallery-card').forEach(card => {
+                    const rect = card.getBoundingClientRect();
+                    if (rect.top < window.innerHeight) {
+                        card.style.opacity = '1';
+                        card.style.transform = 'translateY(0)';
+                    }
+                });
+            }, 100);
         });
+        
+        // Fallback si DOMContentLoaded ne fonctionne pas
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', init);
+        } else {
+            init();
+        }
+        
+        function init() {
+            console.log('Page chargée, prête pour les interactions!');
+        }
     </script>
 </body>
 </html>
