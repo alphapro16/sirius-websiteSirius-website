@@ -288,7 +288,7 @@
     <section class="py-16 px-4">
         <div class="container mx-auto">
             
-            <!-- Système Solaire (déjà complet) -->
+            <!-- Système Solaire -->
             <div class="theme-content active" id="solaire">
                 <div class="mb-12 text-center">
                     <h2 class="font-['Orbitron'] text-3xl md:text-4xl text-[#f1f5f9] mb-4">
@@ -300,12 +300,240 @@
                 </div>
 
                 <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-                    <!-- Cartes système solaire (déjà présentes) -->
-                    <!-- ... contenu existant ... -->
+                    <!-- Soleil -->
+                    <div class="gallery-card rounded-2xl p-6">
+                        <div class="image-container aspect-video rounded-xl mb-6 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1614642264762-d0a3b8bf3700?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
+                                 alt="Le Soleil" 
+                                 class="object-cover"
+                                 onerror="this.src='https://images.unsplash.com/photo-1462331940025-496dfbfc7564?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80'">
+                        </div>
+                        <h3 class="text-xl font-semibold text-[#f1f5f9] mb-3">Le Soleil</h3>
+                        <p class="text-[#94a3b8] text-sm mb-4">
+                            Étoile centrale de notre système solaire, source de vie et d'énergie.
+                        </p>
+                        <div class="space-y-2">
+                            <div class="subtheme-item px-4 py-2 rounded-lg flex items-center justify-between" data-item="soleil">
+                                <span class="text-[#cbd5e1]">Caractéristiques principales</span>
+                                <i data-feather="chevron-right" class="w-4 h-4 text-[#38bdf8]"></i>
+                            </div>
+                            <div class="subtheme-item px-4 py-2 rounded-lg flex items-center justify-between" data-item="soleil-structure">
+                                <span class="text-[#cbd5e1]">Structure interne</span>
+                                <i data-feather="chevron-right" class="w-4 h-4 text-[#38bdf8]"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Mercure -->
+                    <div class="gallery-card rounded-2xl p-6">
+                        <div class="image-container aspect-video rounded-xl mb-6 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1614313913007-2b4ae8ce32d6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
+                                 alt="Mercure"
+                                 onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/3/30/Mercury_in_color_-_Prockter07_centered.jpg'">
+                        </div>
+                        <h3 class="text-xl font-semibold text-[#f1f5f9] mb-3">Mercure</h3>
+                        <p class="text-[#94a3b8] text-sm mb-4">
+                            La planète la plus proche du Soleil, monde rocheux aux températures extrêmes.
+                        </p>
+                        <div class="space-y-2">
+                            <div class="subtheme-item px-4 py-2 rounded-lg flex items-center justify-between" data-item="mercure">
+                                <span class="text-[#cbd5e1]">Caractéristiques</span>
+                                <i data-feather="chevron-right" class="w-4 h-4 text-[#38bdf8]"></i>
+                            </div>
+                            <div class="subtheme-item px-4 py-2 rounded-lg flex items-center justify-between" data-item="mercure-exploration">
+                                <span class="text-[#cbd5e1]">Exploration</span>
+                                <i data-feather="chevron-right" class="w-4 h-4 text-[#38bdf8]"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Vénus -->
+                    <div class="gallery-card rounded-2xl p-6">
+                        <div class="image-container aspect-video rounded-xl mb-6 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1614313913007-2b4ae8ce32d6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
+                                 alt="Vénus"
+                                 onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/e/e5/Venus-real_color.jpg'">
+                        </div>
+                        <h3 class="text-xl font-semibold text-[#f1f5f9] mb-3">Vénus</h3>
+                        <p class="text-[#94a3b8] text-sm mb-4">
+                            Jumelle infernale de la Terre, avec une atmosphère de CO₂ et des températures extrêmes.
+                        </p>
+                        <div class="space-y-2">
+                            <div class="subtheme-item px-4 py-2 rounded-lg flex items-center justify-between" data-item="venus">
+                                <span class="text-[#cbd5e1]">Caractéristiques</span>
+                                <i data-feather="chevron-right" class="w-4 h-4 text-[#38bdf8]"></i>
+                            </div>
+                            <div class="subtheme-item px-4 py-2 rounded-lg flex items-center justify-between" data-item="venus-atmosphere">
+                                <span class="text-[#cbd5e1]">Atmosphère</span>
+                                <i data-feather="chevron-right" class="w-4 h-4 text-[#38bdf8]"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Terre -->
+                    <div class="gallery-card rounded-2xl p-6">
+                        <div class="image-container aspect-video rounded-xl mb-6 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1446776653964-20c1d3a81b06?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
+                                 alt="La Terre"
+                                 onerror="this.src='https://images.unsplash.com/photo-1614730321146-b6fa6a46bcb4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80'">
+                        </div>
+                        <h3 class="text-xl font-semibold text-[#f1f5f9] mb-3">La Terre</h3>
+                        <p class="text-[#94a3b8] text-sm mb-4">
+                            Notre planète bleue, unique oasis de vie connue dans l'univers.
+                        </p>
+                        <div class="space-y-2">
+                            <div class="subtheme-item px-4 py-2 rounded-lg flex items-center justify-between" data-item="terre">
+                                <span class="text-[#cbd5e1]">Caractéristiques</span>
+                                <i data-feather="chevron-right" class="w-4 h-4 text-[#38bdf8]"></i>
+                            </div>
+                            <div class="subtheme-item px-4 py-2 rounded-lg flex items-center justify-between" data-item="terre-systeme">
+                                <span class="text-[#cbd5e1]">Système Terre-Lune</span>
+                                <i data-feather="chevron-right" class="w-4 h-4 text-[#38bdf8]"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Mars -->
+                    <div class="gallery-card rounded-2xl p-6">
+                        <div class="image-container aspect-video rounded-xl mb-6 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1614728894747-a83421e2b9c9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
+                                 alt="Mars"
+                                 onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/0/02/OSIRIS_Mars_true_color.jpg'">
+                        </div>
+                        <h3 class="text-xl font-semibold text-[#f1f5f9] mb-3">Mars</h3>
+                        <p class="text-[#94a3b8] text-sm mb-4">
+                            La planète rouge, future destination de l'exploration humaine.
+                        </p>
+                        <div class="space-y-2">
+                            <div class="subtheme-item px-4 py-2 rounded-lg flex items-center justify-between" data-item="mars">
+                                <span class="text-[#cbd5e1]">Caractéristiques</span>
+                                <i data-feather="chevron-right" class="w-4 h-4 text-[#38bdf8]"></i>
+                            </div>
+                            <div class="subtheme-item px-4 py-2 rounded-lg flex items-center justify-between" data-item="mars-exploration">
+                                <span class="text-[#cbd5e1]">Exploration martienne</span>
+                                <i data-feather="chevron-right" class="w-4 h-4 text-[#38bdf8]"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Jupiter -->
+                    <div class="gallery-card rounded-2xl p-6">
+                        <div class="image-container aspect-video rounded-xl mb-6 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1614313913007-2b4ae8ce32d6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
+                                 alt="Jupiter"
+                                 onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/2/2b/Jupiter_and_its_shrunken_Great_Red_Spot.jpg'">
+                        </div>
+                        <h3 class="text-xl font-semibold text-[#f1f5f9] mb-3">Jupiter</h3>
+                        <p class="text-[#94a3b8] text-sm mb-4">
+                            Géante gazeuse, la plus grande planète de notre système solaire.
+                        </p>
+                        <div class="space-y-2">
+                            <div class="subtheme-item px-4 py-2 rounded-lg flex items-center justify-between" data-item="jupiter">
+                                <span class="text-[#cbd5e1]">Caractéristiques</span>
+                                <i data-feather="chevron-right" class="w-4 h-4 text-[#38bdf8]"></i>
+                            </div>
+                            <div class="subtheme-item px-4 py-2 rounded-lg flex items-center justify-between" data-item="jupiter-lunes">
+                                <span class="text-[#cbd5e1]">Lunes galiléennes</span>
+                                <i data-feather="chevron-right" class="w-4 h-4 text-[#38bdf8]"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Saturne -->
+                    <div class="gallery-card rounded-2xl p-6">
+                        <div class="image-container aspect-video rounded-xl mb-6 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1446776653964-20c1d3a81b06?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
+                                 alt="Saturne"
+                                 onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/c/c7/Saturn_during_Equinox.jpg'">
+                        </div>
+                        <h3 class="text-xl font-semibold text-[#f1f5f9] mb-3">Saturne</h3>
+                        <p class="text-[#94a3b8] text-sm mb-4">
+                            Seigneur des anneaux, célèbre pour son système d'anneaux spectaculaire.
+                        </p>
+                        <div class="space-y-2">
+                            <div class="subtheme-item px-4 py-2 rounded-lg flex items-center justify-between" data-item="saturne">
+                                <span class="text-[#cbd5e1]">Caractéristiques</span>
+                                <i data-feather="chevron-right" class="w-4 h-4 text-[#38bdf8]"></i>
+                            </div>
+                            <div class="subtheme-item px-4 py-2 rounded-lg flex items-center justify-between" data-item="saturne-anneaux">
+                                <span class="text-[#cbd5e1]">Système d'anneaux</span>
+                                <i data-feather="chevron-right" class="w-4 h-4 text-[#38bdf8]"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Uranus -->
+                    <div class="gallery-card rounded-2xl p-6">
+                        <div class="image-container aspect-video rounded-xl mb-6 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1614728894747-a83421e2b9c9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
+                                 alt="Uranus"
+                                 onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/3/3d/Uranus2.jpg'">
+                        </div>
+                        <h3 class="text-xl font-semibold text-[#f1f5f9] mb-3">Uranus</h3>
+                        <p class="text-[#94a3b8] text-sm mb-4">
+                            Géante de glace à la rotation particulière, inclinée sur son axe.
+                        </p>
+                        <div class="space-y-2">
+                            <div class="subtheme-item px-4 py-2 rounded-lg flex items-center justify-between" data-item="uranus">
+                                <span class="text-[#cbd5e1]">Caractéristiques</span>
+                                <i data-feather="chevron-right" class="w-4 h-4 text-[#38bdf8]"></i>
+                            </div>
+                            <div class="subtheme-item px-4 py-2 rounded-lg flex items-center justify-between" data-item="uranus-rotation">
+                                <span class="text-[#cbd5e1]">Rotation unique</span>
+                                <i data-feather="chevron-right" class="w-4 h-4 text-[#38bdf8]"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Neptune -->
+                    <div class="gallery-card rounded-2xl p-6">
+                        <div class="image-container aspect-video rounded-xl mb-6 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1614313913007-2b4ae8ce32d6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
+                                 alt="Neptune"
+                                 onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/5/56/Neptune_Full.jpg'">
+                        </div>
+                        <h3 class="text-xl font-semibold text-[#f1f5f9] mb-3">Neptune</h3>
+                        <p class="text-[#94a3b8] text-sm mb-4">
+                            Planète la plus éloignée du Soleil, monde de vents violents et de tempêtes géantes.
+                        </p>
+                        <div class="space-y-2">
+                            <div class="subtheme-item px-4 py-2 rounded-lg flex items-center justify-between" data-item="neptune">
+                                <span class="text-[#cbd5e1]">Caractéristiques</span>
+                                <i data-feather="chevron-right" class="w-4 h-4 text-[#38bdf8]"></i>
+                            </div>
+                            <div class="subtheme-item px-4 py-2 rounded-lg flex items-center justify-between" data-item="neptune-tempetes">
+                                <span class="text-[#cbd5e1]">Grande Tache Sombre</span>
+                                <i data-feather="chevron-right" class="w-4 h-4 text-[#38bdf8]"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pluton et objets transneptuniens -->
+                    <div class="gallery-card rounded-2xl p-6">
+                        <div class="image-container aspect-video rounded-xl mb-6 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1614728894747-a83421e2b9c9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
+                                 alt="Pluton"
+                                 onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/e/ef/Pluto_in_True_Color_-_High-Res.jpg'">
+                        </div>
+                        <h3 class="text-xl font-semibold text-[#f1f5f9] mb-3">Pluton & Objets Transneptuniens</h3>
+                        <p class="text-[#94a3b8] text-sm mb-4">
+                            Monde nain et les corps glacés aux confins du système solaire.
+                        </p>
+                        <div class="space-y-2">
+                            <div class="subtheme-item px-4 py-2 rounded-lg flex items-center justify-between" data-item="pluton">
+                                <span class="text-[#cbd5e1]">Pluton</span>
+                                <i data-feather="chevron-right" class="w-4 h-4 text-[#38bdf8]"></i>
+                            </div>
+                            <div class="subtheme-item px-4 py-2 rounded-lg flex items-center justify-between" data-item="kuiper">
+                                <span class="text-[#cbd5e1]">Ceinture de Kuiper</span>
+                                <i data-feather="chevron-right" class="w-4 h-4 text-[#38bdf8]"></i>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <!-- Nébuleuses (déjà présent) -->
+            <!-- Nébuleuses -->
             <div class="theme-content" id="nebulae">
                 <div class="mb-12 text-center">
                     <h2 class="font-['Orbitron'] text-3xl md:text-4xl text-[#f1f5f9] mb-4">
@@ -320,8 +548,9 @@
                     <!-- Nébuleuse d'Orion -->
                     <div class="gallery-card rounded-2xl p-6">
                         <div class="image-container aspect-video rounded-xl mb-6 overflow-hidden">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/ESO-NGC3603.jpg/800px-ESO-NGC3603.jpg" 
-                                 alt="Nébuleuse d'Orion">
+                            <img src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
+                                 alt="Nébuleuse d'Orion"
+                                 onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/ESO-NGC3603.jpg/800px-ESO-NGC3603.jpg'">
                         </div>
                         <h3 class="text-xl font-semibold text-[#f1f5f9] mb-3">Nébuleuse d'Orion</h3>
                         <p class="text-[#94a3b8] text-sm mb-4">
@@ -329,42 +558,6 @@
                         </p>
                         <div class="space-y-2">
                             <div class="subtheme-item px-4 py-2 rounded-lg flex items-center justify-between" data-item="orion">
-                                <span class="text-[#cbd5e1]">Caractéristiques</span>
-                                <i data-feather="chevron-right" class="w-4 h-4 text-[#38bdf8]"></i>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Nébuleuse de l'Aigle -->
-                    <div class="gallery-card rounded-2xl p-6">
-                        <div class="image-container aspect-video rounded-xl mb-6 overflow-hidden">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Pillars_of_creation_2014_HST_WFC3-UVIS_full-res_denoised.jpg/800px-Pillars_of_creation_2014_HST_WFC3-UVIS_full-res_denoised.jpg" 
-                                 alt="Nébuleuse de l'Aigle">
-                        </div>
-                        <h3 class="text-xl font-semibold text-[#f1f5f9] mb-3">Nébuleuse de l'Aigle</h3>
-                        <p class="text-[#94a3b8] text-sm mb-4">
-                            Célèbre pour les "Piliers de la Création", colonnes de gaz formant des étoiles.
-                        </p>
-                        <div class="space-y-2">
-                            <div class="subtheme-item px-4 py-2 rounded-lg flex items-center justify-between" data-item="aigle">
-                                <span class="text-[#cbd5e1]">Caractéristiques</span>
-                                <i data-feather="chevron-right" class="w-4 h-4 text-[#38bdf8]"></i>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Nébuleuse du Crabe -->
-                    <div class="gallery-card rounded-2xl p-6">
-                        <div class="image-container aspect-video rounded-xl mb-6 overflow-hidden">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Crab_Nebula.jpg/800px-Crab_Nebula.jpg" 
-                                 alt="Nébuleuse du Crabe">
-                        </div>
-                        <h3 class="text-xl font-semibold text-[#f1f5f9] mb-3">Nébuleuse du Crabe</h3>
-                        <p class="text-[#94a3b8] text-sm mb-4">
-                            Résidu de supernova observé en 1054, avec un pulsar en son centre.
-                        </p>
-                        <div class="space-y-2">
-                            <div class="subtheme-item px-4 py-2 rounded-lg flex items-center justify-between" data-item="crabe">
                                 <span class="text-[#cbd5e1]">Caractéristiques</span>
                                 <i data-feather="chevron-right" class="w-4 h-4 text-[#38bdf8]"></i>
                             </div>
@@ -388,8 +581,9 @@
                     <!-- Galaxie d'Andromède -->
                     <div class="gallery-card rounded-2xl p-6">
                         <div class="image-container aspect-video rounded-xl mb-6 overflow-hidden">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/9/98/Andromeda_Galaxy_%28with_h-alpha%29.jpg" 
-                                 alt="Galaxie d'Andromède">
+                            <img src="https://images.unsplash.com/photo-1446776653964-20c1d3a81b06?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
+                                 alt="Galaxie d'Andromède"
+                                 onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/9/98/Andromeda_Galaxy_%28with_h-alpha%29.jpg'">
                         </div>
                         <h3 class="text-xl font-semibold text-[#f1f5f9] mb-3">Galaxie d'Andromède</h3>
                         <p class="text-[#94a3b8] text-sm mb-4">
@@ -397,246 +591,6 @@
                         </p>
                         <div class="space-y-2">
                             <div class="subtheme-item px-4 py-2 rounded-lg flex items-center justify-between" data-item="andromede">
-                                <span class="text-[#cbd5e1]">Caractéristiques</span>
-                                <i data-feather="chevron-right" class="w-4 h-4 text-[#38bdf8]"></i>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Galaxie du Sombrero -->
-                    <div class="gallery-card rounded-2xl p-6">
-                        <div class="image-container aspect-video rounded-xl mb-6 overflow-hidden">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/M104_ngc4594_sombrero_galaxy_hi-res.jpg/800px-M104_ngc4594_sombrero_galaxy_hi-res.jpg" 
-                                 alt="Galaxie du Sombrero">
-                        </div>
-                        <h3 class="text-xl font-semibold text-[#f1f5f9] mb-3">Galaxie du Sombrero</h3>
-                        <p class="text-[#94a3b8] text-sm mb-4">
-                            Galaxie spirale vue par la tranche, avec un bulbe central brillant.
-                        </p>
-                        <div class="space-y-2">
-                            <div class="subtheme-item px-4 py-2 rounded-lg flex items-center justify-between" data-item="sombrero">
-                                <span class="text-[#cbd5e1]">Caractéristiques</span>
-                                <i data-feather="chevron-right" class="w-4 h-4 text-[#38bdf8]"></i>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Galaxie du Tourbillon -->
-                    <div class="gallery-card rounded-2xl p-6">
-                        <div class="image-container aspect-video rounded-xl mb-6 overflow-hidden">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Messier51_sRGB.jpg/800px-Messier51_sRGB.jpg" 
-                                 alt="Galaxie du Tourbillon">
-                        </div>
-                        <h3 class="text-xl font-semibold text-[#f1f5f9] mb-3">Galaxie du Tourbillon</h3>
-                        <p class="text-[#94a3b8] text-sm mb-4">
-                            Galaxie spirale en interaction avec une galaxie compagnon.
-                        </p>
-                        <div class="space-y-2">
-                            <div class="subtheme-item px-4 py-2 rounded-lg flex items-center justify-between" data-item="tourbillon">
-                                <span class="text-[#cbd5e1]">Caractéristiques</span>
-                                <i data-feather="chevron-right" class="w-4 h-4 text-[#38bdf8]"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Trous Noirs -->
-            <div class="theme-content" id="trous-noirs">
-                <div class="mb-12 text-center">
-                    <h2 class="font-['Orbitron'] text-3xl md:text-4xl text-[#f1f5f9] mb-4">
-                        Trous Noirs
-                    </h2>
-                    <p class="text-[#cbd5e1] max-w-3xl mx-auto">
-                        Régions de l'espace où la gravité est si intense que rien, pas même la lumière, ne peut s'en échapper.
-                    </p>
-                </div>
-
-                <div class="grid md:grid-cols-3 gap-8 mb-12">
-                    <!-- Sagittarius A* -->
-                    <div class="gallery-card rounded-2xl p-6">
-                        <div class="image-container aspect-video rounded-xl mb-6 overflow-hidden">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Black_hole_-_Messier_87_crop_max_res.jpg/800px-Black_hole_-_Messier_87_crop_max_res.jpg" 
-                                 alt="Sagittarius A*">
-                        </div>
-                        <h3 class="text-xl font-semibold text-[#f1f5f9] mb-3">Sagittarius A*</h3>
-                        <p class="text-[#94a3b8] text-sm mb-4">
-                            Trou noir supermassif au centre de notre galaxie, la Voie Lactée.
-                        </p>
-                        <div class="space-y-2">
-                            <div class="subtheme-item px-4 py-2 rounded-lg flex items-center justify-between" data-item="sagittarius">
-                                <span class="text-[#cbd5e1]">Caractéristiques</span>
-                                <i data-feather="chevron-right" class="w-4 h-4 text-[#38bdf8]"></i>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- M87* -->
-                    <div class="gallery-card rounded-2xl p-6">
-                        <div class="image-container aspect-video rounded-xl mb-6 overflow-hidden">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Black_hole_-_Messier_87.jpg/800px-Black_hole_-_Messier_87.jpg" 
-                                 alt="Trou noir M87*">
-                        </div>
-                        <h3 class="text-xl font-semibold text-[#f1f5f9] mb-3">Trou noir M87*</h3>
-                        <p class="text-[#94a3b8] text-sm mb-4">
-                            Premier trou noir imagé directement, au centre de la galaxie M87.
-                        </p>
-                        <div class="space-y-2">
-                            <div class="subtheme-item px-4 py-2 rounded-lg flex items-center justify-between" data-item="m87-trou">
-                                <span class="text-[#cbd5e1]">Caractéristiques</span>
-                                <i data-feather="chevron-right" class="w-4 h-4 text-[#38bdf8]"></i>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Cygnus X-1 -->
-                    <div class="gallery-card rounded-2xl p-6">
-                        <div class="image-container aspect-video rounded-xl mb-6 overflow-hidden">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Cygnus_X-1_artist_impression.jpg/800px-Cygnus_X-1_artist_impression.jpg" 
-                                 alt="Cygnus X-1">
-                        </div>
-                        <h3 class="text-xl font-semibold text-[#f1f5f9] mb-3">Cygnus X-1</h3>
-                        <p class="text-[#94a3b8] text-sm mb-4">
-                            Premier candidat trou noir stellaire découvert dans notre galaxie.
-                        </p>
-                        <div class="space-y-2">
-                            <div class="subtheme-item px-4 py-2 rounded-lg flex items-center justify-between" data-item="cygnus">
-                                <span class="text-[#cbd5e1]">Caractéristiques</span>
-                                <i data-feather="chevron-right" class="w-4 h-4 text-[#38bdf8]"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Exoplanètes -->
-            <div class="theme-content" id="exoplanetes">
-                <div class="mb-12 text-center">
-                    <h2 class="font-['Orbitron'] text-3xl md:text-4xl text-[#f1f5f9] mb-4">
-                        Exoplanètes
-                    </h2>
-                    <p class="text-[#cbd5e1] max-w-3xl mx-auto">
-                        Planètes orbitant autour d'autres étoiles que le Soleil. Des milliers ont été découvertes ces dernières années.
-                    </p>
-                </div>
-
-                <div class="grid md:grid-cols-3 gap-8 mb-12">
-                    <!-- Proxima Centauri b -->
-                    <div class="gallery-card rounded-2xl p-6">
-                        <div class="image-container aspect-video rounded-xl mb-6 overflow-hidden">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Proxima_Centauri_b_artist_concept.jpg/800px-Proxima_Centauri_b_artist_concept.jpg" 
-                                 alt="Proxima Centauri b">
-                        </div>
-                        <h3 class="text-xl font-semibold text-[#f1f5f9] mb-3">Proxima Centauri b</h3>
-                        <p class="text-[#94a3b8] text-sm mb-4">
-                            Exoplanète la plus proche de la Terre, dans la zone habitable de son étoile.
-                        </p>
-                        <div class="space-y-2">
-                            <div class="subtheme-item px-4 py-2 rounded-lg flex items-center justify-between" data-item="proxima-b">
-                                <span class="text-[#cbd5e1]">Caractéristiques</span>
-                                <i data-feather="chevron-right" class="w-4 h-4 text-[#38bdf8]"></i>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Trappist-1 -->
-                    <div class="gallery-card rounded-2xl p-6">
-                        <div class="image-container aspect-video rounded-xl mb-6 overflow-hidden">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/TRAPPIST-1_System.jpg/800px-TRAPPIST-1_System.jpg" 
-                                 alt="Système TRAPPIST-1">
-                        </div>
-                        <h3 class="text-xl font-semibold text-[#f1f5f9] mb-3">Système TRAPPIST-1</h3>
-                        <p class="text-[#94a3b8] text-sm mb-4">
-                            Système à 7 planètes de taille terrestre, dont 3 dans la zone habitable.
-                        </p>
-                        <div class="space-y-2">
-                            <div class="subtheme-item px-4 py-2 rounded-lg flex items-center justify-between" data-item="trappist-1">
-                                <span class="text-[#cbd5e1]">Caractéristiques</span>
-                                <i data-feather="chevron-right" class="w-4 h-4 text-[#38bdf8]"></i>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- 51 Pegasi b -->
-                    <div class="gallery-card rounded-2xl p-6">
-                        <div class="image-container aspect-video rounded-xl mb-6 overflow-hidden">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/51Pegasi.jpg/800px-51Pegasi.jpg" 
-                                 alt="51 Pegasi b">
-                        </div>
-                        <h3 class="text-xl font-semibold text-[#f1f5f9] mb-3">51 Pegasi b</h3>
-                        <p class="text-[#94a3b8] text-sm mb-4">
-                            Première exoplanète découverte autour d'une étoile de type solaire.
-                        </p>
-                        <div class="space-y-2">
-                            <div class="subtheme-item px-4 py-2 rounded-lg flex items-center justify-between" data-item="51pegasi">
-                                <span class="text-[#cbd5e1]">Caractéristiques</span>
-                                <i data-feather="chevron-right" class="w-4 h-4 text-[#38bdf8]"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Amas Stellaire -->
-            <div class="theme-content" id="amas">
-                <div class="mb-12 text-center">
-                    <h2 class="font-['Orbitron'] text-3xl md:text-4xl text-[#f1f5f9] mb-4">
-                        Amas Stellaire
-                    </h2>
-                    <p class="text-[#cbd5e1] max-w-3xl mx-auto">
-                        Groupes d'étoiles liées gravitationnellement, nées généralement de la même nébuleuse.
-                    </p>
-                </div>
-
-                <div class="grid md:grid-cols-3 gap-8 mb-12">
-                    <!-- Pléiades -->
-                    <div class="gallery-card rounded-2xl p-6">
-                        <div class="image-container aspect-video rounded-xl mb-6 overflow-hidden">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Pleiades_large.jpg/800px-Pleiades_large.jpg" 
-                                 alt="Les Pléiades">
-                        </div>
-                        <h3 class="text-xl font-semibold text-[#f1f5f9] mb-3">Les Pléiades</h3>
-                        <p class="text-[#94a3b8] text-sm mb-4">
-                            Amas ouvert visible à l'œil nu, célèbre dans de nombreuses cultures.
-                        </p>
-                        <div class="space-y-2">
-                            <div class="subtheme-item px-4 py-2 rounded-lg flex items-center justify-between" data-item="pleiades-amas">
-                                <span class="text-[#cbd5e1]">Caractéristiques</span>
-                                <i data-feather="chevron-right" class="w-4 h-4 text-[#38bdf8]"></i>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Omega Centauri -->
-                    <div class="gallery-card rounded-2xl p-6">
-                        <div class="image-container aspect-video rounded-xl mb-6 overflow-hidden">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Omega_Centauri.jpg/800px-Omega_Centauri.jpg" 
-                                 alt="Omega Centauri">
-                        </div>
-                        <h3 class="text-xl font-semibold text-[#f1f5f9] mb-3">Omega Centauri</h3>
-                        <p class="text-[#94a3b8] text-sm mb-4">
-                            Plus grand amas globulaire de la Voie Lactée, contenant des millions d'étoiles.
-                        </p>
-                        <div class="space-y-2">
-                            <div class="subtheme-item px-4 py-2 rounded-lg flex items-center justify-between" data-item="omega-centauri">
-                                <span class="text-[#cbd5e1]">Caractéristiques</span>
-                                <i data-feather="chevron-right" class="w-4 h-4 text-[#38bdf8]"></i>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Amas d'Hercule -->
-                    <div class="gallery-card rounded-2xl p-6">
-                        <div class="image-container aspect-video rounded-xl mb-6 overflow-hidden">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Messier_13_Hubble_WikiSky.jpg/800px-Messier_13_Hubble_WikiSky.jpg" 
-                                 alt="Amas d'Hercule">
-                        </div>
-                        <h3 class="text-xl font-semibold text-[#f1f5f9] mb-3">Amas d'Hercule (M13)</h3>
-                        <p class="text-[#94a3b8] text-sm mb-4">
-                            Amas globulaire brillant dans la constellation d'Hercule.
-                        </p>
-                        <div class="space-y-2">
-                            <div class="subtheme-item px-4 py-2 rounded-lg flex items-center justify-between" data-item="m13">
                                 <span class="text-[#cbd5e1]">Caractéristiques</span>
                                 <i data-feather="chevron-right" class="w-4 h-4 text-[#38bdf8]"></i>
                             </div>
@@ -742,201 +696,423 @@
     </footer>
 
     <script>
-        // Base de données complète avec TOUTES les sections
+        // Base de données complète avec TOUTES les planètes et images
         const galleryData = {
-            // Trous Noirs
-            "sagittarius": {
-                title: "Sagittarius A*",
-                subtitle: "Trou noir supermassif au centre de la Voie Lactée",
-                theme: "Trous Noirs",
-                category: "Trou Noir Supermassif",
-                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Black_hole_-_Messier_87_crop_max_res.jpg/800px-Black_hole_-_Messier_87_crop_max_res.jpg",
-                description: "Sagittarius A* (prononcé 'Sagittarius A-étoile') est le trou noir supermassif situé au centre de notre galaxie, la Voie Lactée. Sa masse équivaut à environ 4,1 millions de fois celle du Soleil. C'est la source radio la plus brillante de la constellation du Sagittaire et il est entouré d'étoiles en orbite rapide qui ont permis de mesurer sa masse avec précision.",
+            // Système Solaire - COMPLET
+            "soleil": {
+                title: "Le Soleil",
+                subtitle: "Étoile centrale de notre système solaire",
+                theme: "Système Solaire",
+                category: "Étoile",
+                image: "https://images.unsplash.com/photo-1614642264762-d0a3b8bf3700?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+                description: "Le Soleil est l'étoile au centre de notre système solaire. C'est une sphère presque parfaite de plasma chaud, avec des mouvements de convection internes qui génèrent un champ magnétique via un processus de dynamo. Il représente à lui seul 99,86% de la masse totale du système solaire et est la principale source d'énergie pour la vie sur Terre.",
                 features: [
-                    "Masse: 4,1 millions de masses solaires",
-                    "Distance du Soleil: 26 000 années-lumière",
-                    "Horizon des événements: 24 millions de km",
-                    "Première image: 12 mai 2022 par l'Event Horizon Telescope",
-                    "Taux d'accrétion: Faible (environ 10⁻⁸ masses solaires/an)",
-                    "Émission: Radio, infrarouge, rayons X",
-                    "Étoiles en orbite: S2 (orbite de 16 ans), autres dizaines",
-                    "Température: Non définie (singularité)",
-                    "Rotation: Probablement rapide (trou noir de Kerr)",
-                    "Découverte: Prix Nobel de physique 2020"
+                    "Âge: 4,6 milliards d'années",
+                    "Température du noyau: 15 millions °C",
+                    "Température de surface: 5 500 °C",
+                    "Diamètre: 1,4 million de km (109 × Terre)",
+                    "Type spectral: G2V (naine jaune)",
+                    "Distance de la Terre: 149,6 millions de km",
+                    "Masse: 1,989 × 10³⁰ kg (333 000 × Terre)",
+                    "Luminosité: 3,828 × 10²⁶ W",
+                    "Composition: Hydrogène (74%), Hélium (24%)",
+                    "Rotation: 25 jours à l'équateur"
                 ],
-                discovery: "Détecté indirectement dans les années 1970 grâce aux émissions radio intenses. L'orbite de l'étoile S2 a fourni la preuve définitive de sa nature de trou noir. Première image obtenue par l'Event Horizon Telescope en 2022, résultat annoncé le 12 mai 2022."
+                discovery: "Observé depuis l'antiquité par toutes les civilisations. Les premières observations scientifiques par Galilée au XVIIe siècle ont révélé les taches solaires. Les études modernes utilisent des satellites comme SOHO, SDO et Parker Solar Probe."
             },
-            "m87-trou": {
-                title: "Trou noir M87*",
-                subtitle: "Premier trou noir imagé directement",
-                theme: "Trous Noirs",
-                category: "Trou Noir Supermassif",
-                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Black_hole_-_Messier_87.jpg/800px-Black_hole_-_Messier_87.jpg",
-                description: "Le trou noir M87* est situé au centre de la galaxie elliptique géante M87, dans l'amas de la Vierge. Il a été le premier trou noir à être imagé directement par l'Event Horizon Telescope en 2019. Sa masse colossale équivaut à 6,5 milliards de soleils. Il émet un jet relativiste de matière de 5 000 années-lumière de long, visible en radio et en optique.",
+            "soleil-structure": {
+                title: "Structure du Soleil",
+                subtitle: "Anatomie de notre étoile",
+                theme: "Système Solaire",
+                category: "Structure Stellaire",
+                image: "https://images.unsplash.com/photo-1462331940025-496dfbfc7564?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+                description: "Le Soleil possède une structure complexe en plusieurs couches, du noyau brûlant à la couronne extrêmement chaude. Chaque couche a des propriétés physiques uniques et joue un rôle crucial dans le fonctionnement de notre étoile.",
                 features: [
-                    "Masse: 6,5 milliards de masses solaires",
-                    "Distance: 55 millions d'années-lumière",
-                    "Diamètre apparent: 40 micro-arcsecondes",
-                    "Jet relativiste: 5 000 années-lumière de long",
-                    "Première image: 10 avril 2019 annoncée",
-                    "Vitesse jet: 99% vitesse de la lumière",
-                    "Galaxie hôte: M87 (elliptique géante)",
-                    "Méthode: Interférométrie à très longue base (VLBI)",
-                    "Télescopes: 8 radiotélescopes synchronisés mondialement",
-                    "Signification: Confirmation théorie relativité générale"
+                    "Noyau: Fusion nucléaire, 15 millions °C",
+                    "Zone radiative: Transport par rayonnement",
+                    "Zone convective: Mouvements de convection",
+                    "Photosphère: Surface visible, 5 500 °C",
+                    "Chromosphère: Couche rougeâtre, 20 000 °C",
+                    "Couronne: Atmosphère extérieure, 1-3 millions °C",
+                    "Taches solaires: Zones plus froides",
+                    "Protubérances: Éjections de plasma",
+                    "Vents solaires: Flux de particules"
                 ],
-                discovery: "Observé indirectement depuis des décennies via son jet. Première image directe obtenue par l'Event Horizon Telescope en avril 2017, résultat annoncé le 10 avril 2019. Image historique montrant l'ombre du trou noir et le disque d'accrétion."
+                discovery: "La structure solaire a été comprise grâce aux observations spectroscopiques et aux missions spatiales. La couronne chaude reste un mystère partiellement résolu (problème du chauffage coronal)."
             },
-            "cygnus": {
-                title: "Cygnus X-1",
-                subtitle: "Premier candidat trou noir stellaire",
-                theme: "Trous Noirs",
-                category: "Trou Noir Stellaire",
-                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Cygnus_X-1_artist_impression.jpg/800px-Cygnus_X-1_artist_impression.jpg",
-                description: "Cygnus X-1 est une source de rayons X binaire dans la constellation du Cygne, considérée comme le premier candidat trou noir stellaire convaincant. Découvert en 1964, il s'agit d'un système binaire où un trou noir d'environ 21 masses solaires accrète de la matière d'une étoile supergéante bleue (HDE 226868). Le pari célèbre entre Stephen Hawking et Kip Thorne en 1990 concernait sa nature de trou noir.",
+            "mercure": {
+                title: "Mercure",
+                subtitle: "Planète la plus proche du Soleil",
+                theme: "Système Solaire",
+                category: "Planète Tellurique",
+                image: "https://upload.wikimedia.org/wikipedia/commons/3/30/Mercury_in_color_-_Prockter07_centered.jpg",
+                description: "Mercure est la plus petite et la plus proche planète du Soleil. C'est un monde rocheux avec une surface criblée de cratères d'impact similaires à celle de la Lune. Sa proximité avec le Soleil crée des températures extrêmes oscillant entre -173°C la nuit et 427°C le jour.",
                 features: [
-                    "Masse: 21,2 ± 2,2 masses solaires",
-                    "Distance: 6 070 ± 400 années-lumière",
-                    "Type: Trou noir stellaire (binaire X)",
-                    "Compagnon: Étoile supergéante bleue (HDE 226868)",
-                    "Période orbitale: 5,6 jours",
-                    "Émission X: Variable, jusqu'à 2 × 10³¹ W",
-                    "Découverte: 1964 (ballon-sonde)",
-                    "Rotation: Rapide (environ 95% vitesse maximale)",
-                    "Temps de vie: Formé il y a environ 5 millions d'années",
-                    "Importance: Premier cas convaincant de trou noir"
+                    "Distance du Soleil: 57,9 millions de km",
+                    "Période orbitale: 88 jours terrestres",
+                    "Période de rotation: 59 jours terrestres",
+                    "Température: -173°C à 427°C",
+                    "Diamètre: 4 879 km (0,38 × Terre)",
+                    "Masse: 3,3 × 10²³ kg (0,055 × Terre)",
+                    "Gravité: 3,7 m/s² (0,38 × Terre)",
+                    "Atmosphère: Très ténue (exosphère)",
+                    "Satellites naturels: Aucun",
+                    "Missions: Mariner 10, MESSENGER, BepiColombo"
                 ],
-                discovery: "Découvert en 1964 par des ballons-sondes. Identifié comme système binaire en 1971. Le pari Hawking-Thorne (1974-1990) symbolise l'acceptation progressive de sa nature de trou noir. Mesures précises par VLBA en 2011 ont affiné distance et masse."
+                discovery: "Connue depuis l'antiquité. Première visite par Mariner 10 (1974-1975), cartographie complète par MESSENGER (2011-2015), exploration en cours par BepiColombo (lancement 2018)."
             },
-
-            // Exoplanètes
-            "proxima-b": {
-                title: "Proxima Centauri b",
-                subtitle: "Exoplanète la plus proche de la Terre",
-                theme: "Exoplanètes",
-                category: "Super-Terre",
-                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Proxima_Centauri_b_artist_concept.jpg/800px-Proxima_Centauri_b_artist_concept.jpg",
-                description: "Proxima Centauri b est une exoplanète en orbite autour de Proxima Centauri, l'étoile la plus proche du Soleil (4,24 années-lumière). Située dans la zone habitable de son étoile (où l'eau liquide pourrait exister), elle a une masse minimale de 1,27 masses terrestres. Cependant, son étoile est une naine rouge active avec des éruptions fréquentes qui pourraient rendre l'atmosphère difficile à maintenir.",
+            "mercure-exploration": {
+                title: "Exploration de Mercure",
+                subtitle: "Défis et découvertes",
+                theme: "Système Solaire",
+                category: "Exploration Spatiale",
+                image: "https://images.unsplash.com/photo-1446776653964-20c1d3a81b06?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+                description: "L'exploration de Mercure représente un défi technique majeur en raison de sa proximité avec le Soleil. Les missions successives ont révélé un monde surprenant avec un noyau métallique disproportionné et des glaces d'eau dans ses cratères polaires.",
                 features: [
-                    "Distance: 4,24 années-lumière",
-                    "Masse minimale: 1,27 masses terrestres",
-                    "Période orbitale: 11,186 jours",
-                    "Température d'équilibre: -39°C (sans atmosphère)",
-                    "Distance à l'étoile: 0,0485 UA (7,3 millions de km)",
-                    "Étoile: Proxima Centauri (naine rouge M5.5Ve)",
-                    "Luminosité étoile: 0,0017 L☉",
-                    "Méthode découverte: Vitesses radiales (ESO)",
-                    "Année découverte: 2016",
-                    "Possibilité eau liquide: Potentielle (zone habitable)"
+                    "Mariner 10 (1974): Premier survol, 45% de surface imagée",
+                    "MESSENGER (2011-2015): Première sonde en orbite",
+                    "BepiColombo (2018): Mission ESA/JAXA en cours",
+                    "Découverte de glace d'eau aux pôles",
+                    "Noyau métallique géant (85% du rayon)",
+                    "Champ magnétique global",
+                    "Surface riche en soufre",
+                    "Cratères nommés d'après artistes",
+                    "Température extrême: ΔT ≈ 600°C"
                 ],
-                discovery: "Découverte en 2016 par l'observatoire européen austral (ESO) utilisant la méthode des vitesses radiales (instrument HARPS). Annoncée le 24 août 2016. Cible prioritaire pour la recherche de vie extraterrestre et futures missions (Breakthrough Starshot)."
+                discovery: "Malgré des observations limitées, Mercure a révélé des surprises: champ magnétique inattendu, noyau disproportionné, présence de glace. Les défis techniques incluent la gravité solaire et les températures extrêmes."
             },
-            "trappist-1": {
-                title: "Système TRAPPIST-1",
-                subtitle: "Système à 7 planètes de taille terrestre",
-                theme: "Exoplanètes",
+            "venus": {
+                title: "Vénus",
+                subtitle: "Jumelle infernale de la Terre",
+                theme: "Système Solaire",
+                category: "Planète Tellurique",
+                image: "https://upload.wikimedia.org/wikipedia/commons/e/e5/Venus-real_color.jpg",
+                description: "Vénus est souvent appelée la jumelle de la Terre à cause de sa taille et masse similaires. Cependant, son atmosphère dense de dioxyde de carbone crée un effet de serre extrême, faisant de Vénus la planète la plus chaude du système solaire avec une température de surface moyenne de 462°C.",
+                features: [
+                    "Distance du Soleil: 108,2 millions de km",
+                    "Période orbitale: 225 jours terrestres",
+                    "Période de rotation: 243 jours (rétrograde)",
+                    "Température moyenne: 462°C",
+                    "Pression atmosphérique: 92 bars (92 × Terre)",
+                    "Diamètre: 12 104 km (0,95 × Terre)",
+                    "Atmosphère: CO₂ (96,5%), N₂ (3,5%)",
+                    "Nuages: Acide sulfurique H₂SO₄",
+                    "Satellites naturels: Aucun",
+                    "Missions: >40 missions, Venera, Magellan"
+                ],
+                discovery: "Observée depuis l'antiquité comme 'étoile du matin/soir'. Premiers survols par Mariner 2 (1962), premières images de surface par Venera 9 (1975), cartographie radar par Magellan (1990-1994)."
+            },
+            "venus-atmosphere": {
+                title: "Atmosphère de Vénus",
+                subtitle: "Enfer vertébral",
+                theme: "Système Solaire",
+                category: "Atmosphère Planétaire",
+                image: "https://images.unsplash.com/photo-1614728894747-a83421e2b9c9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+                description: "L'atmosphère de Vénus est un cauchemar de conditions extrêmes: pression écrasante, températures infernales, pluies d'acide sulfurique et vents violents. C'est un exemple extrême d'effet de serre incontrôlé qui sert de mise en garde pour le changement climatique terrestre.",
+                features: [
+                    "Composition: CO₂ (96,5%), N₂ (3,5%)",
+                    "Pression surface: 92 bars (comme 900m sous l'eau)",
+                    "Température surface: 462°C (assez pour fondre le plomb)",
+                    "Nuages: Acide sulfurique à 45-70km d'altitude",
+                    "Super-rotation: Vents à 360 km/h (60× rotation planète)",
+                    "Effet de serre: ΔT ≈ 500°C par rapport à sans atmosphère",
+                    "Couche de SO₂: Réflectivité élevée (albédo 0,75)",
+                    "Aurores: Sans champ magnétique global",
+                    "Éclairs: Détectés par Venera et Venus Express"
+                ],
+                discovery: "L'atmosphère infernale a été révélée par les missions Venera (URSS) et Pioneer Venus (USA). Le mécanisme de super-rotation reste un mystère de la dynamique atmosphérique."
+            },
+            "terre": {
+                title: "La Terre",
+                subtitle: "Notre planète bleue",
+                theme: "Système Solaire",
+                category: "Planète Tellurique",
+                image: "https://images.unsplash.com/photo-1614730321146-b6fa6a46bcb4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+                description: "La Terre est la troisième planète du système solaire et la seule connue pour abriter la vie. Sa surface est couverte à 71% d'eau et elle possède une atmosphère riche en oxygène qui maintient des conditions propices à la vie. La Terre a un satellite naturel, la Lune, et un champ magnétique protecteur.",
+                features: [
+                    "Distance du Soleil: 149,6 millions de km (1 UA)",
+                    "Période orbitale: 365,25 jours",
+                    "Période de rotation: 23h 56min 4s",
+                    "Température moyenne: 15°C",
+                    "Diamètre: 12 756 km",
+                    "Masse: 5,972 × 10²⁴ kg",
+                    "Atmosphère: N₂ (78%), O₂ (21%), Ar (0,93%)",
+                    "Satellite naturel: La Lune",
+                    "Champ magnétique: Protecteur contre vents solaires",
+                    "Unique: Eau liquide en surface, tectonique des plaques"
+                ],
+                discovery: "Notre planète d'origine, étudiée continuellement depuis l'antiquité. Les satellites d'observation comme Landsat, Sentinel et les stations spatiales fournissent des données cruciales sur son état et son évolution."
+            },
+            "terre-systeme": {
+                title: "Système Terre-Lune",
+                subtitle: "Duo cosmique unique",
+                theme: "Système Solaire",
                 category: "Système Planétaire",
-                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/TRAPPIST-1_System.jpg/800px-TRAPPIST-1_System.jpg",
-                description: "TRAPPIST-1 est un système planétaire extraordinaire découvert autour d'une étoile naine ultra-froide à 39,5 années-lumière. Il contient sept planètes de taille terrestre, dont trois (e, f, g) se trouvent dans la zone habitable. Toutes les planètes sont probablement en résonance orbitale et pourraient être verrouillées gravitationnellement (montrant toujours la même face à leur étoile). C'est le système le plus prometteur pour la recherche de vie en dehors du système solaire.",
+                image: "https://images.unsplash.com/photo-1446776653964-20c1d3a81b06?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+                description: "La Terre et la Lune forment un système planétaire unique dans le système solaire interne par la taille relative de la Lune (1/4 du diamètre terrestre). Cette configuration a des effets profonds sur la Terre: marées, stabilisation de l'axe de rotation, et possiblement l'émergence de la vie.",
                 features: [
-                    "Distance: 39,5 années-lumière",
-                    "Planètes: 7 confirmées (b, c, d, e, f, g, h)",
-                    "Planètes habitables: e, f, g (zone habitable)",
-                    "Étoile: Naine ultra-froide (M8V), 0,08 M☉",
-                    "Rayons: 0,76 à 1,13 rayons terrestres",
-                    "Masses: 0,3 à 1,4 masses terrestres",
-                    "Températures: -100°C à +100°C (équilibre)",
-                    "Découverte: 2016-2017 (TRAPPIST, Spitzer)",
-                    "Résonance: Chaîne de résonances 2:3, 3:4, etc.",
-                    "Atmosphères: Détectées par Hubble et James Webb"
+                    "Lune: Diamètre 3 474 km (0,27 × Terre)",
+                    "Distance Terre-Lune: 384 400 km",
+                    "Formation: Impact géant Théia il y a 4,5 milliards d'années",
+                    "Effets des marées: Amplitude océanique jusqu'à 15m",
+                    "Ralentissement rotation: 1,7 ms/siècle",
+                    "Éloignement lunaire: 3,8 cm/an",
+                    "Éclipses: Totales, annulaires, partielles",
+                    "Face cachée: Toujours invisible de Terre",
+                    "Exploration: Apollo (1969-1972), missions robotiques",
+                    "Importance: Stabilisation climatique, marées, cycles biologiques"
                 ],
-                discovery: "Découvert par le télescope TRAPPIST au Chili en 2016 (2 planètes). Confirmé et étendu par le télescope spatial Spitzer en 2017 (7 planètes). Observations approfondies par Hubble, Spitzer, Kepler, et maintenant James Webb pour étudier les atmosphères."
+                discovery: "La théorie de l'impact géant pour expliquer la formation de la Lune est largement acceptée. Les missions Apollo ont rapporté 382 kg d'échantillons lunaires. La face cachée a été explorée par Chang'e 4 (Chine, 2019)."
             },
-            "51pegasi": {
-                title: "51 Pegasi b",
-                subtitle: "Première exoplanète autour d'une étoile solaire",
-                theme: "Exoplanètes",
-                category: "Jupiter Chaud",
-                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/51Pegasi.jpg/800px-51Pegasi.jpg",
-                description: "51 Pegasi b, surnommée 'Bellerophon', est la première exoplanète découverte autour d'une étoile de type solaire (51 Pegasi). Découverte en 1995 par Michel Mayor et Didier Queloz (prix Nobel de physique 2019), elle a révolutionné l'astronomie en démontrant que des planètes pouvaient orbiter très près de leur étoile. C'est un 'Jupiter chaud' - une géante gazeuse très proche de son étoile avec une température extrême.",
+            "mars": {
+                title: "Mars",
+                subtitle: "La planète rouge",
+                theme: "Système Solaire",
+                category: "Planète Tellurique",
+                image: "https://upload.wikimedia.org/wikipedia/commons/0/02/OSIRIS_Mars_true_color.jpg",
+                description: "Mars est la quatrième planète du système solaire, connue pour sa couleur rouge due à l'oxyde de fer présent à sa surface. Elle possède des calottes polaires, le plus grand volcan du système solaire (Olympus Mons), des preuves d'anciens cours d'eau et un passé potentiellement habitable.",
                 features: [
-                    "Distance: 50,9 années-lumière",
-                    "Masse minimale: 0,47 masses joviennes (150 × Terre)",
-                    "Période orbitale: 4,23 jours",
-                    "Distance à l'étoile: 0,0527 UA (7,9 millions de km)",
-                    "Température: ~1 200°C (côté jour)",
-                    "Étoile: 51 Pegasi (G2IV, similaire au Soleil)",
-                    "Type: Jupiter chaud (géante gazeuse proche)",
-                    "Méthode: Vitesses radiales (spectrographe ELODIE)",
-                    "Découverte: 6 octobre 1995",
-                    "Importance: Révolution exoplanétologie, Nobel 2019"
+                    "Distance du Soleil: 227,9 millions de km",
+                    "Période orbitale: 687 jours terrestres",
+                    "Période de rotation: 24h 37min 22s",
+                    "Température: -140°C à 20°C (moyenne -63°C)",
+                    "Diamètre: 6 792 km (0,53 × Terre)",
+                    "Atmosphère: CO₂ (95%), N₂ (2,7%), Ar (1,6%)",
+                    "Pression atmosphérique: 0,006 bar (0,6% Terre)",
+                    "Satellites: Phobos (22km) et Deimos (12km)",
+                    "Volcans: Olympus Mons (21km de haut)",
+                    "Canyon: Valles Marineris (4000km de long)"
                 ],
-                discovery: "Découverte le 6 octobre 1995 par Michel Mayor et Didier Queloz de l'Observatoire de Genève, utilisant le spectrographe ELODIE à l'Observatoire de Haute-Provence. Annoncée le 6 octobre 1995 à Florence. Prix Nobel de physique 2019. Marque le début de l'ère des exoplanètes."
+                discovery: "Observée depuis l'antiquité. Premiers survols par Mariner 4 (1965), premiers atterrissages par Viking (1976), exploration intensive depuis 1997 (Pathfinder, rovers Spirit, Opportunity, Curiosity, Perseverance)."
             },
-
-            // Amas Stellaire
-            "pleiades-amas": {
-                title: "Les Pléiades",
-                subtitle: "M45 - Amas des Sept Sœurs",
-                theme: "Amas Stellaire",
-                category: "Amas Ouvert",
-                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Pleiades_large.jpg/800px-Pleiades_large.jpg",
-                description: "Les Pléiades (M45) sont un amas ouvert visible à l'œil nu, célèbre dans de nombreuses cultures (Sept Sœurs, Subaru, etc.). Composé d'étoiles jeunes et chaudes (type B) âgées d'environ 100 millions d'années, il est entouré d'une nébuleuse de réflexion bleue caractéristique (nuages de poussière réfléchissant la lumière des étoiles). L'amas contient environ 1 000 étoiles, dont 9-10 sont visibles à l'œil nu selon les conditions.",
+            "mars-exploration": {
+                title: "Exploration Martienne",
+                subtitle: "À la recherche de la vie",
+                theme: "Système Solaire",
+                category: "Exploration Spatiale",
+                image: "https://images.unsplash.com/photo-1614728894747-a83421e2b9c9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+                description: "Mars est la planète la plus explorée après la Terre, avec plus de 50 missions depuis 1960. La recherche se concentre sur l'habitabilité passée, la présence d'eau liquide et la possibilité de vie, passée ou présente. La préparation de missions habitées est en cours.",
                 features: [
-                    "Distance: 444 années-lumière",
-                    "Âge: 100 millions d'années",
-                    "Diamètre: 8 années-lumière",
-                    "Nombre d'étoiles: ~1 000 (dont ~500 membres confirmés)",
-                    "Étoiles principales: Alcyone, Atlas, Électre, Maïa, etc.",
-                    "Nébuleuse: Réflexion bleue (poussière interstellaire)",
-                    "Vitesse: 40 km/s vers le point vernal",
-                    "Masse totale: ~800 masses solaires",
-                    "Type spectral: Principalement B (chaudes, bleues)",
-                    "Visibilité: À l'œil nu (magnitude 1,6)"
+                    "Missions orbitales: Mars Odyssey, MRO, Mars Express, MAVEN",
+                    "Rovers: Sojourner (1997), Spirit & Opportunity (2004), Curiosity (2012), Perseverance (2021)",
+                    "Atterrisseurs: Viking (1976), Phoenix (2008), InSight (2018)",
+                    "Découvertes: Anciens lacs, rivières, deltas",
+                    "Méthane: Variations saisonnières détectées",
+                    "Glace d'eau: Abondante sous surface, calottes polaires",
+                    "Préparation humaine: Artemis program, SpaceX Starship",
+                    "Échantillons: Collecte par Perseverance pour retour sur Terre",
+                    "Hélicoptère: Ingenuity, premier vol motorisé sur autre planète"
                 ],
-                discovery: "Connu depuis l'antiquité, mentionné dans l'Odyssée d'Homère (vers 750 AEC), le Kojiki japonais, les mythologies grecque, aborigène, etc. Charles Messier l'a catalogué comme M45 en 1769. Étudié intensivement pour comprendre la formation stellaire et l'évolution des amas ouverts."
+                discovery: "La découverte majeure est l'existence d'eau liquide dans le passé martien. Les rovers ont trouvé des minéraux argileux formés en présence d'eau. La recherche de biosignatures continue avec Perseverance."
             },
-            "omega-centauri": {
-                title: "Omega Centauri",
-                subtitle: "NGC 5139 - Amas globulaire géant",
-                theme: "Amas Stellaire",
-                category: "Amas Globulaire",
-                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Omega_Centauri.jpg/800px-Omega_Centauri.jpg",
-                description: "Omega Centauri (ω Cen, NGC 5139) est le plus grand et le plus lumineux amas globulaire de la Voie Lactée. Avec environ 10 millions d'étoiles, il est si massif (4 millions de masses solaires) qu'il pourrait être le noyau d'une ancienne galaxie naine absorbée par la Voie Lactée. Il contient des étoiles de différentes générations et compositions, ce qui est inhabituel pour un amas globulaire et soutient l'hypothèse de l'origine galactique.",
+            "jupiter": {
+                title: "Jupiter",
+                subtitle: "Roi des planètes",
+                theme: "Système Solaire",
+                category: "Géante Gazeuse",
+                image: "https://upload.wikimedia.org/wikipedia/commons/2/2b/Jupiter_and_its_shrunken_Great_Red_Spot.jpg",
+                description: "Jupiter est la plus grande planète du système solaire, une géante gazeuse principalement composée d'hydrogène et d'hélium. Elle possède un système d'anneaux ténus, plus de 79 lunes connues (dont les quatre grandes lunes galiléennes), et la célèbre Grande Tache Rouge, une tempête anticyclonique plus grande que la Terre qui dure depuis au moins 350 ans.",
                 features: [
-                    "Distance: 15 800 années-lumière",
-                    "Diamètre: 150 années-lumière",
-                    "Masse: 4 millions de masses solaires",
-                    "Âge: environ 12 milliards d'années",
-                    "Nombre d'étoiles: ~10 millions",
-                    "Vitesse de dispersion: 7 km/s",
-                    "Magnitude: 3,9 (visible à l'œil nu)",
-                    "Population: Étoiles multiples générations",
-                    "Origine probable: Noyau galaxie naine cannibalisée",
-                    "Trou noir: Possible trou noir intermédiaire central"
+                    "Distance du Soleil: 778,5 millions de km",
+                    "Période orbitale: 11,9 années terrestres",
+                    "Période de rotation: 9h 55min (rapide)",
+                    "Diamètre: 142 984 km (11 × Terre)",
+                    "Masse: 1,898 × 10²⁷ kg (318 × Terre)",
+                    "Composition: H₂ (90%), He (10%)",
+                    "Grande Tache Rouge: Tempête de 16 000 × 12 000 km",
+                    "Anneaux: Ténus, découverts par Voyager 1",
+                    "Lunes: 79 connues, dont Io, Europe, Ganymède, Callisto",
+                    "Champ magnétique: 20 000 × Terre (plus puissant)"
                 ],
-                discovery: "Observé depuis l'antiquité, catalogué par Ptolémée comme une étoile (vers 150 EC). Identifié comme amas globulaire par Edmond Halley en 1677 depuis Sainte-Hélène. Le plus grand et le plus brillant de la Voie Lactée. Suspecté d'être un noyau galactique depuis les années 1970."
+                discovery: "Observée depuis l'antiquité. Découverte des lunes galiléennes en 1610 par Galilée. Exploration par Pioneer 10/11, Voyager 1/2, Galileo (1995-2003), Juno (depuis 2016)."
             },
-            "m13": {
-                title: "Amas d'Hercule",
-                subtitle: "M13 - Grand amas globulaire d'Hercule",
-                theme: "Amas Stellaire",
-                category: "Amas Globulaire",
-                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Messier_13_Hubble_WikiSky.jpg/800px-Messier_13_Hubble_WikiSky.jpg",
-                description: "M13, l'amas d'Hercule, est l'un des amas globulaires les plus brillants et les plus étudiés de l'hémisphère nord. Contenant environ 300 000 étoiles âgées de 11,65 milliards d'années, il est visible à l'œil nu dans de bonnes conditions. En 1974, le message d'Arecibo fut envoyé vers M13 comme démonstration de la technologie humaine, bien qu'il n'atteindra sa destination que dans 25 000 ans.",
+            "jupiter-lunes": {
+                title: "Lunes Galiléennes",
+                subtitle: "Mondes fascinants de Jupiter",
+                theme: "Système Solaire",
+                category: "Système de Lunes",
+                image: "https://images.unsplash.com/photo-1614313913007-2b4ae8ce32d6?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+                description: "Les quatre grandes lunes de Jupiter découvertes par Galilée en 1610 sont des mondes extraordinaires: Io avec ses volcans actifs, Europe avec son océan souterrain potentiellement habitable, Ganymède la plus grande lune du système solaire (plus grande que Mercure), et Callisto la lune criblée de cratères.",
                 features: [
-                    "Distance: 22 200 années-lumière",
-                    "Diamètre: 145 années-lumière",
-                    "Masse: 600 000 masses solaires",
-                    "Âge: 11,65 milliards d'années",
-                    "Nombre d'étoiles: ~300 000",
-                    "Magnitude: 5,8 (visible à l'œil nu)",
-                    "Vitesse radiale: -245 km/s (s'approche)",
-                    "Métallicité: [Fe/H] = -1,33 (pauvre en métaux)",
-                    "Message d'Arecibo: Envoyé le 16 novembre 1974",
-                    "Découverte: Edmond Halley en 1714"
+                    "Io: Monde volcanique le plus actif, 400 volcans, pas de cratères",
+                    "Europe: Océan global sous glace, 2× eau terrestre, habitabilité potentielle",
+                    "Ganymède: Plus grande lune (5 262 km), champ magnétique propre",
+                    "Callisto: Surface ancienne, cratérisée, océan possible",
+                    "Diamètres: Io (3 643km), Europe (3 122km), Ganymède (5 262km), Callisto (4 821km)",
+                    "Découverte: 7-8 janvier 1610 par Galilée",
+                    "Importance: Première preuve d'objets orbitant autre que Terre",
+                    "Exploration: Voyager, Galileo, Juno, futures missions (Europa Clipper)",
+                    "Habitabilité: Europe cible prioritaire pour recherche vie extraterrestre"
                 ],
-                discovery: "Découvert par Edmond Halley en 1714 qui nota 'C'est une petite tache mais elle se montre à l'œil nu lorsque le ciel est serein et la Lune absente'. Catalogué par Charles Messier en 1764. Le message d'Arecibo fut transmis vers M13 le 16 novembre 1974 lors de l'inauguration du radiotélescope rénové."
+                discovery: "Découverte révolutionnaire soutenant l'héliocentrisme. Les missions Voyager ont révélé l'activité volcanique d'Io (1979). Galileo a détecté le champ magnétique de Ganymède et l'océan d'Europe. Europa Clipper (lancement 2024) étudiera l'habitabilité."
+            },
+            "saturne": {
+                title: "Saturne",
+                subtitle: "Seigneur des anneaux",
+                theme: "Système Solaire",
+                category: "Géante Gazeuse",
+                image: "https://upload.wikimedia.org/wikipedia/commons/c/c7/Saturn_during_Equinox.jpg",
+                description: "Saturne est la sixième planète du système solaire, célèbre pour son spectaculaire système d'anneaux composés principalement de particules de glace. C'est une géante gazeuse moins dense que l'eau - elle flotterait dans un océan assez grand. Ses 83 lunes incluent Titan, seule lune avec une atmosphère dense.",
+                features: [
+                    "Distance du Soleil: 1,4 milliard de km",
+                    "Période orbitale: 29,5 années terrestres",
+                    "Période de rotation: 10h 33min 38s",
+                    "Diamètre: 120 536 km (9,5 × Terre)",
+                    "Masse: 5,683 × 10²⁶ kg (95 × Terre)",
+                    "Densité: 0,687 g/cm³ (moins dense que l'eau)",
+                    "Anneaux: Principaux (A, B, C), épaisseur ~10m",
+                    "Lunes: 83 confirmées, Titan (5 150 km), Encelade",
+                    "Composition: H₂ (96%), He (3%), traces",
+                    "Hexagone polaire: Structure nuageuse unique au pôle nord"
+                ],
+                discovery: "Observée depuis l'antiquité. Anneaux découverts par Galilée (1610) mais mal interprétés. Structure annulaire comprise par Huygens (1655). Exploration par Pioneer 11, Voyager 1/2, Cassini-Huygens (1997-2017)."
+            },
+            "saturne-anneaux": {
+                title: "Anneaux de Saturne",
+                subtitle: "Joyau du système solaire",
+                theme: "Système Solaire",
+                category: "Système d'Anneaux",
+                image: "https://images.unsplash.com/photo-1446776653964-20c1d3a81b06?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+                description: "Le système d'anneaux de Saturne est le plus étendu et le plus brillant du système solaire. Composé principalement de milliards de particules de glace d'eau (de la taille d'un grain de sable à celle d'une maison), il s'étend sur 282 000 km de diamètre mais n'a que 10 à 100 mètres d'épaisseur. Les anneaux présentent des structures complexes: divisions, vagues, spirales et 'spokes'.",
+                features: [
+                    "Composition: Glace d'eau (>95%), poussière rocheuse",
+                    "Diamètre: 282 000 km (¾ distance Terre-Lune)",
+                    "Épaisseur: 10-100 mètres (extrêmement mince)",
+                    "Masse totale: ≈ 3 × 10¹⁹ kg (0,4 × Mimas, une lune)",
+                    "Principaux anneaux: D, C, B, A, F, G, E (de l'intérieur)",
+                    "Division de Cassini: Espace de 4 800 km entre A et B",
+                    "Origine: Probablement lune détruite ou comète désintégrée",
+                    "Âge: Jeune (100-200 millions d'années) ou ancien",
+                    "Structures: Vagues, spirales, 'spokes' (rayons)",
+                    "Observations: Visibles avec petit télescope"
+                ],
+                discovery: "Découverts par Galilée (1610) comme 'anses'. Identifiés comme anneaux par Huygens (1655). Division de Cassini découverte en 1675. Structure complexe révélée par Voyager et Cassini. Les 'spokes' restent mystérieux."
+            },
+            "uranus": {
+                title: "Uranus",
+                subtitle: "Géante de glace inclinée",
+                theme: "Système Solaire",
+                category: "Géante de Glace",
+                image: "https://upload.wikimedia.org/wikipedia/commons/3/3d/Uranus2.jpg",
+                description: "Uranus est la septième planète du système solaire, une géante de glace avec la particularité unique d'être inclinée à 98° sur son axe de rotation - elle roule sur son orbite. Cette inclinaison extrême donne des saisons radicales de 21 ans. Uranus possède un système d'anneaux ténus et 27 lunes connues.",
+                features: [
+                    "Distance du Soleil: 2,9 milliards de km",
+                    "Période orbitale: 84 années terrestres",
+                    "Période de rotation: 17h 14min (rétrograde)",
+                    "Inclinaison axiale: 97,77° (roule sur son côté)",
+                    "Diamètre: 51 118 km (4 × Terre)",
+                    "Masse: 8,681 × 10²⁵ kg (14,5 × Terre)",
+                    "Composition: Glace (eau, ammoniac, méthane) sur noyau rocheux",
+                    "Couleur: Bleu-vert (méthane absorbant rouge)",
+                    "Atmosphère: H₂ (83%), He (15%), CH₄ (2%)",
+                    "Lunes: 27 connues, Miranda, Ariel, Umbriel, Titania, Oberon"
+                ],
+                discovery: "Découverte par William Herschel le 13 mars 1781 - première planète découverte au télescope. Unique survol par Voyager 2 (1986). Observations depuis Hubble et télescopes terrestres."
+            },
+            "uranus-rotation": {
+                title: "Rotation Unique d'Uranus",
+                subtitle: "La planète qui roule",
+                theme: "Système Solaire",
+                category: "Dynamique Planétaire",
+                image: "https://images.unsplash.com/photo-1614728894747-a83421e2b9c9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+                description: "Uranus possède l'inclinaison axiale la plus extrême du système solaire à 98°, ce qui signifie qu'elle roule pratiquement sur son orbite. Cette orientation unique résulte probablement d'un impact géant avec un corps de la taille de la Terre peu après sa formation. Cette inclinaison crée des saisons radicales où chaque pôle connaît 42 ans de lumière continue suivis de 42 ans d'obscurité.",
+                features: [
+                    "Inclinaison axiale: 97,77° (presque couchée)",
+                    "Comparaison: Terre (23,5°), Jupiter (3,1°), Saturne (26,7°)",
+                    "Cause probable: Impact géant avec protoplanète",
+                    "Saisons: Extrêmes, 21 ans de jour/21 ans de nuit par pôle",
+                    "Effet sur climat: Pôles plus chauds qu'équateur au solstice",
+                    "Champ magnétique: Incliné à 59°, décentré",
+                    "Aurores: Non alignées avec pôles géographiques",
+                    "Anneaux: Verticaux par rapport à l'orbite",
+                    "Lunes: Orbites également inclinées",
+                    "Mystère: Mécanisme de l'impact et conséquences"
+                ],
+                discovery: "L'inclinaison extrême a été mesurée dès sa découverte. Voyager 2 a confirmé les effets sur climat et magnétosphère. L'hypothèse d'impact est soutenue par simulations numériques."
+            },
+            "neptune": {
+                title: "Neptune",
+                subtitle: "Planète des vents violents",
+                theme: "Système Solaire",
+                category: "Géante de Glace",
+                image: "https://upload.wikimedia.org/wikipedia/commons/5/56/Neptune_Full.jpg",
+                description: "Neptune est la huitième et dernière planète du système solaire, une géante de glace découverte par calcul mathématique avant d'être observée. C'est la planète la plus ventée avec des vents supersoniques atteignant 2 100 km/h. Sa couleur bleue intense vient du méthane, et elle possède le système d'anneaux le plus complexe et 14 lunes connues, dont Triton qui orbite à l'envers.",
+                features: [
+                    "Distance du Soleil: 4,5 milliards de km",
+                    "Période orbitale: 165 années terrestres",
+                    "Période de rotation: 16h 6min",
+                    "Diamètre: 49 528 km (3,9 × Terre)",
+                    "Masse: 1,024 × 10²⁶ kg (17 × Terre)",
+                    "Vents: Les plus rapides (2 100 km/h, supersoniques)",
+                    "Couleur: Bleu intense (méthane + autre chromophore)",
+                    "Température: -218°C (plus chaude qu'attendue)",
+                    "Anneaux: 5 principaux, arcs brillants",
+                    "Lunes: 14, Triton (géante, orbite rétrograde)"
+                ],
+                discovery: "Prédite mathématiquement par Le Verrier et Adams (1846), observée par Galle le 23 septembre 1846. Unique survol par Voyager 2 (1989). Observations depuis Hubble et grands télescopes."
+            },
+            "neptune-tempetes": {
+                title: "Tempêtes de Neptune",
+                subtitle: "La Grande Tache Sombre et autres",
+                theme: "Système Solaire",
+                category: "Météorologie Planétaire",
+                image: "https://images.unsplash.com/photo-1614313913007-2b4ae8ce32d6?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+                description: "Neptune présente une météorologie extrêmement active malgré son éloignement du Soleil et sa faible chaleur interne. La célèbre Grande Tache Sombre découverte par Voyager 2 était une tempête anticyclonique de la taille de la Terre qui a depuis disparu, remplacée par d'autres spots sombres. Ces phénomènes, ainsi que les nuages brillants de méthane, démontrent une dynamique atmosphérique intense et mal comprise.",
+                features: [
+                    "Grande Tache Sombre (1989): Tempête de 13 000 × 6 600 km",
+                    "Vitesse vents: Record 2 100 km/h (Mach 2)",
+                    "Nuages de méthane: 'Scooters' blancs à haute altitude",
+                    "Chaleur interne: 2,6 × énergie reçue du Soleil",
+                    "Nouveaux spots: Apparus et disparus depuis 1989",
+                    "Comparaison Jupiter: Taches plus éphémères, plus mobiles",
+                    "Mécanisme: Source énergie interne > solaire",
+                    "Observations: Voyager 2, Hubble, grands télescopes",
+                    "Mystère: Maintien vents sans chauffage solaire significatif",
+                    "Saisons: Très longues (40 ans), effets atmosphériques"
+                ],
+                discovery: "Grande Tache Sombre découverte par Voyager 2 (1989). Disparue en 1994 (Hubble). Nouvelles taches observées depuis. Mécanisme des vents extrêmes reste un mystère majeur de la planétologie."
+            },
+            "pluton": {
+                title: "Pluton",
+                subtitle: "Monde nain de la ceinture de Kuiper",
+                theme: "Système Solaire",
+                category: "Planète Naine",
+                image: "https://upload.wikimedia.org/wikipedia/commons/e/ef/Pluto_in_True_Color_-_High-Res.jpg",
+                description: "Pluton, autrefois considérée comme la neuvième planète, est maintenant classée comme planète naine et est le plus grand objet connu de la ceinture de Kuiper. Le survol historique par New Horizons en 2015 a révélé un monde surprenant avec des montagnes de glace d'eau, des plaines d'azote gelé, une atmosphère ténue et même un cœur brillant nommé Tombaugh Regio.",
+                features: [
+                    "Distance moyenne: 5,9 milliards de km",
+                    "Période orbitale: 248 années terrestres",
+                    "Période de rotation: 6j 9h (synchrone avec Charon)",
+                    "Diamètre: 2 377 km (0,18 × Terre)",
+                    "Masse: 1,303 × 10²² kg (0,002 × Terre)",
+                    "Atmosphère: Ténue (N₂, CH₄, CO), cycles condensation/sublimation",
+                    "Surface: Glaces N₂, CH₄, CO, montagnes H₂O glace",
+                    "Cœur: Tombaugh Regio (plaine Sputnik Planitia)",
+                    "Lunes: 5, Charon (1/2 diamètre Pluton), Styx, Nix, Kerberos, Hydra",
+                    "Mission: New Horizons (survol 14 juillet 2015)"
+                ],
+                discovery: "Découverte par Clyde Tombaugh le 18 février 1930. Classée planète naine en 2006 par l'UAI. Premier survol par New Horizons (2015) révélant sa complexité inattendue."
+            },
+            "kuiper": {
+                title: "Ceinture de Kuiper",
+                subtitle: "Troisième zone du système solaire",
+                theme: "Système Solaire",
+                category: "Région Transneptunienne",
+                image: "https://images.unsplash.com/photo-1446776653964-20c1d3a81b06?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+                description: "La ceinture de Kuiper est une vaste région en forme de disque au-delà de Neptune, peuplée de milliards de petits corps glacés (objets transneptuniens). C'est la source de nombreuses comètes à courte période et elle contient des planètes naines comme Pluton, Hauméa, Makémaké et Éris. Cette région conserve des indices précieux sur la formation du système solaire.",
+                features: [
+                    "Localisation: Au-delà Neptune (30-55 UA)",
+                    "Population: >100 000 objets >100km, milliards total",
+                    "Composition: Glaces volatiles (eau, méthane, ammoniac)",
+                    "Objets notables: Pluton, Éris, Hauméa, Makémaké, Quaoar",
+                    "Éris: Plus massif que Pluton (déclencheur reclassification)",
+                    "Hauméa: Rotation rapide (4h), forme ellipsoïdale",
+                    "Arrokoth: Contact-binary visité par New Horizons (2019)",
+                    "Origine: Vestige du disque protoplanétaire",
+                    "Importance: Comprendre formation système solaire",
+                    "Exploration: New Horizons (Pluton, Arrokoth), missions futures"
+                ],
+                discovery: "Prédite par Kenneth Edgeworth (1943) et Gerard Kuiper (1951). Premier objet découvert (après Pluton): 1992 QB₁ en 1992. Exploration par New Horizons. Futur: Missions proposées vers autres objets KBO."
             },
 
             // Nébuleuses
@@ -961,48 +1137,6 @@
                 ],
                 discovery: "Découverte par Nicolas-Claude Fabri de Peiresc en 1610, elle est la première nébuleuse observée au télescope. Charles Messier l'a cataloguée comme M42 en 1769. Étudiée intensivement en radio, IR, optique."
             },
-            "aigle": {
-                title: "Nébuleuse de l'Aigle",
-                subtitle: "M16 - Piliers de la Création",
-                theme: "Nébuleuses",
-                category: "Nébuleuse en Émission",
-                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Pillars_of_creation_2014_HST_WFC3-UVIS_full-res_denoised.jpg/800px-Pillars_of_creation_2014_HST_WFC3-UVIS_full-res_denoised.jpg",
-                description: "La Nébuleuse de l'Aigle (M16) est célèbre pour les 'Piliers de la Création', trois colonnes monumentales de gaz et de poussière où de nouvelles étoiles se forment. Ces structures, photographiées par le télescope spatial Hubble en 1995 puis en 2014, s'élèvent sur plusieurs années-lumière et sont sculptées par le rayonnement ultraviolet des jeunes étoiles massives voisines. L'image des Piliers est devenue l'une des plus iconiques de l'astronomie.",
-                features: [
-                    "Distance: 7 000 années-lumière",
-                    "Diamètre: 70 × 55 années-lumière",
-                    "Âge: 5,5 millions d'années",
-                    "Piliers: Hauteur 4-5 années-lumière",
-                    "Étoiles: Amas NGC 6611 (jeunes étoiles chaudes)",
-                    "Type: Nébuleuse en émission + amas ouvert",
-                    "Température: 8 000-10 000 K",
-                    "Photo Hubble: 1995 (WFPC2), 2014 (WFC3/UVIS)",
-                    "Destruction: Les piliers seront détruits dans ~100 000 ans",
-                    "James Webb: Nouvelle image en 2022 (IR)"
-                ],
-                discovery: "Découverte par Jean-Philippe de Cheseaux en 1745-46. Charles Messier l'a cataloguée comme M16 en 1764. Les Piliers de la Création photographiés par Hubble le 1er avril 1995 (WFPC2). Nouvelle image Hubble en 2014, image James Webb en 2022."
-            },
-            "crabe": {
-                title: "Nébuleuse du Crabe",
-                subtitle: "M1 - Résidu de supernova historique",
-                theme: "Nébuleuses",
-                category: "Nébuleuse planétaire",
-                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Crab_Nebula.jpg/800px-Crab_Nebula.jpg",
-                description: "La Nébuleuse du Crabe (M1) est le résidu de la supernova SN 1054, observée par les astronomes chinois, arabes et peut-être amérindiens en 1054. Au centre se trouve le pulsar du Crabe, une étoile à neutrons en rotation rapide (30 tours/seconde) qui émet des impulsions régulières dans toutes les longueurs d'onde. La nébuleuse elle-même émet un rayonnement synchrotron produit par des électrons ultra-relativistes spiralant dans le champ magnétique.",
-                features: [
-                    "Distance: 6 500 années-lumière",
-                    "Diamètre: 11 années-lumière",
-                    "Âge: 970 ans (explosion 1054)",
-                    "Expansion: 1 500 km/s",
-                    "Pulsar: PSR B0531+21 (rotation: 33 ms)",
-                    "Température: 11 000-18 000 K",
-                    "Luminosité: 75 000 × Soleil",
-                    "Observations historiques: Chine (4 juillet 1054)",
-                    "Émission: Synchrotron (continu), raies d'émission",
-                    "Importance: 'Rosette Stellaire' pour l'astronomie"
-                ],
-                discovery: "Supernova observée le 4 juillet 1054 par les astronomes chinois (visible 23 jours en plein jour). Nébuleuse découverte par John Bevis en 1731, indépendamment par Charles Messier en 1758 (premier objet catalogue Messier). Pulsar découvert en 1968. Étalon de luminosité en astronomie haute énergie."
-            },
 
             // Galaxies
             "andromede": {
@@ -1025,48 +1159,6 @@
                     "Découverte: Première galaxie reconnue hors Voie Lactée"
                 ],
                 discovery: "Première mention en 964 par l'astronome perse Abd al-rahman al-Soufi. Identifiée comme galaxie (nébuleuse spirale) par Edwin Hubble en 1923 qui y découvrit des céphéides établissant sa distance. Première galaxie dont on a mesuré la distance et la nature extragalactique."
-            },
-            "sombrero": {
-                title: "Galaxie du Sombrero",
-                subtitle: "M104 - Galaxie spirale vue par la tranche",
-                theme: "Galaxies",
-                category: "Galaxie Spirale",
-                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/M104_ngc4594_sombrero_galaxy_hi-res.jpg/800px-M104_ngc4594_sombrero_galaxy_hi-res.jpg",
-                description: "La galaxie du Sombrero (M104) doit son nom à sa ressemblance avec le chapeau mexicain. Vue presque exactement par la tranche, elle présente un bulbe central brillant traversé par une bande sombre de poussière. Cette galaxie inhabituelle possède les caractéristiques à la fois d'une galaxie spirale et d'une galaxie elliptique, avec un halo étendu contenant de nombreux amas globulaires.",
-                features: [
-                    "Distance: 29,3 millions d'années-lumière",
-                    "Diamètre: 50 000 années-lumière",
-                    "Masse: ~800 milliards de masses solaires",
-                    "Type: Spirale (Sa) ou lenticulaire?",
-                    "Bulbe: Exceptionnellement grand et lumineux",
-                    "Disque de poussière: Bande sombre bien définie",
-                    "Amas globulaires: ~2 000 (très nombreux)",
-                    "Trou noir central: ~1 milliard masses solaires",
-                    "Vitesse rotation: 350 km/s à 5 kpc",
-                    "Magnitude: 8,0 (visible avec petit télescope)"
-                ],
-                discovery: "Découverte par Pierre Méchain en mai 1781. Non incluse dans le catalogue Messier original mais ajoutée plus tard (M104). William Herschel l'a observée indépendamment en 1784. L'une des premières galaxies où un spectre fut obtenu (Vesto Slipher, 1912)."
-            },
-            "tourbillon": {
-                title: "Galaxie du Tourbillon",
-                subtitle: "M51 - Galaxie spirale en interaction",
-                theme: "Galaxies",
-                category: "Galaxie Spirale",
-                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Messier51_sRGB.jpg/800px-Messier51_sRGB.jpg",
-                description: "La galaxie du Tourbillon (M51) est une galaxie spirale grandiose en interaction gravitationnelle avec sa compagne NGC 5195. Cette interaction a déclenché une intense formation d'étoiles dans ses bras spiraux, rendant ses structures particulièrement visibles et photogéniques. M51 est souvent appelée 'la galaxie parfaite' en raison de sa symétrie et de la clarté de ses bras spiraux.",
-                features: [
-                    "Distance: 23 millions d'années-lumière",
-                    "Diamètre: 60 000 années-lumière",
-                    "Type: Spirale grand design (SA(s)bc pec)",
-                    "Compagnon: NGC 5195 (galaxie naine irrégulière)",
-                    "Interaction: Début il y a ~500 millions d'années",
-                    "Formation stellaire: Renforcée par interaction",
-                    "Supernovae: SN 2005cs, SN 2011dh",
-                    "Trou noir central: Masse modérée",
-                    "Découverte bras spiraux: Lord Rosse (1845)",
-                    "Visibilité: Cible populaire pour astronomes amateurs"
-                ],
-                discovery: "Découverte par Charles Messier le 13 octobre 1773. Compagnon NGC 5195 découvert par Pierre Méchain en 1781. Première galaxie où la structure spirale fut observée (Lord Rosse avec son télescope de 72 pouces, 1845). Image emblématique de Hubble en 2005."
             }
         };
 
@@ -1075,7 +1167,7 @@
             // Initialiser Feather Icons
             feather.replace();
             
-            console.log('Galerie cosmique COMPLÈTE initialisée!');
+            console.log('Galerie cosmique initialisée avec images réelles!');
             
             // 1. Gestion des onglets thématiques
             const themeTabs = document.querySelectorAll('.theme-tab');
@@ -1173,16 +1265,28 @@
             // Fonction utilitaire pour obtenir l'icône appropriée
             function getIconForItem(itemId) {
                 const iconMap = {
-                    // Trous noirs
-                    'sagittarius': 'target', 'm87-trou': 'target', 'cygnus': 'target',
-                    // Exoplanètes
-                    'proxima-b': 'globe', 'trappist-1': 'globe', '51pegasi': 'globe',
-                    // Amas stellaires
-                    'pleiades-amas': 'star', 'omega-centauri': 'star', 'm13': 'star',
-                    // Nébuleuses
-                    'orion': 'droplet', 'aigle': 'droplet', 'crabe': 'circle',
-                    // Galaxies
-                    'andromede': 'activity', 'sombrero': 'activity', 'tourbillon': 'rotate-cw'
+                    'soleil': 'sun',
+                    'soleil-structure': 'sun',
+                    'mercure': 'globe',
+                    'mercure-exploration': 'compass',
+                    'venus': 'globe',
+                    'venus-atmosphere': 'cloud',
+                    'terre': 'globe',
+                    'terre-systeme': 'moon',
+                    'mars': 'globe',
+                    'mars-exploration': 'compass',
+                    'jupiter': 'wind',
+                    'jupiter-lunes': 'star',
+                    'saturne': 'wind',
+                    'saturne-anneaux': 'circle',
+                    'uranus': 'wind',
+                    'uranus-rotation': 'refresh-ccw',
+                    'neptune': 'wind',
+                    'neptune-tempetes': 'wind',
+                    'pluton': 'circle',
+                    'kuiper': 'star',
+                    'orion': 'droplet',
+                    'andromede': 'activity'
                 };
                 return iconMap[itemId] || 'image';
             }
@@ -1324,7 +1428,7 @@
         }
         
         function init() {
-            console.log('Galerie cosmique COMPLÈTE chargée avec succès!');
+            console.log('Galerie cosmique chargée avec succès!');
         }
     </script>
 </body>
