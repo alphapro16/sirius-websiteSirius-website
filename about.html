@@ -93,35 +93,16 @@
             box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2), 0 0 20px rgba(56, 189, 248, 0.1);
         }
 
-        .timeline-item {
-            position: relative;
-            padding-left: 2rem;
+        .pillar-card {
+            background: linear-gradient(145deg, rgba(30, 41, 59, 0.7) 0%, rgba(15, 23, 42, 0.85) 100%);
+            border: 1px solid rgba(56, 189, 248, 0.1);
+            transition: all 0.3s ease;
         }
 
-        .timeline-item::before {
-            content: '';
-            position: absolute;
-            left: 0;
-            top: 0.5rem;
-            width: 12px;
-            height: 12px;
-            border-radius: 50%;
-            background: linear-gradient(135deg, #0ea5e9, #7e22ce);
-            border: 2px solid rgba(255, 255, 255, 0.1);
-        }
-
-        .timeline-item::after {
-            content: '';
-            position: absolute;
-            left: 5px;
-            top: 1.5rem;
-            bottom: -1.5rem;
-            width: 2px;
-            background: linear-gradient(to bottom, rgba(56, 189, 248, 0.3), transparent);
-        }
-
-        .timeline-item:last-child::after {
-            display: none;
+        .pillar-card:hover {
+            border-color: rgba(56, 189, 248, 0.3);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2), 0 0 15px rgba(56, 189, 248, 0.1);
         }
 
         .text-shadow {
@@ -150,12 +131,6 @@
             opacity: 0.3;
         }
 
-        .gradient-border {
-            border: 2px solid transparent;
-            background: linear-gradient(145deg, rgba(30, 41, 59, 0.8), rgba(15, 23, 42, 0.9)) padding-box,
-                        linear-gradient(135deg, #0ea5e9, #7e22ce) border-box;
-        }
-
         .pulsing-dot {
             animation: pulse 2s infinite;
         }
@@ -163,6 +138,31 @@
         @keyframes pulse {
             0%, 100% { opacity: 1; }
             50% { opacity: 0.5; }
+        }
+
+        .benin-flag {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .benin-flag::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 33.33%;
+            background: #008751; /* Vert du Bénin */
+        }
+
+        .benin-flag::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 33.33%;
+            background: #FCD116; /* Jaune du Bénin */
         }
     </style>
 </head>
@@ -197,81 +197,65 @@
                 </div>
                 <h1 class="font-['Orbitron'] text-4xl md:text-6xl text-[#f1f5f9] mb-6 text-shadow">
                     <span class="bg-gradient-to-r from-[#38bdf8] to-[#a855f7] bg-clip-text text-transparent">
-                        Notre Mission Cosmique
+                        Faire du Bénin une Nation Spatiale
                     </span>
                 </h1>
                 <p class="text-xl md:text-2xl text-[#cbd5e1] mb-10 max-w-3xl mx-auto">
-                    Éclairer les mystères de l'univers et inspirer la prochaine génération d'explorateurs spatiaux
+                    Organisation à but non lucratif dédiée au développement des sciences et technologies spatiales au Bénin
                 </p>
-                <div class="flex justify-center space-x-4">
+                <div class="flex flex-wrap justify-center gap-4">
+                    <span class="inline-flex items-center px-3 py-1 rounded-full text-sm bg-[#008751]/20 text-[#008751] border border-[#008751]/30">
+                        <i data-feather="map-pin" class="w-3 h-3 mr-2"></i>
+                        Cotonou, Bénin
+                    </span>
                     <span class="inline-flex items-center px-3 py-1 rounded-full text-sm bg-[#0ea5e9]/10 text-[#38bdf8] border border-[#38bdf8]/30">
                         <span class="w-2 h-2 rounded-full bg-[#38bdf8] mr-2 pulsing-dot"></span>
-                        Depuis 2015
+                        Fondée en 2021
                     </span>
                     <span class="inline-flex items-center px-3 py-1 rounded-full text-sm bg-[#7e22ce]/10 text-[#a855f7] border border-[#a855f7]/30">
-                        <i data-feather="globe" class="w-3 h-3 mr-2"></i>
-                        50+ pays membres
+                        <i data-feather="target" class="w-3 h-3 mr-2"></i>
+                        Organisation à but non lucratif
                     </span>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Notre Histoire -->
+    <!-- Notre Mission -->
     <section class="py-16 px-4">
         <div class="container mx-auto max-w-6xl">
             <div class="content-card rounded-2xl p-8 md:p-12 mb-16">
                 <div class="flex items-center gap-4 mb-8">
                     <div class="p-3 rounded-lg bg-gradient-to-r from-[#0284c7]/20 to-[#9333ea]/20 border border-[#38bdf8]/30">
-                        <i data-feather="compass" class="w-8 h-8 text-[#38bdf8]"></i>
+                        <i data-feather="target" class="w-8 h-8 text-[#38bdf8]"></i>
                     </div>
                     <h2 class="font-['Orbitron'] text-3xl md:text-4xl text-[#f1f5f9]">
-                        Notre Histoire
+                        Notre Mission
                     </h2>
                 </div>
                 
                 <div class="grid md:grid-cols-2 gap-8 items-center">
                     <div>
                         <p class="text-[#cbd5e1] text-lg mb-6 leading-relaxed">
-                            Fondée en 2015 par un groupe de passionnés d'astronomie et d'ingénieurs spatiaux, 
-                            la <span class="text-[#38bdf8] font-semibold">Sirius Space Association</span> est née d'une vision simple mais ambitieuse : 
-                            rendre l'exploration spatiale accessible à tous et démocratiser la connaissance du cosmos.
+                            <span class="text-[#38bdf8] font-semibold">Sirius Space Association</span> est une organisation à but non lucratif, dédiée à la promotion et au développement des sciences et technologies spatiales au Bénin.
                         </p>
                         <p class="text-[#cbd5e1] text-lg mb-6 leading-relaxed">
-                            Ce qui a commencé comme un petit club d'astronomes amateurs dans un garage s'est rapidement 
-                            transformé en une organisation internationale reconnue, collaborant avec des agences spatiales 
-                            et des institutions éducatives à travers le monde.
+                            Notre mission principale est d'<span class="text-[#38bdf8] font-semibold">inspirer les jeunes</span> à s'orienter vers des carrières dans le domaine spatial, en éveillant leur intérêt pour les STIM à travers l'astronomie et ses multiples applications.
+                        </p>
+                        <p class="text-[#cbd5e1] text-lg mb-6 leading-relaxed">
+                            Nous œuvrons également à inciter les décideurs publics et les partenaires nationaux à investir dans le spatial afin de développer les applications des technologies spatiales pour faire du Bénin une <span class="text-[#38bdf8] font-semibold">nation spatiale</span>.
                         </p>
                         <div class="mt-8">
-                            <h3 class="font-['Orbitron'] text-xl text-[#f1f5f9] mb-4">Timeline de notre évolution</h3>
-                            <div class="space-y-6">
-                                <div class="timeline-item">
-                                    <h4 class="font-semibold text-[#38bdf8]">2015 - Fondation</h4>
-                                    <p class="text-[#94a3b8] text-sm">Création de l'association avec 12 membres fondateurs</p>
-                                </div>
-                                <div class="timeline-item">
-                                    <h4 class="font-semibold text-[#38bdf8]">2017 - Première mission éducative</h4>
-                                    <p class="text-[#94a3b8] text-sm">Lancement de notre programme "Étoiles des Quartiers"</p>
-                                </div>
-                                <div class="timeline-item">
-                                    <h4 class="font-semibold text-[#38bdf8]">2019 - Collaboration NASA</h4>
-                                    <p class="text-[#94a3b8] text-sm">Partenariat officiel avec la NASA pour la diffusion éducative</p>
-                                </div>
-                                <div class="timeline-item">
-                                    <h4 class="font-semibold text-[#38bdf8]">2021 - Galerie Cosmique</h4>
-                                    <p class="text-[#94a3b8] text-sm">Lancement de notre plateforme digitale internationale</p>
-                                </div>
-                                <div class="timeline-item">
-                                    <h4 class="font-semibold text-[#38bdf8]">2023 - 50 pays membres</h4>
-                                    <p class="text-[#94a3b8] text-sm">Expansion à l'international avec 50 pays représentés</p>
-                                </div>
+                            <h3 class="font-['Orbitron'] text-xl text-[#f1f5f9] mb-4">Secteur d'activité</h3>
+                            <div class="inline-block px-4 py-2 rounded-lg bg-[#0ea5e9]/10 text-[#38bdf8] border border-[#38bdf8]/30">
+                                Recherche et technologie spatiales
                             </div>
                         </div>
                     </div>
                     <div class="relative">
-                        <div class="aspect-square rounded-xl overflow-hidden gradient-border">
-                            <img src="https://images.unsplash.com/photo-1446776653964-20c1d3a81b06?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
-                                 alt="Équipe Sirius Space Association"
+                        <div class="aspect-square rounded-xl overflow-hidden border-2 border-[#38bdf8]/30">
+                            <img src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
+                                 alt="Développement spatial au Bénin"
                                  class="w-full h-full object-cover">
                         </div>
                         <div class="absolute -bottom-6 -right-6 w-48 h-48 bg-gradient-to-r from-[#0ea5e9]/20 to-[#7e22ce]/20 rounded-full blur-2xl"></div>
@@ -281,232 +265,227 @@
         </div>
     </section>
 
-    <!-- Notre Mission & Vision -->
+    <!-- Nos Trois Axes Majeurs -->
     <section class="py-16 px-4">
         <div class="container mx-auto max-w-6xl">
             <div class="text-center mb-16">
                 <h2 class="font-['Orbitron'] text-3xl md:text-4xl text-[#f1f5f9] mb-6">
-                    Notre <span class="bg-gradient-to-r from-[#38bdf8] to-[#a855f7] bg-clip-text text-transparent">Mission</span>
+                    Nos <span class="bg-gradient-to-r from-[#38bdf8] to-[#a855f7] bg-clip-text text-transparent">Trois Axes</span> Majeurs
                 </h2>
                 <p class="text-[#cbd5e1] text-lg max-w-3xl mx-auto">
-                    Guider l'humanité dans sa compréhension et son exploration de l'univers
+                    Les piliers fondamentaux de notre action pour le développement spatial béninois
                 </p>
             </div>
 
             <div class="grid md:grid-cols-3 gap-8 mb-16">
-                <!-- Mission 1 -->
-                <div class="content-card rounded-2xl p-8 text-center">
-                    <div class="mission-icon w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-6">
-                        <i data-feather="eye" class="w-8 h-8 text-[#38bdf8]"></i>
+                <!-- Axe 1 -->
+                <div class="pillar-card rounded-2xl p-6">
+                    <div class="mission-icon w-16 h-16 rounded-2xl flex items-center justify-center mb-6">
+                        <i data-feather="globe" class="w-8 h-8 text-[#38bdf8]"></i>
                     </div>
-                    <h3 class="font-['Orbitron'] text-xl text-[#f1f5f9] mb-4">Observer & Documenter</h3>
-                    <p class="text-[#94a3b8]">
-                        Collecter, analyser et partager les découvertes astronomiques les plus récentes 
-                        à travers notre galerie cosmique et nos publications scientifiques.
+                    <h3 class="font-['Orbitron'] text-xl text-[#f1f5f9] mb-4">Vulgarisation Scientifique</h3>
+                    <p class="text-[#94a3b8] mb-4">
+                        Rendre l'espace accessible à tous à travers :
                     </p>
+                    <ul class="space-y-2">
+                        <li class="flex items-start gap-2">
+                            <i data-feather="check-circle" class="w-4 h-4 text-[#38bdf8] mt-1 flex-shrink-0"></i>
+                            <span class="text-[#94a3b8] text-sm">Observations du ciel</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i data-feather="check-circle" class="w-4 h-4 text-[#38bdf8] mt-1 flex-shrink-0"></i>
+                            <span class="text-[#94a3b8] text-sm">Conférences et ateliers</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i data-feather="check-circle" class="w-4 h-4 text-[#38bdf8] mt-1 flex-shrink-0"></i>
+                            <span class="text-[#94a3b8] text-sm">Démystification de l'astronomie</span>
+                        </li>
+                    </ul>
                 </div>
 
-                <!-- Mission 2 -->
-                <div class="content-card rounded-2xl p-8 text-center">
-                    <div class="mission-icon w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                <!-- Axe 2 -->
+                <div class="pillar-card rounded-2xl p-6">
+                    <div class="mission-icon w-16 h-16 rounded-2xl flex items-center justify-center mb-6">
                         <i data-feather="book-open" class="w-8 h-8 text-[#38bdf8]"></i>
                     </div>
-                    <h3 class="font-['Orbitron'] text-xl text-[#f1f5f9] mb-4">Éduquer & Inspirer</h3>
-                    <p class="text-[#94a3b8]">
-                        Développer des programmes éducatifs innovants pour les jeunes et le grand public, 
-                        rendant l'astronomie accessible à tous.
+                    <h3 class="font-['Orbitron'] text-xl text-[#f1f5f9] mb-4">Formation</h3>
+                    <p class="text-[#94a3b8] mb-4">
+                        Développer et transmettre des compétences techniques :
                     </p>
+                    <ul class="space-y-2">
+                        <li class="flex items-start gap-2">
+                            <i data-feather="check-circle" class="w-4 h-4 text-[#38bdf8] mt-1 flex-shrink-0"></i>
+                            <span class="text-[#94a3b8] text-sm">Renforcement des capacités locales</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i data-feather="check-circle" class="w-4 h-4 text-[#38bdf8] mt-1 flex-shrink-0"></i>
+                            <span class="text-[#94a3b8] text-sm">Ateliers techniques spécialisés</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i data-feather="check-circle" class="w-4 h-4 text-[#38bdf8] mt-1 flex-shrink-0"></i>
+                            <span class="text-[#94a3b8] text-sm">Programmes éducatifs innovants</span>
+                        </li>
+                    </ul>
                 </div>
 
-                <!-- Mission 3 -->
-                <div class="content-card rounded-2xl p-8 text-center">
-                    <div class="mission-icon w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-6">
-                        <i data-feather="users" class="w-8 h-8 text-[#38bdf8]"></i>
+                <!-- Axe 3 -->
+                <div class="pillar-card rounded-2xl p-6">
+                    <div class="mission-icon w-16 h-16 rounded-2xl flex items-center justify-center mb-6">
+                        <i data-feather="cpu" class="w-8 h-8 text-[#38bdf8]"></i>
                     </div>
-                    <h3 class="font-['Orbitron'] text-xl text-[#f1f5f9] mb-4">Connecter & Collaborer</h3>
-                    <p class="text-[#94a3b8]">
-                        Créer un réseau mondial de passionnés d'espace, facilitant les échanges entre 
-                        amateurs, professionnels et institutions.
+                    <h3 class="font-['Orbitron'] text-xl text-[#f1f5f9] mb-4">Recherche & Développement</h3>
+                    <p class="text-[#94a3b8] mb-4">
+                        Concevoir des solutions spatiales innovantes :
                     </p>
+                    <ul class="space-y-2">
+                        <li class="flex items-start gap-2">
+                            <i data-feather="check-circle" class="w-4 h-4 text-[#38bdf8] mt-1 flex-shrink-0"></i>
+                            <span class="text-[#94a3b8] text-sm">Technologies spatiales adaptées</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i data-feather="check-circle" class="w-4 h-4 text-[#38bdf8] mt-1 flex-shrink-0"></i>
+                            <span class="text-[#94a3b8] text-sm">Solutions avec et pour tous</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i data-feather="check-circle" class="w-4 h-4 text-[#38bdf8] mt-1 flex-shrink-0"></i>
+                            <span class="text-[#94a3b8] text-sm">Projets de recherche appliquée</span>
+                        </li>
+                    </ul>
                 </div>
             </div>
+        </div>
+    </section>
 
-            <!-- Vision -->
+    <!-- Notre Équipe & Impact -->
+    <section class="py-16 px-4">
+        <div class="container mx-auto max-w-6xl">
             <div class="content-card rounded-2xl p-8 md:p-12">
-                <div class="grid md:grid-cols-2 gap-8 items-center">
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- Notre Équipe -->
                     <div>
-                        <div class="p-3 rounded-lg bg-gradient-to-r from-[#0284c7]/20 to-[#9333ea]/20 border border-[#38bdf8]/30 inline-block mb-6">
-                            <i data-feather="target" class="w-8 h-8 text-[#38bdf8]"></i>
+                        <div class="flex items-center gap-4 mb-8">
+                            <div class="p-3 rounded-lg bg-gradient-to-r from-[#0284c7]/20 to-[#9333ea]/20 border border-[#38bdf8]/30">
+                                <i data-feather="users" class="w-8 h-8 text-[#38bdf8]"></i>
+                            </div>
+                            <h3 class="font-['Orbitron'] text-2xl text-[#f1f5f9]">
+                                Notre Équipe
+                            </h3>
                         </div>
-                        <h3 class="font-['Orbitron'] text-2xl md:text-3xl text-[#f1f5f9] mb-6">
-                            Notre Vision pour 2030
-                        </h3>
                         <p class="text-[#cbd5e1] text-lg mb-6 leading-relaxed">
-                            D'ici 2030, nous aspirons à devenir la référence mondiale pour l'éducation spatiale 
-                            grand public, avec :
+                            Créée en 2021, Sirius Space Association est dirigée par une équipe passionnée de <span class="text-[#38bdf8] font-semibold">jeunes étudiants, ingénieurs et scientifiques engagés</span>.
                         </p>
-                        <ul class="space-y-4">
-                            <li class="flex items-start gap-3">
-                                <i data-feather="check-circle" class="w-5 h-5 text-[#38bdf8] mt-1 flex-shrink-0"></i>
-                                <span class="text-[#cbd5e1]">Un réseau de 100 observatoires partenaires à travers le monde</span>
-                            </li>
-                            <li class="flex items-start gap-3">
-                                <i data-feather="check-circle" class="w-5 h-5 text-[#38bdf8] mt-1 flex-shrink-0"></i>
-                                <span class="text-[#cbd5e1]">Un programme éducatif atteignant 1 million d'étudiants annuellement</span>
-                            </li>
-                            <li class="flex items-start gap-3">
-                                <i data-feather="check-circle" class="w-5 h-5 text-[#38bdf8] mt=1 flex-shrink-0"></i>
-                                <span class="text-[#cbd5e1]">La première plateforme de réalité virtuelle pour l'exploration spatiale grand public</span>
-                            </li>
-                            <li class="flex items-start gap-3">
-                                <i data-feather="check-circle" class="w-5 h-5 text-[#38bdf8] mt=1 flex-shrink-0"></i>
-                                <span class="text-[#cbd5e1]">Un programme de mentorat connectant étudiants et professionnels du spatial</span>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="relative">
-                        <div class="aspect-square rounded-xl overflow-hidden gradient-border">
-                            <img src="https://images.unsplash.com/photo-1446776653964-20c1d3a81b06?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
-                                 alt="Vision spatiale"
-                                 class="w-full h-full object-cover">
+                        <div class="space-y-4">
+                            <div class="flex items-center justify-between p-3 rounded-lg bg-white/5">
+                                <span class="text-[#cbd5e1]">Taille de l'entreprise</span>
+                                <span class="font-['Orbitron'] text-[#38bdf8]">11-50 employés</span>
+                            </div>
+                            <div class="flex items-center justify-between p-3 rounded-lg bg-white/5">
+                                <span class="text-[#cbd5e1]">Membres associés</span>
+                                <span class="font-['Orbitron'] text-[#38bdf8]">7 membres actifs</span>
+                            </div>
+                            <div class="flex items-center justify-between p-3 rounded-lg bg-white/5">
+                                <span class="text-[#cbd5e1]">Siège social</span>
+                                <span class="font-['Orbitron'] text-[#38bdf8]">Cotonou, Bénin</span>
+                            </div>
                         </div>
-                        <div class="absolute -top-4 -left-4 w-32 h-32 bg-gradient-to-r from-[#0ea5e9]/20 to-[#7e22ce]/20 rounded-full blur-2xl"></div>
-                        <div class="absolute -bottom-4 -right-4 w-32 h-32 bg-gradient-to-r from-[#7e22ce]/20 to-[#0ea5e9]/20 rounded-full blur-2xl"></div>
+                    </div>
+
+                    <!-- Notre Impact -->
+                    <div>
+                        <div class="flex items-center gap-4 mb-8">
+                            <div class="p-3 rounded-lg bg-gradient-to-r from-[#0284c7]/20 to-[#9333ea]/20 border border-[#38bdf8]/30">
+                                <i data-feather="zap" class="w-8 h-8 text-[#38bdf8]"></i>
+                            </div>
+                            <h3 class="font-['Orbitron'] text-2xl text-[#f1f5f9]">
+                                Notre Impact
+                            </h3>
+                        </div>
+                        <p class="text-[#cbd5e1] text-lg mb-6 leading-relaxed">
+                            Sirius Space Association contribue à <span class="text-[#38bdf8] font-semibold">inspirer la prochaine génération</span> de scientifiques et d'ingénieurs pour le développement technologique du Bénin.
+                        </p>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="text-center p-4 rounded-lg bg-gradient-to-b from-[#0ea5e9]/10 to-transparent">
+                                <div class="text-2xl font-['Orbitron'] text-[#38bdf8] mb-1">50+</div>
+                                <p class="text-[#94a3b8] text-sm">Événements organisés</p>
+                            </div>
+                            <div class="text-center p-4 rounded-lg bg-gradient-to-b from-[#7e22ce]/10 to-transparent">
+                                <div class="text-2xl font-['Orbitron'] text-[#a855f7] mb-1">1000+</div>
+                                <p class="text-[#94a3b8] text-sm">Jeunes inspirés</p>
+                            </div>
+                            <div class="text-center p-4 rounded-lg bg-gradient-to-b from-[#0ea5e9]/10 to-transparent">
+                                <div class="text-2xl font-['Orbitron'] text-[#38bdf8] mb-1">20+</div>
+                                <p class="text-[#94a3b8] text-sm">Ateliers techniques</p>
+                            </div>
+                            <div class="text-center p-4 rounded-lg bg-gradient-to-b from-[#7e22ce]/10 to-transparent">
+                                <div class="text-2xl font-['Orbitron'] text-[#a855f7] mb-1">5+</div>
+                                <p class="text-[#94a3b8] text-sm">Projets de recherche</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Équipe Directrice -->
+    <!-- Notre Localisation -->
     <section class="py-16 px-4">
         <div class="container mx-auto max-w-6xl">
-            <div class="text-center mb-16">
-                <h2 class="font-['Orbitron'] text-3xl md:text-4xl text-[#f1f5f9] mb-6">
-                    Notre <span class="bg-gradient-to-r from-[#38bdf8] to-[#a855f7] bg-clip-text text-transparent">Équipe</span>
-                </h2>
-                <p class="text-[#cbd5e1] text-lg max-w-3xl mx-auto">
-                    Des passionnés dévoués à l'exploration et à la transmission du savoir cosmique
-                </p>
-            </div>
-
-            <div class="grid md:grid-cols-3 gap-8 mb-16">
-                <!-- Membre 1 -->
-                <div class="team-card rounded-2xl p-6 text-center">
-                    <div class="w-32 h-32 rounded-full mx-auto mb-6 overflow-hidden border-2 border-[#38bdf8]/30">
-                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" 
-                             alt="Dr. Alexandre Moreau"
-                             class="w-full h-full object-cover">
-                    </div>
-                    <h3 class="font-['Orbitron'] text-xl text-[#f1f5f9] mb-2">Dr. Alexandre Moreau</h3>
-                    <p class="text-[#38bdf8] text-sm mb-4">Directeur Scientifique</p>
-                    <p class="text-[#94a3b8] text-sm mb-4">
-                        Ancien chercheur à l'ESA, docteur en astrophysique, spécialiste des exoplanètes.
-                    </p>
-                    <div class="flex justify-center space-x-3">
-                        <a href="#" class="text-[#94a3b8] hover:text-[#38bdf8]">
-                            <i data-feather="linkedin" class="w-4 h-4"></i>
-                        </a>
-                        <a href="#" class="text-[#94a3b8] hover:text-[#38bdf8]">
-                            <i data-feather="mail" class="w-4 h-4"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Membre 2 -->
-                <div class="team-card rounded-2xl p-6 text-center">
-                    <div class="w-32 h-32 rounded-full mx-auto mb-6 overflow-hidden border-2 border-[#38bdf8]/30">
-                        <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" 
-                             alt="Élise Dubois"
-                             class="w-full h-full object-cover">
-                    </div>
-                    <h3 class="font-['Orbitron'] text-xl text-[#f1f5f9] mb-2">Élise Dubois</h3>
-                    <p class="text-[#38bdf8] text-sm mb-4">Directrice Éducation</p>
-                    <p class="text-[#94a3b8] text-sm mb-4">
-                        Pédagogue innovante, créatrice de programmes éducatifs primés par l'UNESCO.
-                    </p>
-                    <div class="flex justify-center space-x-3">
-                        <a href="#" class="text-[#94a3b8] hover:text-[#38bdf8]">
-                            <i data-feather="linkedin" class="w-4 h-4"></i>
-                        </a>
-                        <a href="#" class="text-[#94a3b8] hover:text-[#38bdf8]">
-                            <i data-feather="mail" class="w-4 h-4"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Membre 3 -->
-                <div class="team-card rounded-2xl p-6 text-center">
-                    <div class="w-32 h-32 rounded-full mx-auto mb-6 overflow-hidden border-2 border-[#38bdf8]/30">
-                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" 
-                             alt="Thomas Leroy"
-                             class="w-full h-full object-cover">
-                    </div>
-                    <h3 class="font-['Orbitron'] text-xl text-[#f1f5f9] mb-2">Thomas Leroy</h3>
-                    <p class="text-[#38bdf8] text-sm mb-4">Directeur Technologie</p>
-                    <p class="text-[#94a3b8] text-sm mb-4">
-                        Ingénieur spatial, développeur de la plateforme Galerie Cosmique et outils VR.
-                    </p>
-                    <div class="flex justify-center space-x-3">
-                        <a href="#" class="text-[#94a3b8] hover:text-[#38bdf8]">
-                            <i data-feather="linkedin" class="w-4 h-4"></i>
-                        </a>
-                        <a href="#" class="text-[#94a3b8] hover:text-[#38bdf8]">
-                            <i data-feather="mail" class="w-4 h-4"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Stats -->
             <div class="content-card rounded-2xl p-8">
-                <div class="grid md:grid-cols-4 gap-6 text-center">
-                    <div>
-                        <div class="text-3xl md:text-4xl font-['Orbitron'] text-[#38bdf8] mb-2 glow-text">50+</div>
-                        <p class="text-[#94a3b8] text-sm">Pays membres</p>
+                <div class="flex items-center gap-4 mb-8">
+                    <div class="p-3 rounded-lg bg-gradient-to-r from-[#0284c7]/20 to-[#9333ea]/20 border border-[#38bdf8]/30">
+                        <i data-feather="map-pin" class="w-8 h-8 text-[#38bdf8]"></i>
                     </div>
-                    <div>
-                        <div class="text-3xl md:text-4xl font-['Orbitron'] text-[#38bdf8] mb-2 glow-text">250+</div>
-                        <p class="text-[#94a3b8] text-sm">Bénévoles actifs</p>
-                    </div>
-                    <div>
-                        <div class="text-3xl md:text-4xl font-['Orbitron'] text-[#38bdf8] mb-2 glow-text">10K+</div>
-                        <p class="text-[#94a3b8] text-sm">Étudiants formés</p>
-                    </div>
-                    <div>
-                        <div class="text-3xl md:text-4xl font-['Orbitron'] text-[#38bdf8] mb-2 glow-text">1M+</div>
-                        <p class="text-[#94a3b8] text-sm">Visiteurs annuels</p>
-                    </div>
+                    <h2 class="font-['Orbitron'] text-3xl text-[#f1f5f9]">
+                        Notre Localisation
+                    </h2>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Partenaires -->
-    <section class="py-16 px-4">
-        <div class="container mx-auto max-w-6xl">
-            <div class="text-center mb-12">
-                <h2 class="font-['Orbitron'] text-3xl md:text-4xl text-[#f1f5f9] mb-6">
-                    Nos <span class="bg-gradient-to-r from-[#38bdf8] to-[#a855f7] bg-clip-text text-transparent">Partenaires</span>
-                </h2>
-                <p class="text-[#cbd5e1] text-lg max-w-3xl mx-auto">
-                    Collaborer pour repousser les frontières de la connaissance spatiale
-                </p>
-            </div>
-
-            <div class="content-card rounded-2xl p-8">
-                <div class="grid grid-cols-2 md:grid-cols-4 gap-8 items-center justify-items-center">
-                    <div class="p-4 rounded-lg bg-white/5 border border-white/10 hover:border-[#38bdf8]/30 transition">
-                        <div class="text-xl font-['Orbitron'] text-white">NASA</div>
+                
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="font-['Orbitron'] text-xl text-[#f1f5f9] mb-4">Siège Social</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-start gap-3 p-4 rounded-lg bg-white/5">
+                                <i data-feather="map-pin" class="w-5 h-5 text-[#38bdf8] mt-1"></i>
+                                <div>
+                                    <p class="text-[#cbd5e1] font-semibold">Cotonou, Bénin</p>
+                                    <p class="text-[#94a3b8] text-sm">Notre quartier général pour rayonner sur toute l'Afrique de l'Ouest</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3 p-4 rounded-lg bg-white/5">
+                                <i data-feather="globe" class="w-5 h-5 text-[#38bdf8] mt-1"></i>
+                                <div>
+                                    <p class="text-[#cbd5e1] font-semibold">Portée Régionale</p>
+                                    <p class="text-[#94a3b8] text-sm">Nos activités s'étendent à toute l'Afrique de l'Ouest francophone</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3 p-4 rounded-lg bg-white/5">
+                                <i data-feather="target" class="w-5 h-5 text-[#38bdf8] mt-1"></i>
+                                <div>
+                                    <p class="text-[#cbd5e1] font-semibold">Vision Panafricaine</p>
+                                    <p class="text-[#94a3b8] text-sm">Contribuer au développement spatial de toute l'Afrique</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="p-4 rounded-lg bg-white/5 border border-white/10 hover:border-[#38bdf8]/30 transition">
-                        <div class="text-xl font-['Orbitron'] text-white">ESA</div>
-                    </div>
-                    <div class="p-4 rounded-lg bg-white/5 border border-white/10 hover:border-[#38bdf8]/30 transition">
-                        <div class="text-xl font-['Orbitron'] text-white">CNES</div>
-                    </div>
-                    <div class="p-4 rounded-lg bg-white/5 border border-white/10 hover:border-[#38bdf8]/30 transition">
-                        <div class="text-xl font-['Orbitron'] text-white">UNESCO</div>
+                    
+                    <div class="relative">
+                        <div class="aspect-[4/3] rounded-xl overflow-hidden border-2 border-[#38bdf8]/30">
+                            <div class="w-full h-full flex items-center justify-center bg-gradient-to-br from-[#0f172a] to-[#1e1b4b]">
+                                <div class="text-center p-8">
+                                    <div class="inline-block p-4 rounded-full bg-gradient-to-r from-[#008751]/20 via-[#FCD116]/20 to-[#E8112D]/20 border border-white/20 mb-4">
+                                        <i data-feather="map" class="w-12 h-12 text-white"></i>
+                                    </div>
+                                    <h4 class="font-['Orbitron'] text-xl text-white mb-2">Cotonou, Bénin</h4>
+                                    <p class="text-[#cbd5e1] text-sm">Centre névralgique de l'innovation spatiale en Afrique de l'Ouest</p>
+                                    <div class="mt-4 flex justify-center space-x-2">
+                                        <span class="w-3 h-8 bg-[#008751] rounded-sm"></span>
+                                        <span class="w-3 h-8 bg-[#FCD116] rounded-sm"></span>
+                                        <span class="w-3 h-8 bg-[#E8112D] rounded-sm"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="absolute -top-4 -right-4 w-32 h-32 bg-gradient-to-r from-[#0ea5e9]/20 to-[#7e22ce]/20 rounded-full blur-2xl"></div>
                     </div>
                 </div>
             </div>
@@ -521,22 +500,25 @@
                     <i data-feather="user-plus" class="w-12 h-12 text-[#38bdf8]"></i>
                 </div>
                 <h2 class="font-['Orbitron'] text-3xl md:text-4xl text-[#f1f5f9] mb-6">
-                    Rejoignez Notre Aventure Cosmique
+                    Rejoignez la Révolution Spatiale Béninoise
                 </h2>
                 <p class="text-[#cbd5e1] text-lg mb-8 max-w-2xl mx-auto">
-                    Que vous soyez passionné d'astronomie, étudiant, enseignant ou simplement curieux de l'univers, 
-                    il y a une place pour vous dans notre communauté.
+                    Que vous soyez étudiant, ingénieur, chercheur ou simplement passionné par l'espace, 
+                    participez avec nous à faire du Bénin une nation spatiale.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                    <a href="contact.html" class="bg-gradient-to-r from-[#0ea5e9] to-[#7e22ce] text-white px-8 py-3 rounded-lg font-semibold hover:opacity-90 transition inline-flex items-center gap-2 justify-center">
+                    <a href="contact.html" class="bg-gradient-to-r from-[#008751] to-[#0ea5e9] text-white px-8 py-3 rounded-lg font-semibold hover:opacity-90 transition inline-flex items-center gap-2 justify-center">
                         <i data-feather="mail" class="w-5 h-5"></i>
-                        Devenir Membre
+                        Nous Contacter
                     </a>
                     <a href="galerie.html" class="bg-transparent text-[#38bdf8] px-8 py-3 rounded-lg font-semibold border border-[#38bdf8] hover:bg-[#38bdf8]/10 transition inline-flex items-center gap-2 justify-center">
                         <i data-feather="compass" class="w-5 h-5"></i>
-                        Explorer la Galerie
+                        Explorer Notre Galerie
                     </a>
                 </div>
+                <p class="text-[#94a3b8] text-sm mt-6">
+                    Ensemble, bâtissons l'avenir spatial du Bénin !
+                </p>
             </div>
         </div>
     </section>
@@ -550,7 +532,7 @@
                         <i data-feather="star" class="w-6 h-6 text-[#38bdf8]"></i>
                         Sirius Space Association
                     </a>
-                    <p class="text-[#94a3b8] text-sm mt-2">© 2025 Exploration du Cosmos. Tous droits réservés.</p>
+                    <p class="text-[#94a3b8] text-sm mt-2">© 2025 Organisation à but non lucratif. Tous droits réservés.</p>
                 </div>
                 <div class="flex flex-col md:flex-row md:space-x-10 space-y-4 md:space-y-0 text-center md:text-left">
                     <a href="mailto:contact@sirius-space.org" class="text-[#94a3b8] hover:text-[#38bdf8] transition inline-flex items-center gap-2">
@@ -559,13 +541,13 @@
                     </a>
                     <a href="#" class="text-[#94a3b8] hover:text-[#38bdf8] transition inline-flex items-center gap-2">
                         <i data-feather="map-pin" class="w-4 h-4"></i>
-                        Paris, France
+                        Cotonou, Bénin
                     </a>
                 </div>
             </div>
             <div class="text-center mt-8 pt-8 border-t border-[#334155]">
                 <p class="text-[#64748b] text-sm">
-                    "La curiosité est la pierre angulaire de toute découverte. Regardons ensemble vers les étoiles." — Sirius Space Association
+                    "L'avenir du Bénin est dans les étoiles. Rejoignez-nous pour l'écrire ensemble." — Sirius Space Association
                 </p>
             </div>
         </div>
@@ -597,7 +579,7 @@
         }, observerOptions);
         
         // Observer toutes les cartes
-        document.querySelectorAll('.content-card, .team-card').forEach(card => {
+        document.querySelectorAll('.content-card, .pillar-card, .team-card').forEach(card => {
             card.style.opacity = '0';
             card.style.transform = 'translateY(20px)';
             card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
@@ -606,7 +588,7 @@
         
         // Initialiser les cartes déjà visibles
         setTimeout(() => {
-            document.querySelectorAll('.content-card, .team-card').forEach(card => {
+            document.querySelectorAll('.content-card, .pillar-card, .team-card').forEach(card => {
                 const rect = card.getBoundingClientRect();
                 if (rect.top < window.innerHeight) {
                     card.style.opacity = '1';
@@ -615,7 +597,7 @@
             });
         }, 100);
         
-        console.log('Page À Propos chargée avec succès!');
+        console.log('Page À Propos Sirius Space Association chargée avec succès!');
     </script>
 </body>
 </html>
